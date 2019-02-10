@@ -18,17 +18,15 @@ J1149.com is a resource for PAI developers.
 
 ## Welcome!
 
-Welcome to J1149. The purpose of this website is to provide documentation and code examples for the development of applications in the [Project PAI](projectpai.com) ecosystem. The navigational sections of this website outline components of the Project PAI blockchain. The example use cases, API documentation, and example code will help you to get started with Project PAI application development.
+Welcome to J1149. The purpose of this website is to provide documentation and code examples for the development of applications in the [Project PAI](projectpai.com) ecosystem.
+
+The navigational sections of this website outline components of the Project PAI blockchain. The example use cases, API documentation, and example code will help you to get started with Project PAI application development.
 
 ## About this site
 
-J1149, Inc. was created by members of the Project PAI community to be an informational resource for developers.
+J1149, Inc. was created by members of the Project PAI community to be an informational resource for developers. This website is open source, and you can make contributions to its code and content.
 
-This website is open source, and you can make contributions to its code and content here.
-
-We follow a Github-based proposal acceptance process, [click here](https://github.com/J1149/j1149.github.io/issues) to submit a proposal or request.
-
-Please ask questions, give feedback, and help us to grow by joining the [discussion on slack](https://join.slack.com/t/j1149-pai/shared_invite/enQtNTQ3MzE3OTkxMDEzLWIxNTkzODkwYTdmNjI1YmIxMzExZTk4MjIxNWEwZGVhYjJkMGU5OTc1ZDhmNmM2MjkxNGFjZjVkYThjYTBmODM).
+It follows a Github-based proposal acceptance process, [click here](https://github.com/J1149/j1149.github.io/issues) to submit a proposal or request. Please ask questions, give feedback, and help us to grow by joining the [discussion on slack](https://join.slack.com/t/j1149-pai/shared_invite/enQtNTQ3MzE3OTkxMDEzLWIxNTkzODkwYTdmNjI1YmIxMzExZTk4MjIxNWEwZGVhYjJkMGU5OTc1ZDhmNmM2MjkxNGFjZjVkYThjYTBmODM).
 
 We would like to thank the [J1149.com contributors](https://github.com/J1149/j1149.github.io/graphs/contributors).
 
@@ -39,7 +37,7 @@ This website is distributed by an [MIT license](https://github.com/J1149/j1149.g
 ### Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via Github issue tracker,
-email, slack, or any other method before making a change. Read more about becoming a contributor in [our GitHub repository](https://github.com/J1149/j1149.github.io#contributing).
+email, slack, or any other method before making a change. Read more about becoming a contributor in the [J1149 GitHub repository](https://github.com/J1149/j1149.github.io#contributing).
 
 ### Code of Conduct
 
