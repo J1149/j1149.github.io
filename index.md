@@ -12,7 +12,7 @@ permalink: /
 J1149.com is a resource for PAI developers.
 {: .fs-6 .fw-300 }
 
-[Tell Me More](#about-the-project){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View this site on GitHub](https://github.com/J1149/j1149.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Tell Me More](#about-this-site){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View this site on GitHub](https://github.com/J1149/j1149.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
