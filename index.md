@@ -26,7 +26,7 @@ We follow a Github-base proposal acceptance process, [click here](https://github
 
 Please ask questions, give feedback, and help us to grow by joining the [discussion on slack](https://join.slack.com/t/j1149-pai/shared_invite/enQtNTQ3MzE3OTkxMDEzLWIxNTkzODkwYTdmNjI1YmIxMzExZTk4MjIxNWEwZGVhYjJkMGU5OTc1ZDhmNmM2MjkxNGFjZjVkYThjYTBmODM).
 
-We would like to thank the following contributors: [https://github.com/J1149/j1149.github.io/graphs/contributors]
+We would like to thank the [J1149.com contributors](https://github.com/J1149/j1149.github.io/graphs/contributors).
 
 ### License
 
