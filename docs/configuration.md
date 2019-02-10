@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Configuration
+parent: Site
 nav_order: 2
 ---
 

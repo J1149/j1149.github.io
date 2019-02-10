@@ -22,7 +22,7 @@ J1149, Inc. was created by members of the Project PAI community to be an informa
 
 This website is open source, and you can make contributions to its code and content here.
 
-We follow a Github-base proposal acceptance process, [click here](https://github.com/J1149/j1149.github.io/issues) to submit a proposal or request. 
+We follow a Github-based proposal acceptance process, [click here](https://github.com/J1149/j1149.github.io/issues) to submit a proposal or request.
 
 Please ask questions, give feedback, and help us to grow by joining the [discussion on slack](https://join.slack.com/t/j1149-pai/shared_invite/enQtNTQ3MzE3OTkxMDEzLWIxNTkzODkwYTdmNjI1YmIxMzExZTk4MjIxNWEwZGVhYjJkMGU5OTc1ZDhmNmM2MjkxNGFjZjVkYThjYTBmODM).
 
@@ -34,8 +34,8 @@ This website is distributed by an [MIT license](https://github.com/J1149/j1149.g
 
 ### Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repository](https://github.com/J1149/j1149.github.io#contributing).
+When contributing to this repository, please first discuss the change you wish to make via Github issue tracker,
+email, slack, or any other method before making a change. Read more about becoming a contributor in [our GitHub repository](https://github.com/J1149/j1149.github.io#contributing).
 
 ### Code of Conduct
 

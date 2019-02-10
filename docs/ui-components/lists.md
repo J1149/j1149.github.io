@@ -2,6 +2,7 @@
 layout: default
 title: Lists
 parent: UI Components
+grand_parent: Site
 nav_order: 5
 ---
 

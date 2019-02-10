@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Search
+parent: Site
 nav_order: 7
 ---
 

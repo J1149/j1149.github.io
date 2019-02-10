@@ -2,6 +2,7 @@
 layout: default
 title: Code
 parent: UI Components
+grand_parent: Site
 nav_order: 6
 ---
 

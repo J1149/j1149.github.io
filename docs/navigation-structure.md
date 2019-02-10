@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Navigation Structure
+parent: Site
 nav_order: 5
 ---
 
