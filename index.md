@@ -6,7 +6,7 @@ description: "J1149.com is a resource for PAI developers."
 permalink: /
 ---
 
-# Focus on writing good documentation
+# Get Started
 {: .fs-9 }
 
 J1149.com is a resource for PAI developers.
@@ -22,14 +22,11 @@ J1149, Inc. was created by members of the Project PAI community to be an informa
 
 This website is open source, and you can make contributions to its code and content here.
 
-We follow the [to-be-named] proposal acceptance process [link].
+We follow a Github-base proposal acceptance process, [click here](https://github.com/J1149/j1149.github.io/issues) to submit a proposal or request. 
 
-Please ask questions, give feedback, and help us grow by joining the discussion here:
+Please ask questions, give feedback, and help us to grow by joining the [discussion on slack](https://join.slack.com/t/j1149-pai/shared_invite/enQtNTQ3MzE3OTkxMDEzLWIxNTkzODkwYTdmNjI1YmIxMzExZTk4MjIxNWEwZGVhYjJkMGU5OTc1ZDhmNmM2MjkxNGFjZjVkYThjYTBmODM).
 
-
-[Live chat and/or links to Slack, IRC, Discord, WeChat.]
-
-We would like to thank the following contributors: [https://github.com/orgs/projectpai/people]
+We would like to thank the following contributors: [https://github.com/J1149/j1149.github.io/graphs/contributors]
 
 ### License
 
@@ -38,7 +35,7 @@ This website is distributed by an [MIT license](https://github.com/J1149/j1149.g
 ### Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/J1149/j1149.github.io#contributing).
+email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repository](https://github.com/J1149/j1149.github.io#contributing).
 
 ### Code of Conduct
 
