@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Site
-nav_order: 3
+nav_order: 99
 has_children: true
 permalink: /docs
 ---

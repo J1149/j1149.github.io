@@ -22,7 +22,7 @@ Welcome to J1149. The purpose of this website is to provide documentation and co
 
 The navigational sections of this website outline components of the Project PAI blockchain. The example use cases, API documentation, and example code will help you to get started with Project PAI application development.
 
-## About this site
+# About this site
 
 J1149, Inc. was created by members of the Project PAI community to be an informational resource for developers. This website is open source, and you can make contributions to its code and content.
 
