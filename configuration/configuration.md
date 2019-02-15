@@ -5,4 +5,4 @@ nav_order: 2
 has_children: true
 permalink: /configuration
 ---
-(Describe various build environments, walkthrough how to setup a local copy, and share information about web-based envs like paichain.info.)
+For the most up-to-date build notes: please see the [PAI Coin docs folder](https://github.com/projectpai/paicoin/tree/master/doc).
