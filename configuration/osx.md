@@ -5,7 +5,7 @@ parent: Configuration
 nav_order: 4
 ---
 
-See [https://github.com/projectpai/paicoin/blob/master/doc/build-osx.md](https://github.com/projectpai/paicoin/blob/master/doc/build-osx.md)
+See [https://github.com/projectpai/paicoin/blob/master/doc/build-osx.md]({{site.git_paicoin_doc_address}}//build-osx.md)
 
 Mac OS X Build Instructions and Notes
 ====================================
@@ -27,7 +27,7 @@ Dependencies
 
     brew install automake libtool pkg-config python3
 
-See [dependencies.md](dependencies.md) for a complete overview.
+See [dependencies.md]({{site.git_paicoin_doc_address}}/dependencies.md) for a complete overview.
 
 If you want to build the disk image with `make deploy` (.dmg / optional), you need RSVG
 

@@ -5,13 +5,13 @@ parent: Configuration
 nav_order: 2
 ---
 
-See [https://github.com/projectpai/paicoin/blob/master/doc/build-unix.md](https://github.com/projectpai/paicoin/blob/master/doc/build-unix.md)
+See [https://github.com/projectpai/paicoin/blob/master/doc/build-unix.md]({{site.git_paicoin_doc_address}}/build-unix.md)
 
 UNIX BUILD NOTES
 ====================
 Some notes on how to build PAIcoin Core in Unix.
 
-(for OpenBSD specific instructions, see [build-openbsd.md](build-openbsd.md))
+(for OpenBSD specific instructions, see [build-openbsd.md]({{site.git_paicoin_doc_address}}/build-openbsd.md))
 
 Note
 ---------------------
@@ -58,7 +58,7 @@ Optional dependencies:
  univalue    | Utility          | JSON parsing and encoding (bundled version will be used unless --with-system-univalue passed to configure)
  libzmq3     | ZMQ notification | Optional, allows generating ZMQ notifications (requires ZMQ version >= 4.x)
 
-For the versions used, see [dependencies.md](dependencies.md)
+For the versions used, see [dependencies.md]({{site.git_paicoin_doc_address}}/dependencies.md)
 
 Memory Requirements
 --------------------
@@ -319,7 +319,7 @@ To build executables for ARM:
     make
 
 
-For further documentation on the depends system see [README.md](../depends/README.md) in the depends directory.
+For further documentation on the depends system see [README.md]({{site.git_paicoin_address}}/depends/README.md) in the depends directory.
 
 Building on FreeBSD
 --------------------
@@ -327,7 +327,7 @@ Building on FreeBSD
 (Updated as of FreeBSD 11.0)
 
 Clang is installed by default as `cc` compiler, this makes it easier to get
-started than on [OpenBSD](build-openbsd.md). Installing dependencies:
+started than on [OpenBSD]({{site.git_paicoin_doc_address}}/build-openbsd.md). Installing dependencies:
 
     pkg install autoconf automake libtool pkgconf
     pkg install boost-libs openssl libevent
