@@ -1,8 +1,8 @@
 ---
 layout: default
 title: ControlMessages
-parent: Developer Reference
-nav_order: 7
+parent: P2P
+grand_parent: Developer Reference
 ---
 
 ControlMessages
@@ -12,7 +12,7 @@ The following network messages all help control the connection between
 two peers or allow them to advise each other about the rest of the
 network.
 
-![Overview Of P2P Protocol Control And Advisory Messages](/img/dev/en-p2p-control-messages.svg?{{site.time | date: '%s'}})
+![Overview Of P2P Protocol Control And Advisory Messages](https://bitcoin.org/img/dev/en-p2p-control-messages.svg?1551020757)
 
 Note that almost none of the control messages are authenticated in any
 way, meaning they can contain incorrect or intentionally harmful

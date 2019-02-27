@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Addr
-parent: Developer Reference
-nav_order: 1
+parent: P2P
+grand_parent: Developer Reference
 ---
 
 ADDR

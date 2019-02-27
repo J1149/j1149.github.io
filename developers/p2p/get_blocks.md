@@ -1,8 +1,8 @@
 ---
 layout: default
 title: GetBlocks
-parent: Developer Reference
-nav_order: 4
+parent: P2P
+grand_parent: Developer Reference
 ---
 
 GetBlocks
@@ -41,13 +41,14 @@ message header has been omitted.)
 
 ```
 71110100 ........................... Protocol version: 70001
-02 ................................. Hash count: 2`
+02 ................................. Hash count: 2
 
-`d39f608a7775b537729884d4e6633bb2
-105e55a16a14d31b0000000000000000 ... Hash #1`
+d39f608a7775b537729884d4e6633bb2
+105e55a16a14d31b0000000000000000 ... Hash #1
 
-`5c3e6403d40837110a2e8afb602b1c01
-714bda7ce23bea0a0000000000000000 ... Hash #2`
+5c3e6403d40837110a2e8afb602b1c01
+714bda7ce23bea0a0000000000000000 ... Hash #2
 
-`00000000000000000000000000000000
-00000000000000000000000000000000 ... Stop hash```
+00000000000000000000000000000000
+00000000000000000000000000000000 ... Stop hash
+```

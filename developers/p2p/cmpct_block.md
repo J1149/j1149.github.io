@@ -1,8 +1,8 @@
 ---
 layout: default
 title: CmpctBlock
-parent: Developer Reference
-nav_order: 5
+parent: P2P
+grand_parent: Developer Reference
 ---
 
 CmpctBlock

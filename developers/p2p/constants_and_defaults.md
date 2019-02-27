@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Contants & defaults
-parent: Developer Reference
-nav_order: 6
+parent: P2P
+grand_parent: Developer Reference
 ---
 
 Constants And Defaults
