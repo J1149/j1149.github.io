@@ -34,11 +34,6 @@ We would like to thank the [J1149.com contributors](https://github.com/J1149/j11
 
 This website is distributed by an [MIT license](https://github.com/J1149/j1149.github.io/tree/master/LICENSE.txt).
 
-### Contributing
-
-When contributing to this repository, please first discuss the change you wish to make via Github issue tracker,
-email, slack, or any other method before making a change. Read more about becoming a contributor in the [J1149 GitHub repository](https://github.com/J1149/j1149.github.io#contributing).
-
 ### Code of Conduct
 
 J1149.com is committed to fostering a welcoming community.
