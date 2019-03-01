@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Data Storage
-parent: Use Cases
+parent: Examples
 nav_order: 5
 ---
 
