@@ -5,7 +5,7 @@ parent: Examples
 nav_order: 7
 ---
 
-Build instructions for running a local PAIcoin block explorer on OSX.
+Build instructions for running a local PAIcoin block explorer on OSX. Kudos if you can create a docker files, [please see this issue](https://github.com/J1149/j1149.github.io/issues/12).
 
 1. Build and run paicoin. See the build-osx, build-unix, build-windows docs here
 2. Create a paicoin folder in `/Users/your-user-on-osx/Library/Application Support` -- the folder structure will be different depending on OS
