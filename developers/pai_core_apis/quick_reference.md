@@ -8,21 +8,21 @@ grand_parent: Developer Reference
 Quick Reference
 ===================
 
-`Block Chain RPCs`
+`PAI RPCs`
 
-* GetBestBlockHash: returns the header hash of the most recent block on the best block chain.
+* GetBestBlockHash: returns the header hash of the most recent block on the best PAI.
 
 * GetBlock: gets a block with a particular header hash from the local block database either as a JSON object or as a serialized block. Updated in 0.13.0
 
-* GetBlockChainInfo: provides information about the current state of the block chain. Updated in 0.12.1
+* GetPAIInfo: provides information about the current state of the PAI. Updated in 0.12.1
 
-* GetBlockCount: returns the number of blocks in the local best block chain.
+* GetBlockCount: returns the number of blocks in the local best PAI.
 
-* GetBlockHash: returns the header hash of a block at the given height in the local best block chain.
+* GetBlockHash: returns the header hash of a block at the given height in the local best PAI.
 
 * GetBlockHeader: gets a block header with a particular header hash from the local block database either as a JSON object or as a serialized block header. New in 0.12.0
 
-* GetChainTips: returns information about the highest-height block (tip) of each local block chain.
+* GetChainTips: returns information about the highest-height block (tip) of each local PAI.
 
 * GetDifficulty: returns the proof-of-work difficulty as a multiple of the minimum difficulty.
 
@@ -44,11 +44,11 @@ Quick Reference
 
 * PreciousBlock: treats a block as if it were received before others with the same work. New in 0.14.0
 
-* PruneBlockChain: prunes the blockchain up to a specified height or timestamp. New in 0.14.0
+* PrunePAI: prunes the PAI up to a specified height or timestamp. New in 0.14.0
 
-* VerifyChain: verifies each entry in the local block chain database.
+* VerifyChain: verifies each entry in the local PAI database.
 
-* VerifyTxOutProof: verifies that a proof points to one or more transactions in a block, returning the transactions the proof commits to and throwing an RPC error if the block is not in our best block chain. New in 0.11.0
+* VerifyTxOutProof: verifies that a proof points to one or more transactions in a block, returning the transactions the proof commits to and throwing an RPC error if the block is not in our best PAI. New in 0.11.0
 
 `CONTROL RPCs`
 
@@ -74,7 +74,7 @@ Quick Reference
 
 * PrioritiseTransaction: adds virtual priority or fee to a transaction, allowing it to be accepted into blocks mined by this node (or miners which use this node) with a lower priority or fee. (It can also remove virtual priority or fee, requiring the transaction have a higher priority or fee to be accepted into a locally-mined block.)
 
-* SubmitBlock: accepts a block, verifies it is a valid addition to the block chain, and broadcasts it to the network. Extra parameters are ignored by PAI Core but may be used by mining pools or other programs.
+* SubmitBlock: accepts a block, verifies it is a valid addition to the PAI, and broadcasts it to the network. Extra parameters are ignored by PAI Core but may be used by mining pools or other programs.
 
 `Network RPCs`
 
@@ -181,7 +181,7 @@ Note: the wallet RPCs are only available if PAI Core was built with wallet suppo
 
 * ImportPrivKey: adds a private key to your wallet. The key should be formatted in the wallet import format created by the dumpprivkey RPC.
 
-* ImportWallet: imports private keys from a file in wallet dump file format (see the dumpwallet RPC). These keys will be added to the keys currently in the wallet. This call may need to rescan all or parts of the block chain for transactions affecting the newly-added keys, which may take several minutes.
+* ImportWallet: imports private keys from a file in wallet dump file format (see the dumpwallet RPC). These keys will be added to the keys currently in the wallet. This call may need to rescan all or parts of the PAI for transactions affecting the newly-added keys, which may take several minutes.
 
 * KeyPoolRefill: fills the cache of unused pre-generated keys (the keypool).
 

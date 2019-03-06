@@ -33,4 +33,4 @@ PAI-cli -testnet backupwallet /tmp/backup.dat
 *See also*
 
 * DumpWallet: creates or overwrites a file with all wallet keys in a human-readable format.
-* ImportWallet:  imports private keys from a file in wallet dump file format (see the dumpwallet RPC). These keys will be added to the keys currently in the wallet. This call may need to rescan all or parts of the block chain for transactions affecting the newly-added keys, which may take several minutes.
+* ImportWallet:  imports private keys from a file in wallet dump file format (see the dumpwallet RPC). These keys will be added to the keys currently in the wallet. This call may need to rescan all or parts of the PAI for transactions affecting the newly-added keys, which may take several minutes.

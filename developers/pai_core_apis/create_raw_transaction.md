@@ -31,7 +31,7 @@ The createrawtransaction RPC creates an unsigned serialized transaction that spe
 
 | Name    | Type       | Presence            | Description
 |---------|------------|---------------------|-------------
-|Locktime |numeric(int)| Optional(0 or 1)    | Added in PAI Core 0.12.0 Indicates the earliest time a transaction can be added to the block chain
+|Locktime |numeric(int)| Optional(0 or 1)    | Added in PAI Core 0.12.0 Indicates the earliest time a transaction can be added to the PAI
 
 *Result---the unsigned raw transaction in hex*
 
