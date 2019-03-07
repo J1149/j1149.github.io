@@ -1,79 +1,79 @@
 ---
 layout: default
-title: GetPaiInfo
+title: GetBlockChainInfo
 parent: PAI Core Apis
 grand_parent: Developer Reference
 ---
 
-GetPaiInfo
+GetBlockChainInfo
 ========================
 
-The `getpaiinfo` RPC provides information about the current state of the pai.
+The `getblockchaininfo` RPC provides information about the current state of the block chain.
 
 *Parameters: none*
 
-*Result---A JSON object providing information about the PAI*
+*Result---A JSON object providing information about the block chain*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
   t: "object"
   p: "Required<br>(exactly 1)"
-  d: "Information about the current state of the local PAI"
+  d: "Information about the current state of the local block chain"
 
 - n: "→<br>`chain`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The name of the PAI.  One of `main` for mainnet, `test` for testnet, or `regtest`<!--noref--> for regtest"
+  d: "The name of the block chain.  One of `main` for mainnet, `test` for testnet, or `regtest`<!--noref--> for regtest"
 
-- n: "→<br>`pais`"
+- n: "→<br>`blocks`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The number of validated pais in the local best PAI.  For a new node with just the hardcoded genesis pai, this will be 0"
+  d: "The number of validated blocks in the local best block chain.  For a new node with just the hardcoded genesis block, this will be 0"
 
 - n: "→<br>`headers`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The number of validated headers in the local best headers chain.  For a new node with just the hardcoded genesis pai, this will be zero.  This number may be higher than the number of *pais*"
+  d: "The number of validated headers in the local best headers chain.  For a new node with just the hardcoded genesis block, this will be zero.  This number may be higher than the number of *blocks*"
 
-- n: "→<br>`bestpaihash`"
+- n: "→<br>`bestblockhash`"
   t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The hash of the header of the highest validated pai in the best PAI, encoded as hex in RPC byte order.  This is identical to the string returned by the `getbestpaihash` RPC"
+  d: "The hash of the header of the highest validated block in the best block chain, encoded as hex in RPC byte order.  This is identical to the string returned by the `getbestblockhash` RPC"
 
 - n: "→<br>`difficulty`"
   t: "number (real)"
   p: "Required<br>(exactly 1)"
-  d: "The difficulty of the highest-height pai in the best PAI"
+  d: "The difficulty of the highest-height block in the best block chain"
 
 - n: "→<br>`mediantime`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in pai Core 0.12.0*<br><br>The median time of the 11 pais before the most recent pai on the PAI.  Used for validating transaction locktime under BIP113"
+  d: "*Added in PAI Core 0.12.0*<br><br>The median time of the 11 blocks before the most recent block on the blockchain.  Used for validating transaction locktime under BIP113"
   
 - n: "→<br>`verificationprogress`"
   t: "number (real)"
   p: "Required<br>(exactly 1)"
-  d: "Estimate of what percentage of the PAI transactions have been verified so far, starting at 0.0 and increasing to 1.0 for fully verified.  May slightly exceed 1.0 when fully synced to account for transactions in the memory pool which have been verified before being included in a pai"
+  d: "Estimate of what percentage of the block chain transactions have been verified so far, starting at 0.0 and increasing to 1.0 for fully verified.  May slightly exceed 1.0 when fully synced to account for transactions in the memory pool which have been verified before being included in a block"
 
 - n: "→<br>`chainwork`"
   t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The estimated number of pai header hashes checked from the genesis pai to this pai, encoded as big-endian hex"
+  d: "The estimated number of block header hashes checked from the genesis block to this block, encoded as big-endian hex"
 
 - n: "→<br>`pruned`"
   t: "bool"
   p: "Required<br>(exactly 1)"
-  d: "*Added in pai Core 0.11.0*<br><br>Indicates if the pais are subject to pruning"
+  d: "*Added in PAI Core 0.11.0*<br><br>Indicates if the blocks are subject to pruning"
   
 - n: "→<br>`pruneheight`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "*Added in pai Core 0.11.0*<br><br>The lowest-height complete pai stored if prunning is activated"
+  d: "*Added in PAI Core 0.11.0*<br><br>The lowest-height complete block stored if prunning is activated"
   
 - n: "→<br>`softforks`"
   t: "array"
   p: "Required<br>(exactly 1)"
-  d: "*Added in pai Core 0.12.0*<br><br>An array of objects each describing a current or previous soft fork"
+  d: "*Added in PAI Core 0.12.0*<br><br>An array of objects each describing a current or previous soft fork"
 
 - n: "→ →<br>Softfork"
   t: "object"
@@ -88,12 +88,12 @@ The `getpaiinfo` RPC provides information about the current state of the pai.
 - n: "→ → →<br>`version`"
   t: "numeric<br>(int)"
   p: "Required<br>(exactly 1)"
-  d: "The pai version used for the softfork"
+  d: "The block version used for the softfork"
   
 - n: "→ → →<br>`enforce`"
   t: "string : object"
   p: "Optional<br>(0 or 1)"
-  d: "The progress toward enforcing the softfork rules for new-version pais"
+  d: "The progress toward enforcing the softfork rules for new-version blocks"
 
 - n: "→ → → →<br>`status`"
   t: "bool"
@@ -103,22 +103,22 @@ The `getpaiinfo` RPC provides information about the current state of the pai.
 - n: "→ → → →<br>`found`"
   t: "numeric<br>(int)"
   p: "Optional<br>(0 or 1)"
-  d: "Number of pais that support the softfork"
+  d: "Number of blocks that support the softfork"
   
 - n: "→ → → →<br>`required`"
   t: "numeric<br>(int)"
   p: "Optional<br>(0 or 1)"
-  d: "Number of pais that are required to reach the threshold"
+  d: "Number of blocks that are required to reach the threshold"
 
 - n: "→ → → →<br>`window`"
   t: "numeric<br>(int)"
   p: "Optional<br>(0 or 1)"
-  d: "The maximum size of examined window of recent pais"
+  d: "The maximum size of examined window of recent blocks"
 
 - n: "→ → →<br>`reject`"
   t: "object"
   p: "Optional<br>(0 or 1)"
-  d: "The progress toward enforcing the softfork rules for new-version pais"
+  d: "The progress toward enforcing the softfork rules for new-version blocks"
 
 - n: "→ → → →<br>`status`"
   t: "bool"
@@ -128,22 +128,22 @@ The `getpaiinfo` RPC provides information about the current state of the pai.
 - n: "→ → → →<br>`found`"
   t: "numeric<br>(int)"
   p: "Optional<br>(0 or 1)"
-  d: "Number of pais that support the softfork"
+  d: "Number of blocks that support the softfork"
   
 - n: "→ → → →<br>`required`"
   t: "numeric<br>(int)"
   p: "Optional<br>(0 or 1)"
-  d: "Number of pais that are required to reach the threshold"
+  d: "Number of blocks that are required to reach the threshold"
 
 - n: "→ → → →<br>`window`"
   t: "numeric<br>(int)"
   p: "Optional<br>(0 or 1)"
-  d: "The maximum size of examined window of recent pais"
+  d: "The maximum size of examined window of recent blocks"
   
 - n: "→<br>`bip9_softforks`"
   t: "object"
   p: "Required<br>(exactly 1)"
-  d: "*Added in pai Core 0.12.1*<br><br>The status of BIP9 softforks in progress"
+  d: "*Added in PAI Core 0.12.1*<br><br>The status of BIP9 softforks in progress"
   
 - n: "→ →<br>Name"
   t: "string : object"
@@ -158,7 +158,7 @@ The `getpaiinfo` RPC provides information about the current state of the pai.
 - n: "→ → →<br>`bit`"
   t: "numeric<br>(int)"
   p: "Optional<br>(0 or 1)"
-  d: "The bit (0-28) in the pai version field used to signal this softfork.  Field is only shown when status is `started`"
+  d: "The bit (0-28) in the block version field used to signal this softfork.  Field is only shown when status is `started`"
   
 - n: "→ → →<br>`startTime`"
   t: "numeric<br>(int)"
@@ -173,14 +173,14 @@ The `getpaiinfo` RPC provides information about the current state of the pai.
 - n: "→ → →<br>`since`"
   t: "numeric<br>(int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in pai Core 0.14.0*<br><br>The height of the first pai to which the status applies"
+  d: "*Added in PAI Core 0.14.0*<br><br>The height of the first block to which the status applies"
   
 {% enditemplate %}
 
-*Example from pai Core 0.14.1*
+*Example from PAI Core 0.14.1*
 
 ```
-pai-cli getpaiinfo
+pai-cli getblockchaininfo
 ```
 
 Result:
@@ -188,9 +188,9 @@ Result:
 ```
 {
   "chain": "main",
-  "PAIs": 464562,
+  "blocks": 464562,
   "headers": 464562,
-  "bestpaihash": "00000000000000000085bd56990c579a36bade6ea427646612f13476edb30ceb",
+  "bestblockhash": "00000000000000000085bd56990c579a36bade6ea427646612f13476edb30ceb",
   "difficulty": 521974519553.6282,
   "mediantime": 1493758169,
   "verificationprogress": 0.999989733170878,

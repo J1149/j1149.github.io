@@ -39,7 +39,7 @@ Results (only showing the first 10 lines):
 ```
 # Wallet dump created by pai v0.9.1.0-g026a939-beta (Tue, 8 Apr 2014 12:04:06 +0200)
 # * Created on 2014-04-29T20:46:09Z
-# * Best PAI at time of backup was 227221 (0000000026ede4c10594af8087748507fb06dcd30b8f4f48b9cc463cabc9d767),
+# * Best block at time of backup was 227221 (0000000026ede4c10594af8087748507fb06dcd30b8f4f48b9cc463cabc9d767),
 #   mined on 2014-04-29T21:15:07Z
 
 cTtefiUaLfXuyBXJBBywSdg8soTEkBNh9yTi1KgoHxUYxt1xZ2aA 2014-02-05T15:44:03Z label=test1 # addr=mnUbTmdAFD5EAg3348Ejmonub7JcWtrMck

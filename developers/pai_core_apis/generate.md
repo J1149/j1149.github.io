@@ -12,13 +12,13 @@ Generate
 
 The `generate` RPC nearly instantly generates PAIs.
 
-*Parameter #1---the number of PAIs to generate*
+*Parameter #1---the number of blocks to generate*
 
 {% itemplate ntpd1 %}
-- n: "PAIs"
+- n: "Blocks"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The number of PAIs to generate.  The RPC call will not return until all PAIs have been generated or the maxium number of iterations has been reached"
+  d: "The number of blocks to generate.  The RPC call will not return until all blocks have been generated or the maxium number of iterations has been reached"
   
 {% enditemplate %}
 
@@ -28,7 +28,7 @@ The `generate` RPC nearly instantly generates PAIs.
 - n: "Maxtries"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "The maximum number of iterations that are tried to create the requested number of PAIs. Default is `1000000`"
+  d: "The maximum number of iterations that are tried to create the requested number of blocks. Default is `1000000`"
 
 {% enditemplate %}
 
@@ -38,17 +38,17 @@ The `generate` RPC nearly instantly generates PAIs.
 - n: "`result`"
   t: "array"
   p: "Required<br>(exactly 1)"
-  d: "An array containing the PAI header hashes of the generated PAIs (may be empty if used with `generate 0`)"
+  d: "An array containing the block header hashes of the generated PAIs (may be empty if used with `generate 0`)"
 
 - n: "→<br>Header Hashes"
   t: "string (hex)"
   p: "Required<br>(1 or more)"
-  d: "The hashes of the headers of the PAIs generated in regtest mode, as hex in RPC byte order"
+  d: "The hashes of the headers of the blocks generated in regtest mode, as hex in RPC byte order"
 {% enditemplate %}
 
-*Example from pai Core 0.13.1*
+*Example from PAI Core 0.13.1*
 
-Using regtest mode (also works in normal mode), generate 2 PAIs:
+Using regtest mode (also works in normal mode), generate 2 blocks:
 
 ```
 pai-cli -regtest generate 2 500000
@@ -65,6 +65,6 @@ Result:
 
 *See also*
 
-* `GenerateToAddress`: mines PAIs immediately to a specified address.
+* `GenerateToAddress`: mines blocks immediately to a specified address.
 * `GetMiningInfo`: returns various mining-related information.
-* `GetPAITemplate`: gets a PAI template or proposal for use with mining software.
+* `GetPAITemplate`: gets a block template or proposal for use with mining software.

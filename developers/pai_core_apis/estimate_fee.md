@@ -8,15 +8,15 @@ grand_parent: Developer Reference
 EstimateFee
 ========================
 
-The `estimatefee` RPC estimates the transaction fee per kilobyte that needs to be paid for a transaction to be included within a certain number of PAIs.
+The `estimatefee` RPC estimates the transaction fee per kilobyte that needs to be paid for a transaction to be included within a certain number of blocks.
 
-*Parameter #1---how many PAIs the transaction may wait before being included*
+*Parameter #1---how many blocks the transaction may wait before being included*
 
 {% itemplate ntpd1 %}
-- n: "PAIs"
+- n: "Blocks"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The maximum number of PAIs a transaction should have to wait before it is predicted to be included in a PAI. Has to be between 2 and 25 PAIs"
+  d: "The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block. Has to be between 2 and 25 blocks"
 
 {% enditemplate %}
 
@@ -26,7 +26,7 @@ The `estimatefee` RPC estimates the transaction fee per kilobyte that needs to b
 - n: "`result`"
   t: "number (pais)"
   p: "Required<br>(exactly 1)"
-  d: "The estimated fee the transaction should pay in order to be included within the specified number of PAIs.  If the node doesn't have enough information to make an estimate, the value `-1` will be returned"
+  d: "The estimated fee the transaction should pay in order to be included within the specified number of blocks.  If the node doesn't have enough information to make an estimate, the value `-1` will be returned"
 
 {% enditemplate %}
 

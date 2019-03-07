@@ -32,7 +32,7 @@ The `getaccount` RPC returns the name of the account associated with the given a
 
 {% enditemplate %}
 
-*Example from pai Core 0.10.0*
+*Example from PAI Core 0.10.0*
 
 ```
 pai-cli -testnet getaccount mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN
@@ -47,4 +47,3 @@ doc test
 *See also*
 
 * `GetAddressesByAccount`: returns a list of every address assigned to a particular account.
- 
