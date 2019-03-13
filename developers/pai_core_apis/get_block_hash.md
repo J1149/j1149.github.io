@@ -1,0 +1,48 @@
+---
+layout: default
+title: GetBlockHash
+parent: PAI Core Apis
+grand_parent: Developer Reference
+---
+
+GetBlockHash
+========================
+
+The `getblockhash` RPC returns the header hash of a block at the given height in the local best block chain.
+
+*Parameter---a block height*
+
+{% itemplate ntpd1 %}
+- n: "Block Height"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The height of the block whose header hash should be returned.  The height of the hardcoded genesis block is 0"
+
+{% enditemplate %}
+
+*Result---the block header hash*
+
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "string (hex)/null"
+  p: "Required<br>(exactly 1)"
+  d: "The hash of the block at the requested height, encoded as hex in RPC byte order, or JSON `null` if an error occurred"
+
+{% enditemplate %}
+
+*Example from PAI Core 0.10.0*
+
+```
+pai-cli -testnet getblockhash 240886
+```
+
+Result:
+
+```
+00000000a0faf83ab5799354ae9c11da2a2bd6db44058e03c528851dee0a3fff
+```
+
+*See also*
+
+* `GetBlock`: gets a block with a particular header hash from the local block database either as a JSON object or as a serialized block.
+* `GetBestBlockHash`: returns the header hash of the most recent block on the best block chain.
