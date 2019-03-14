@@ -1,8 +1,8 @@
 ---
 layout: default
 title: FilterAdd
-parent: Developer Reference
-nav_order: 10
+parent: P2P
+grand_parent: Developer Reference
 ---
 
 FilterAdd

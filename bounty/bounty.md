@@ -2,7 +2,7 @@
 layout: default
 title: Bounties
 nav_order: 5
-has_children: true
 permalink: /bounty
+has_toc: false
 ---
-Description of the bounty / grant selection process, links to accompanying stakeholder stories (GH issue tracker), and a list of completed bounties.
+[Please see the bounty discussion thread in the Github issue tracker](https://github.com/J1149/j1149.github.io/issues/5).

@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Tx
-parent: Developer Reference
-nav_order: 4
+parent: P2P
+grand_parent: Developer Reference
 ---
 
 Tx
@@ -21,7 +21,7 @@ format. It can be sent in a variety of situations;
   message.) Each `tx` message in this case provides a matched
   transaction from that block.
 
-* **Unsolicited:** PaiJ will send a `tx` message unsolicited for
+* **Unsolicited:** Pai will send a `tx` message unsolicited for
   transactions it originates.
 
 For an example hexdump of the raw transaction format, see the [raw

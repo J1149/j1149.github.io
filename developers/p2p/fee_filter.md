@@ -1,8 +1,8 @@
 ---
 layout: default
 title: FeeFilter
-parent: Developer Reference
-nav_order: 9
+parent: P2P
+grand_parent: Developer Reference
 ---
 
 FeeFilter

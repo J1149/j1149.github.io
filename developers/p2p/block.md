@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Block
-parent: Developer Reference
-nav_order: 3
+parent: P2P
+grand_parent: Developer Reference
 ---
 
 BLOCK

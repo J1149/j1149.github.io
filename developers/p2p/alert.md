@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Alert
-parent: Developer Reference
-nav_order: 2
+parent: P2P
+grand_parent: Developer Reference
 ---
 
 ALERT

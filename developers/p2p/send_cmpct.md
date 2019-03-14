@@ -1,8 +1,8 @@
 ---
 layout: default
 title: SendCmpct
-parent: Developer Reference
-nav_order: 4
+parent: P2P
+grand_parent: Developer Reference
 ---
 
 SendCmpct

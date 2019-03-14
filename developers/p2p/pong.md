@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Pong
-parent: Developer Reference
-nav_order: 4
+parent: P2P
+grand_parent: Developer Reference
 ---
 
 Pong

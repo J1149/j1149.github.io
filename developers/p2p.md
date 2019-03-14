@@ -1,7 +1,7 @@
 ---
 layout: default
-title: PAI Core Apis
-nav_order: 5
+title: P2P
+nav_order: 3
 parent: Developer Reference
 has_children: true
 ---
