@@ -14,13 +14,12 @@ The `getblockcount` RPC returns the number of blocks in the local best block cha
 
 *Result---the number of blocks in the local best block chain*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The number of blocks in the local best block chain.  For a new node with only the hardcoded genesis block, this number will be 0"
-
-{% enditemplate %}
+{% include table_header.md
+  n= "`result`"
+  t= "number (int)"
+  p= "Required<br>(exactly 1)"
+  d= "The number of blocks in the local best block chain.  For a new node with only the hardcoded genesis block, this number will be 0"
+%}
 
 *Example from PAI Core 0.10.0*
 

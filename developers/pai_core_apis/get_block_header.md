@@ -14,113 +14,50 @@ The `getblockheader` RPC gets a block header with a particular header hash from 
 
 *Parameter #1---header hash*
 
-{% itemplate ntpd1 %}
-- n: "Header Hash"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The hash of the block header to get, encoded as hex in RPC byte order"
+| Name | Type      | Presence            | Description
+|------|-----------|---------------------|-------------
+|Header Hash  |string (hex) | Required<br>(exactly 1) | The hash of the block header to get, encoded as hex in RPC byte order
+| Format | bool | Optional<br>(0 or 1) | Set to `false` to get the block header in serialized block format; set to `true` (the default) to get the decoded block header as a JSON object
 
-{% enditemplate %}
 
 *Parameter #2---JSON or hex output*
 
-{% itemplate ntpd1 %}
-- n: "Format"
-  t: "bool"
-  p: "Optional<br>(0 or 1)"
-  d: "Set to `false` to get the block header in serialized block format; set to `true` (the default) to get the decoded block header as a JSON object"
-
-{% enditemplate %}
+{% include table_header.md
+  n= "Format"
+  t= "bool"
+  p= "Optional<br>(0 or 1)"
+  d= ""
+%}
 
 *Result (if format was `false`)---a serialized block header*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "string (hex)/null"
-  p: "Required<br>(exactly 1)"
-  d: "The requested block header as a serialized block, encoded as hex, or JSON `null` if an error occurred"
-
-{% enditemplate %}
+{% include table_header.md
+  n= "`result`"
+  t= "string (hex)/null"
+  p= "Required<br>(exactly 1)"
+  d= "The requested block header as a serialized block, encoded as hex, or JSON `null` if an error occurred"
+%}
 
 *Result (if format was `true` or omitted)---a JSON block header*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "object/null"
-  p: "Required<br>(exactly 1)"
-  d: "An object containing the requested block, or JSON `null` if an error occurred"
+| Name | Type      | Presence            | Description
+|------|-----------|---------------------|-------------
+| `result` |object/null | Required<br>(exactly 1) | An object containing the requested block, or JSON `null` if an error occurred
+| →<br>`hash` | string (hex) | Required<br>(exactly 1) | The hash of this block's block header encoded as hex in RPC byte order.  This is the same as the hash provided in parameter #1
+| →<br>`confirmations` | number (int) | Required<br>(exactly 1) | The number of confirmations the transactions in this block have, starting at 1 when this block is at the tip of the best block chain.  This score will be -1 if the the block is not part of the best block chain
+| →<br>`height` | number (int) | Required<br>(exactly 1) | The height of this block on its block chain
+| →<br>`version` | number (int) | Required<br>(exactly 1) | This block's version number.
+| →<br>`versionHex` | number (int) | Required<br>(exactly 1) | This block's hex version number.
+| <br>`merkleroot` | string (hex) | Required<br>(exactly 1) | The merkle root for this block, encoded as hex in RPC byte order
+| →<br>`time` | number (int) | Required<br>(exactly 1) | The value of the time field in the block header, indicating approximately when the block was created
+| →<br>`mediantime` | number (int) | Required<br>(exactly 1) | The computed median time of the previous 11 blocks.  Used for validating transaction locktime under BIP113
+| →<br>`nonce` | number (int) | Required<br>(exactly 1) | The nonce which was successful at turning this particular block into one that could be added to the best block chain
+| →<br>`bits` | string (hex) | Required<br>(exactly 1) | The value of the *nBits* field in the block header, indicating the target threshold this block's header had to pass
+| →<br>`difficulty` | number (real) | Required<br>(exactly 1) | The estimated amount of work done to find this block relative to the estimated amount of work done to find block 0
+| →<br>`chainwork` | string (hex) | Required<br>(exactly 1) | The estimated number of block header hashes miners had to check from the genesis block to this block, encoded as big-endian hex
+| →<br>`previousblockhash` | string (hex) | Optional<br>(0 or 1) | The hash of the header of the previous block, encoded as hex in RPC byte order.  Not returned for genesis block
+| →<br>`nextblockhash` | string (hex) | Optional<br>(0 or 1) | The hash of the next block on the best block chain, if known, encoded as hex in RPC byte order
 
-- n: "→<br>`hash`"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The hash of this block's block header encoded as hex in RPC byte order.  This is the same as the hash provided in parameter #1"
-
-- n: "→<br>`confirmations`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The number of confirmations the transactions in this block have, starting at 1 when this block is at the tip of the best block chain.  This score will be -1 if the the block is not part of the best block chain"
-
-- n: "→<br>`height`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The height of this block on its block chain"
-
-- n: "→<br>`version`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "This block's version number.  See [block version numbers][section block versions]"
-  
-- n: "→<br>`versionHex`"
-  t: "number (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "This block's hex version number.  See [block version numbers][section block versions]"
-
-- n: "→<br>`merkleroot`"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The merkle root for this block, encoded as hex in RPC byte order"
-
-- n: "→<br>`time`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The value of the time field in the block header, indicating approximately when the block was created"
-
-- n: "→<br>`mediantime`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The computed median time of the previous 11 blocks.  Used for validating transaction locktime under BIP113"
-
-- n: "→<br>`nonce`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The nonce which was successful at turning this particular block into one that could be added to the best block chain"
-
-- n: "→<br>`bits`"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The value of the *nBits* field in the block header, indicating the target threshold this block's header had to pass"
-
-- n: "→<br>`difficulty`"
-  t: "number (real)"
-  p: "Required<br>(exactly 1)"
-  d: "The estimated amount of work done to find this block relative to the estimated amount of work done to find block 0"
-
-- n: "→<br>`chainwork`"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The estimated number of block header hashes miners had to check from the genesis block to this block, encoded as big-endian hex"
-
-- n: "→<br>`previousblockhash`"
-  t: "string (hex)"
-  p: "Optional<br>(0 or 1)"
-  d: "The hash of the header of the previous block, encoded as hex in RPC byte order.  Not returned for genesis block"
-
-- n: "→<br>`nextblockhash`"
-  t: "string (hex)"
-  p: "Optional<br>(0 or 1)"
-  d: "The hash of the next block on the best block chain, if known, encoded as hex in RPC byte order"
-
-{% enditemplate %}
 
 *Example from PAI Core 0.12.1*
 

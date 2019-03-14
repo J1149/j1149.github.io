@@ -22,23 +22,16 @@ the `dumpwallet` RPC.
 
 *Parameter #1---a passphrase*
 
-{% itemplate ntpd1 %}
-- n: "Passphrase"
-  t: "string"
-  p: "Required<br>(exactly 1)"
-  d: "The passphrase to use for the encrypted wallet.  Must be at least one character"
-
-{% enditemplate %}
+| Name    | Type   | Presence                | Description
+|---------|--------|-------------------------|-------------
+|Passphrase | string | Required<br>(exactly 1) | The passphrase to use for the encrypted wallet. Must be at least one character
 
 *Result---a notice (with program shutdown)*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "string"
-  p: "Required<br>(exactly 1)"
-  d: "A notice that the server is stopping and that you need to make a new backup.  The wallet is now encrypted"
+| Name    | Type   | Presence                | Description
+|---------|--------|-------------------------|-------------
+|`result` | string | Required<br>(exactly 1) | A notice that the server is stopping and that you need to make a new backup.  The wallet is now encrypted
 
-{% enditemplate %}
 
 *Example from pai Core 0.10.0*
 

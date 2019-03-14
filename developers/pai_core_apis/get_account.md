@@ -14,23 +14,22 @@ The `getaccount` RPC returns the name of the account associated with the given a
 
 *Parameter #1---a pai address*
 
-{% itemplate ntpd1 %}
-- n: "Address"
-  t: "string (base58)"
-  p: "Required<br>(exactly 1)"
-  d: "A P2PKH or P2SH pai address belonging either to a specific account or the default account (\"\")"
-
-{% enditemplate %}
+{% include table_header.md
+  n= "Address"
+  t= "string (base58)"
+  p= "Required<br>(exactly 1)"
+  d= "A P2PKH or P2SH pai address belonging either to a specific account or the default account (\"\")"
+%}
 
 *Result---an account name*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "string"
-  p: "Required<br>(exactly 1)"
-  d: "The name of an account, or an empty string (\"\", the default account)"
+{% include table_header.md
+  n= "`result`"
+  t= "string"
+  p= "Required<br>(exactly 1)"
+  d= "The name of an account, or an empty string (\"\", the default account)"
 
-{% enditemplate %}
+%}
 
 *Example from PAI Core 0.10.0*
 

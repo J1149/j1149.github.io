@@ -17,37 +17,37 @@ Core.  Use the RPCs listed in the See Also subsection below instead.
 
 *Parameter #1---an account name*
 
-{% itemplate ntpd1 %}
-- n: "Account"
-  t: "string"
-  p: "Required<br>(exactly 1)"
-  d: "The name of an account.  Use an empty string (\"\") for the default account.  If the account doesn't exist, it will be created"
+{% include table_header.md
+  n= "Account"
+  t= "string"
+  p= "Required<br>(exactly 1)"
+  d= "The name of an account.  Use an empty string (\"\") for the default account.  If the account doesn't exist, it will be created"
 
-{% enditemplate %}
+%}
 
 *Result---a pai address*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "string (base58)"
-  p: "Required<br>(exactly 1)"
-  d: "An address, belonging to the account specified, which has not yet received any payments"
+{% include table_header.md
+  n= "`result`"
+  t= "string (base58)"
+  p= "Required<br>(exactly 1)"
+  d= "An address, belonging to the account specified, which has not yet received any payments"
 
-{% enditemplate %}
+%}
 
 *Example from pai Core 0.10.0*
 
 Get an address for the default account:
 
-{% highlight bash %}
+```
 pai-cli -testnet getaccountaddress ""
-{% endhighlight %}
+```
 
 Result:
 
-{% highlight text %}
+```
 msQyFNYHkFUo4PG3puJBbpesvRCyRQax7r
-{% endhighlight %}
+```
 
 *See also*
 

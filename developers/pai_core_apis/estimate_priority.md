@@ -18,23 +18,17 @@ Transaction priority is relative to a transaction's byte size.
 
 *Parameter #1---how many blocks the transaction may wait before being included as a free high-priority transaction*
 
-{% itemplate ntpd1 %}
-- n: "Blocks"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "Deprecated: will be removed in a later version of pai Core<br><br>The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block based purely on its priority"
+| Name    | Type   | Presence                | Description
+|---------|--------|-------------------------|-------------
+|Blocks | number (int) | Required<br>(exactly 1) | Deprecated: will be removed in a later version of pai Core<br><br>The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block based purely on its priority 
 
-{% enditemplate %}
 
 *Result---the priority a transaction needs*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "number (real)"
-  p: "Required<br>(exactly 1)"
-  d: "The estimated priority the transaction should have in order to be included within the specified number of blocks.  If the node doesn't have enough information to make an estimate, the value `-1` will be returned"
+| Name    | Type   | Presence                | Description
+|---------|--------|-------------------------|-------------
+|`result` | number (real) | Required<br>(exactly 1) | The estimated priority the transaction should have in order to be included within the specified number of blocks.  If the node doesn't have enough information to make an estimate, the value `-1` will be returned
 
-{% enditemplate %}
 
 *Examples from PAI Core 0.10.0*
 

@@ -14,13 +14,13 @@ The `getbestblockhash` RPC returns the header hash of the most recent block on t
 
 *Result---hash of the tip from the best block chain*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The hash of the block header from the most recent block on the best block chain, encoded as hex in RPC byte order"
+{% include table_header.md
+  n= "`result`"
+  t= "string (hex)"
+  p= "Required<br>(exactly 1)"
+  d= "The hash of the block header from the most recent block on the best block chain, encoded as hex in RPC byte order"
 
-{% enditemplate %}
+%}
 
 *Example from PAI Core 0.10.0*
 

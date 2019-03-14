@@ -14,98 +14,33 @@ The `getmempoolentry` RPC returns mempool data for given transaction (must be in
 
 *Parameter #1---a transaction identifier (TXID)*
 
-{% itemplate ntpd1 %}
-- n: "TXID"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The TXID of the transaction. The TXID must be encoded as hex in RPC byte order"
-
-{% enditemplate %}
+{% include table_header.md
+  n= "TXID"
+  t= "string (hex)"
+  p= "Required (exactly 1)"
+  d= "The TXID of the transaction. The TXID must be encoded as hex in RPC byte order"
+%}
 
 *Result ---a JSON object describing the transaction*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "object"
-  p: "Required<br>(exactly 1)"
-  d: "A object containing transactions currently in the memory pool.  May be empty"
-
-- n: "→<br>`size`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The size of the serialized transaction in bytes"
-
-- n: "→<br>`fee`"
-  t: "number (pai's)"
-  p: "Required<br>(exactly 1)"
-  d: "The transaction fee paid by the transaction in decimal pai's"
-  
-- n: "→<br>`modifiedfee`"
-  t: "number (pai's)"
-  p: "Required<br>(exactly 1)"
-  d: "The transaction fee with fee deltas used for mining priority in decimal pai's"
-
-- n: "→<br>`time`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The time the transaction entered the memory pool, Unix epoch time format"
-
-- n: "→<br>`height`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The block height when the transaction entered the memory pool"
-
-- n: "→<br>`startingpriority`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The priority of the transaction when it first entered the memory pool"
-
-- n: "→<br>`currentpriority`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The current priority of the transaction"
-
-- n: "→<br>`descendantcount`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The number of in-mempool descendant transactions (including this one)"
-
-- n: "→<br>`descendantsize`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The size of in-mempool descendants (including this one)"
-
-- n: "→<br>`descendantfees`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The modified fees (see `modifiedfee` above) of in-mempool descendants (including this one)"
-
-- n: "→<br>`ancestorcount`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The number of in-mempool ancestor transactions (including this one)"
-
-- n: "→<br>`ancestorsize`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The size of in-mempool ancestors (including this one)"
-
-- n: "→<br>`ancestorfees`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The modified fees (see `modifiedfee` above) of in-mempool ancestors (including this one)"
-
-- n: "→<br>`depends`"
-  t: "array"
-  p: "Required<br>(exactly 1)"
-  d: "An array holding TXIDs of unconfirmed transactions this transaction depends upon (parent transactions).  Those transactions must be part of a block before this transaction can be added to a block, although all transactions may be included in the same block.  The array may be empty"
-
-- n: "→ →<br>Depends TXID"
-  t: "string"
-  p: "Optional (0 or more)"
-  d: "The TXIDs of any unconfirmed transactions this transaction depends upon, encoded as hex in RPC byte order"
-
-{% enditemplate %}
+| Name | Type      | Presence            | Description
+|------|-----------|---------------------|-------------
+|`result`  |object     | Required<br>(exactly 1) | A object containing transactions currently in the memory pool.  May be empty
+|`size` | number (int) | Required<br>(exactly 1) | The size of the serialized transaction in bytes
+| `fee`  | number (pai's) | Required<br>(exactly 1) | The transaction fee paid by the transaction in decimal pai's
+| `modifiedfee` | number (pai's) | Required<br>(exactly 1) | The transaction fee with fee deltas used for mining priority in decimal pai's
+| → <br>`time` | number (int) | Required<br>(exactly 1) | The time the transaction entered the memory pool, Unix epoch time format
+| → <br>`height` | number (int) | Required<br>(exactly 1) | The block height when the transaction entered the memory pool
+| → <br>`startingpriority` | number (int) | Required<br>(exactly 1) | The priority of the transaction when it first entered the memory pool
+| → <br>`currentpriority` | number (int) | Required<br>(exactly 1) | The current priority of the transaction
+| → <br>`descendantcount` | number (int) | Required<br>(exactly 1) | The number of in-mempool descendant transactions (including this one)
+| → <br>`descendantsize` | number (int) | Required<br>(exactly 1) | The size of in-mempool descendants (including this one)
+| → <br>`descendantfees` | number (int) | Required<br>(exactly 1) | The modified fees (see `modifiedfee` above) of in-mempool descendants (including this one)"
+| → <br>`ancestorcount` | number (int) | Required<br>(exactly 1) | The number of in-mempool ancestor transactions (including this one)
+| → <br>`ancestorsize` |  number (int) | Required<br>(exactly 1) | The size of in-mempool ancestors (including this one)
+| → <br>`ancestorfees` |  number (int) | Required<br>(exactly 1) | The modified fees (see `modifiedfee` above) of in-mempool ancestors (including this one)
+| → <br>`depends` | array | Required<br>(exactly 1) | An array holding TXIDs of unconfirmed transactions this transaction depends upon (parent transactions).  Those transactions must be part of a block before this transaction can be added to a block, although all transactions may be included in the same block.  The array may be empty
+| → →<br>Depends TXID | string | Optional (0 or more) | The TXIDs of any unconfirmed transactions this transaction depends upon, encoded as hex in RPC byte order
 
 *Examples from PAI Core 0.13.1*
 

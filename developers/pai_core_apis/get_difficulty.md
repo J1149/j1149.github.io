@@ -14,13 +14,12 @@ The `getdifficulty` RPC
 
 *Result---the current difficulty*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "number (real)"
-  p: "Required<br>(exactly 1)"
-  d: "The difficulty of creating a block with the same target threshold (nBits) as the highest-height block in the local best block chain.  The number is a a multiple of the minimum difficulty"
-
-{% enditemplate %}
+{% include table_header.md
+  n= "`result`"
+  t= "number (real)"
+  p= "Required<br>(exactly 1)"
+  d= "The difficulty of creating a block with the same target threshold (nBits) as the highest-height block in the local best block chain.  The number is a a multiple of the minimum difficulty"
+%}
 
 *Example from PAI Core 0.10.0*
 

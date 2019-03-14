@@ -12,23 +12,15 @@ The `estimatefee` RPC estimates the transaction fee per kilobyte that needs to b
 
 *Parameter #1---how many blocks the transaction may wait before being included*
 
-{% itemplate ntpd1 %}
-- n: "Blocks"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block. Has to be between 2 and 25 blocks"
-
-{% enditemplate %}
+| Name    | Type       | Presence                | Description
+|---------|------------|-------------------------|-------------
+|Blocks | number (int) | Required<br>(exactly 1) | The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block. Has to be between 2 and 25 blocks 
 
 *Result---the fee the transaction needs to pay per kilobyte*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "number (pais)"
-  p: "Required<br>(exactly 1)"
-  d: "The estimated fee the transaction should pay in order to be included within the specified number of blocks.  If the node doesn't have enough information to make an estimate, the value `-1` will be returned"
-
-{% enditemplate %}
+| Name    | Type   | Presence                        | Description
+|---------|--------|---------------------------------|-------------
+|`result` | number (pai's) | Required<br>(exactly 1) | The estimated fee the transaction should pay in order to be included within the specified number of blocks.  If the node doesn't have enough information to make an estimate, the value `-1` will be returned
 
 *Examples from pai Core 0.14.1*
 

@@ -14,31 +14,42 @@ The `getbalance` RPC gets the balance in decimal pais across all accounts or for
 
 *Parameter #1---an account name*
 
-{% itemplate ntpd1 %}
-- n: "Account"
-  t: "string"
-  p: "Optional<br>(0 or 1)"
-  d: "*Deprecated: will be removed in a later version of pai Core*<br><br>The name of an account to get the balance for.  An empty string (\"\") is the default account.  The string `*` will get the balance for all accounts (this is the default behavior)"
+{% include table_header.md
+  n= "Account"
+  t= "string"
+  p= "Optional<br>(0 or 1)"
+  d= "*Deprecated: will be removed in a later version of pai Core*<br><br>The name of an account to get the balance for.  An empty string (\"\") is the default account.  The string `*` will get the balance for all accounts (this is the default behavior)"
 
-{% enditemplate %}
+%}
 
 *Parameter #2---the minimum number of confirmations*
 
-{{INCLUDE_CONFIRMATIONS_PARAMETER}}
+{% include table_header.md
+  n= "Confirmations"
+  t= "number (int"
+  p= "Required<br>(exactly 1)"
+  d= "The number of confirmations the transactions in this block have, starting at 1 when this block is at the tip of the best block chain.  This score will be -1 if the the block is not part of the best block chain"
+
+%}
 
 *Parameter #3---whether to include watch-only addresses*
 
-{{INCLUDE_INCLUDE_WATCH_ONLY_PARAMETER}}
+{% include table_header.md
+  n= "→ →<br>`watchonly`"
+  t= "bool"
+  p= "Optional<br>(0 or 1)"
+  d= "Stating whether matching outputs should be considered watched even when they're not spendable. This is only allowed if keys are empty. The default is `false`"
+
+%}
 
 *Result---the balance in pais*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "number (pais)"
-  p: "Required<br>(exactly 1)"
-  d: "The balance of the account (or all accounts) in pais"
-
-{% enditemplate %}
+{% include table_header.md
+  n= "`result`"
+  t= "number(int)"
+  p= "Required<br>(exactly 1)"
+  d= "The balance of the account (or all accounts) in pais"
+%}
 
 *Examples from pai Core 0.10.0*
 

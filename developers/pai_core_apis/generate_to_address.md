@@ -16,47 +16,46 @@ The `generatetoaddress` RPC mines blocks immediately to a specified address.
 
 *Parameter #1---the number of blocks to generate*
 
-{% itemplate ntpd1 %}
-- n: "Blocks"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The number of blocks to generate.  The RPC call will not return until all blocks have been generated or the maxium number of iterations has been reached"
-  
-{% enditemplate %}
+{% include table_header.md 
+  n="Blocks" 
+  t="number (int)" 
+  p="Required<br>(exactly 1)" 
+  d="The number of blocks to generate.  The RPC call will not return until all blocks have been generated or the maxium number of iterations has been reached" 
+%}
 
 *Parameter #2---an address (P2PKH or P2SH)*
 
-{% itemplate ntpd1 %}
-- n: "Address"
-  t: "string (base58)"
-  p: "Required<br>(exactly 1)"
-  d: "The address to send the newly generated pai to"
-  
-{% enditemplate %}
+{% include table_header.md 
+  n="Address" 
+  t="string (base58)" 
+  p="Required<br>(exactly 1)" 
+  d="The address to send the newly generated pai to"
+%}
 
 *Parameter #3---the maximum number of iterations to try*
 
-{% itemplate ntpd1 %}
-- n: "Maxtries"
-  t: "number (int)"
-  p: "Optional<br>(0 or 1)"
-  d: "The maximum number of iterations that are tried to create the requested number of blocks.  Default is `1000000`"
-
-{% enditemplate %}
+{% include table_header.md 
+  n="Maxtries" 
+  t="number (int)" 
+  p="Optional<br>(0 or 1)" 
+  d="The maximum number of iterations that are tried to create the requested number of blocks.  Default is `1000000`" 
+%}
 
 *Result---the generated block header hashes*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "array"
-  p: "Required<br>(exactly 1)"
-  d: "An array containing the block header hashes of the generated blocks (may be empty if used with `generate 0`)"
+{% include table_header.md
+  n= "`result`"
+  t= "array"
+  p= "Required<br>(exactly 1)"
+  d= "An array containing the block header hashes of the generated blocks (may be empty if used with `generate 0`)"
+%}
 
-- n: "→<br>Header Hashes"
-  t: "string (hex)"
-  p: "Required<br>(1 or more)"
-  d: "The hashes of the headers of the blocks generated, as hex in RPC byte order"
-{% enditemplate %}
+{% include table_content.md
+  n= "→<br>Header Hashes"
+  t= "string (hex)"
+  p= "Required<br>(1 or more)"
+  d= "The hashes of the headers of the blocks generated, as hex in RPC byte order"
+%}
 
 *Example from PAI Core 0.13.1*
 

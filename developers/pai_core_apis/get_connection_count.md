@@ -14,13 +14,12 @@ The `getconnectioncount` RPC returns the number of connections to other nodes.
 
 *Result---the number of connections to other nodes*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The total number of connections to other nodes (both inbound and outbound)"
-
-{% enditemplate %}
+{% include table_header.md
+  n= "`result`"
+  t= "number (int)"
+  p= "Required<br>(exactly 1)"
+  d= "The total number of connections to other nodes (both inbound and outbound)"
+%}
 
 *Example from PAI Core 0.10.0*
 

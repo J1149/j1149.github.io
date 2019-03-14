@@ -1,4 +1,3 @@
 | Name                | Type            | Presence                    | Description
 |---------------------|-----------------|-----------------------------|----------------
-{% for item in entry %}| {{item.n}} | {{item.t}} | {{item.p}} | {{item.d}}
-{% endfor %}{:.ntpd}
+| {{include.n}}       | {{include.t}}   | {{include.p}}               | {{include.d}}

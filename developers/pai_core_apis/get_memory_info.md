@@ -16,48 +16,16 @@ The `getmemoryinfo` RPC returns information about memory usage.
 
 *Result---information about memory usage*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "object"
-  p: "Required<br>(exactly 1)"
-  d: "An object containing information about memory usage"
-
-- n: "→<br>`locked`"
-  t: "string : object"
-  p: "Required<br>(exactly 1)"
-  d: "An object containing information about locked memory manager" 
-  
-- n: "→→<br>`used`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "Number of bytes used"
-
-- n: "→→<br>`free`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "Number of bytes available in current arenas"
-
-- n: "→→<br>`total`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "Total number of bytes managed"
-
-- n: "→→<br>`locked`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "Amount of bytes that succeeded locking"
-
-- n: "→→<br>`chunks_used`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "Number allocated chunks"
-
-- n: "→→<br>`chunks_free`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "Number unused chunks"
-  
-{% enditemplate %}
+| Name | Type      | Presence            | Description
+|------|-----------|---------------------|-------------
+|`result`  |object | Required<br>(exactly 1) | An object containing information about memory usage
+| →<br>`locked` | string : object | Required<br>(exactly 1) | An object containing information about locked memory manager
+| →→<br>`used` | number (int) | Required<br>(exactly 1) | Number of bytes used
+| →→<br>`free` | number (int) | Required<br>(exactly 1) | Number of bytes available in current arenas
+| →→<br>`total` | number (int) | Required<br>(exactly 1) | Total number of bytes managed
+| →→<br>`locked` | number (int) | Required<br>(exactly 1) | Amount of bytes that succeeded locking
+| →→<br>`chunks_used` | number (int) | Required<br>(exactly 1) | Number allocated chunks
+| →→<br>`chunks_free` | number (int) | Required<br>(exactly 1) | Number unused chunks
 
 *Example from PAI Core 0.14.1*
 

@@ -16,91 +16,34 @@ All existing inputs must have their previous output transaction be in the wallet
 
 *Parameter #1---The hex string of the raw transaction*
 
-{% itemplate ntpd1 %}
-- n: "Hexstring"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The hex string of the raw transaction"
+| Name    | Type   | Presence                | Description
+|---------|--------|-------------------------|-------------
+|Hexstring | string (hex)| Required<br>(exactly 1) | The hex string of the raw transaction 
 
-{% enditemplate %}
 
 *Parameter #2---Additional options*
 
-{% itemplate ntpd1 %}
-- n: "Options"
-  t: "Object"
-  p: "Optional<br>(0 or 1)"
-  d: "*Added in pai Core 0.13.0*<br><br>Additional options"
+| Name    | Type   | Presence                | Description
+|---------|--------|-------------------------|-------------
+| Options | Object| Optional<br>(0 or 1) | *Added in pai Core 0.13.0*<br><br>Additional options
+| → <br>`changeAddress` | string | Optional<br>(0 or 1) | The pai address to receive the change. If not set, the address is chosen from address pool
+| → <br>`changePosition` | nummeric (int) | Optional<br>(0 or 1) | The index of the change output. If not set, the change position is randomly chosen
+| → <br>`includeWatching` | bool | Optional<br>(0 or 1) | Inputs from watch-only addresses are also considered. The default is `false`
+| → <br>`lockUnspents` | bool | Optional<br>(0 or 1) | The selected outputs are locked after running the rpc call. The default is `false`
+| → <br>`reserveChangeKey` | bool | Optional<br>(0 or 1) | *Added in pai Core 0.14.0*<br><br>Reserves the change output key from the keypool. The default is `true`. Before 0.14.0, the used keypool key was never marked as change-address key and directly returned to the keypool (leading to address reuse).
+| → <br>`feeRate` | numeric (pai's) | Optional<br>(0 or 1) | The specific feerate  you are willing to pay(BTC per KB). If not set, the wallet determines the fee
+| → <br>`subtractFeeFromOutputs` | array | Optional<br>(0 or 1) | A json array of integers. The fee will be equally deducted from the amount of each specified output. The outputs are specified by their zero-based index, before any change output is added.
+| → →<br>Output index | numeric (int) | Optional<br>(0 or more) | A output index number (vout) from which the fee should be subtracted. If multiple vouts are provided, the total fee will be divided by the numer of vouts listed and each vout will have that amount subtracted from it
 
-- n: "→ <br>`changeAddress`"
-  t: "string"
-  p: "Optional<br>(0 or 1)"
-  d: "The pai address to receive the change. If not set, the address is chosen from address pool"
-  
-- n: "→ <br>`changePosition`"
-  t: "nummeric (int)"
-  p: "Optional<br>(0 or 1)"
-  d: "The index of the change output. If not set, the change position is randomly chosen"
-
-- n: "→ <br>`includeWatching`"
-  t: "bool"
-  p: "Optional<br>(0 or 1)"
-  d: "Inputs from watch-only addresses are also considered. The default is `false`"
-  
-- n: "→ <br>`lockUnspents`"
-  t: "bool"
-  p: "Optional<br>(0 or 1)"
-  d: "The selected outputs are locked after running the rpc call. The default is `false`"
-
-- n: "→ <br>`reserveChangeKey`"
-  t: "bool"
-  p: "Optional<br>(0 or 1)"
-  d: "*Added in pai Core 0.14.0*<br><br>Reserves the change output key from the keypool. The default is `true`. Before 0.14.0, the used keypool key was never marked as change-address key and directly returned to the keypool (leading to address reuse)."  
-  
-- n: "→ <br>`feeRate`"
-  t: "numeric (pais)"
-  p: "Optional<br>(0 or 1)"
-  d: "The specific feerate  you are willing to pay(BTC per KB). If not set, the wallet determines the fee"
-
-- n: "→ <br>`subtractFeeFromOutputs`"
-  t: "array"
-  p: "Optional<br>(0 or 1)"
-  d: "A json array of integers. The fee will be equally deducted from the amount of each specified output. The outputs are specified by their zero-based index, before any change output is added."
-
-- n: "→ →<br>Output index"
-  t: numeric (int)
-  p: Optional<br>(0 or more)
-  d: "A output index number (vout) from which the fee should be subtracted.
-  If multiple vouts are provided, the total fee will be divided by the
-  numer of vouts listed and each vout will have that amount subtracted
-  from it"
-
-{% enditemplate %}
 
 *Result---information about the created transaction*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "object"
-  p: "Required<br>(exactly 1)"
-  d: "An object including information about the created transaction"
-
-- n: "→ <br>hex"
-  t: "string (hex)"
-  p: "Required<br>(Exactly 1)"
-  d: "The resulting unsigned raw transaction in serialized transaction format encoded as hex"
-
-- n: "→ <br>fee"
-  t: "numeric (pais)"
-  p: "Required<br>(Exactly 1)"
-  d: "Fee in BTC the resulting transaction pays"
-
-- n: "→ <br>changepos"
-  t: "numeric (int)"
-  p: "Required<br>(Exactly 1)"
-  d: "The position of the added change output, or `-1` if no change output was added"
-
-{% enditemplate %}
+| Name    | Type   | Presence                | Description
+|---------|--------|-------------------------|-------------
+| `result` | object| Required<br>(exactly 1) | An object including information about the created transaction
+| → <br>hex | string (hex) | Required<br>(Exactly 1) | The resulting unsigned raw transaction in serialized transaction format encoded as hex
+| → <br>fee | numeric (pais) | Required<br>(Exactly 1) | Fee in BTC the resulting transaction pays
+| → <br>changepos | numeric (int) | Required<br>(Exactly 1) | The position of the added change output, or `-1` if no change output was added
 
 *Example from pai Core 0.13.1*
 
