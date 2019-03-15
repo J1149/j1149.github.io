@@ -73,6 +73,7 @@ Result:
 
 *See also*
 
-* `GetMemPoolAncestors`:
-* `GetMemPoolDescendants`:
-* `GetRawMemPool`:
+* `GetMemPoolAncestors`: returns all in-mempool ancestors for a transaction in the mempool.
+* `GetMemPoolDescendants`: returns all in-mempool descendants for a transaction in the mempool.
+* `GetRawMemPool`: returns all transaction identifiers (TXIDs) in the memory pool as a JSON array, or detailed information about each transaction in the memory pool as a JSON object.
+
