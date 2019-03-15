@@ -110,6 +110,6 @@ Result:
 
 *See also*
 
-* `GetBlock`: 
-* `GetBlockHash`: 
-* `GetBestBlockHash`: 
+* `GetBlock`: gets a block with a particular header hash from the local block database either as a JSON object or as a serialized block.
+* `GetBlockHash`: returns the header hash of a block at the given height in the local best block chain.
+* `GetBestBlockHash`: eturns the header hash of the most recent block on the best block chain.

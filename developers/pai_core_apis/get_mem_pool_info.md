@@ -44,6 +44,7 @@ Result:
 
 *See also*
 
-* `GetBlockChainInfo`:
-* `GetRawMemPool`:
-* `GetTxOutSetInfo`:
+* `GetBlockChainInfo`: provides information about the current state of the block chain.
+* `GetRawMemPool`: returns all transaction identifiers (TXIDs) in the memory pool as a JSON array, or detailed information about each transaction in the memory pool as a JSON object.
+* `GetTxOutSetInfo`: returns statistics about the confirmed unspent transaction output (UTXO) set. Note that this call may take some time and that it only counts outputs from confirmed transactions—it does not count outputs from the memory pool.
+

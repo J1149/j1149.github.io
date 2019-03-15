@@ -54,7 +54,7 @@ Result:
 
 *See also*
 
-* `GetMemPoolInfo`:
-* `GetRawMemPool`:
-* `GetBlockTemplate`:
-* `Generate`:
+* `GetMemPoolInfo`:  returns information about the node’s current transaction memory pool.
+* `GetRawMemPool`: returns all transaction identifiers (TXIDs) in the memory pool as a JSON array, or detailed information about each transaction in the memory pool as a JSON object.
+* `GetBlockTemplate`: gets a block template or proposal for use with mining software.
+* `Generate`: nearly instantly generates blocks.
