@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 Abandon Transaction
 ======================
 
-*Added in PAI Core 0.12.0*
-
 The `abandontransaction` RPC marks an in-wallet transaction and all its in-wallet descendants as abandoned. This allows their inputs to be respent.
 
 *Parameter #1---a transaction identifier (TXID)*
@@ -24,9 +22,9 @@ The `abandontransaction` RPC marks an in-wallet transaction and all its in-walle
 |------ |------|---------------------|-------------
 |Result |null  | Required(Exactly 1) | JSON null when the transaction and all descendants were abandoned
 
-*Example from PAI Core 0.13.1*
-
 Abandons the transaction on your node.
+
+*Example*
 
 ```
 PAI-cli abandontransaction fa3970c341c9f5de6ab13f128cbfec58d732e736a505fe32137ad551c799ecc4

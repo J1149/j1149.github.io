@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 GenerateToAddress
 ========================
 
-*Added in pai Core 0.13.0*
-
 *Requires wallet support.*
 
 The `generatetoaddress` RPC mines blocks immediately to a specified address.
@@ -57,12 +55,12 @@ The `generatetoaddress` RPC mines blocks immediately to a specified address.
   d= "The hashes of the headers of the blocks generated, as hex in RPC byte order"
 %}
 
-*Example from PAI Core 0.13.1*
+*Example*
 
 Using regtest mode, generate 2 blocks with maximal 500000 iterations:
 
 ```
-pai-cli -regtest generatetoaddress 2 "1BRo7qrYHMPrzdBDzfjmzt\
+pai-cli -regtest generatetoaddress 2 "PaXVxzkruFZPidQjsDft9CW174Tr99xngu\
 eBdYAyTMXW75" 500000
 ```
 

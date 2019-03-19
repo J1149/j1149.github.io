@@ -30,7 +30,7 @@ The `settxfee` RPC sets the transaction fee per kilobyte paid by transactions cr
   d= "Set to `true` if the fee was successfully set"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Set the transaction fee per kilobyte to 100,000 satoshis.
 

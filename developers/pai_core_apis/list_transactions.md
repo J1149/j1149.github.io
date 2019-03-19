@@ -18,7 +18,7 @@ The `listtransactions` RPC returns the most recent transactions that affect the 
   n= "Account"
   t= "string"
   p= "Optional<br>(0 or 1)"
-  d= "*Deprecated: will be removed in a later version of Pai Core*<br><br>The name of an account to get transactinos from.  Use an empty string (\"\") to get transactions for the default account.  Default is `*` to get transactions for all accounts."
+  d= "The name of an account to get transactinos from.  Use an empty string (\"\") to get transactions for the default account.  Default is `*` to get transactions for all accounts."
 %}
 
 *Parameter #2---the number of transactions to get*
@@ -55,7 +55,7 @@ The `listtransactions` RPC returns the most recent transactions that affect the 
 |------|-----------|---------------------|-------------
 | `result`  | array | Required<br>(exactly 1) | An array containing objects, with each object describing a **payment** or internal accounting entry (not a transaction).  More than one object in this array may come from a single transaction.  Array may be empty
 | →<br>Payment | object | Optional<br>(0 or more) | A payment or internal accounting entry
-| → →<br>`account` | string | Required<br>(exactly 1) | *Deprecated: will be removed in a later version of Pai Core*<br><br>The account which the payment was credited to or debited from.  May be an empty string (\"\") for the default account
+| → →<br>`account` | string | Required<br>(exactly 1) | The account which the payment was credited to or debited from.  May be an empty string (\"\") for the default account
 | → →<br>`address` | string (base58) | Optional<br>(0 or 1) | The address paid in this payment, which may be someone else's address not belonging to this wallet.  May be empty if the address is unknown, such as when paying to a non-standard pubkey script or if this is in the *move* category
 | → →<br>`category` | string | Required<br>(exactly 1) | Set to one of the following values:<br>• `send` if sending payment<br>• `receive` if this wallet received payment in a regular transaction<br>• `generate` if a matured and spendable coinbase<br>• `immature` if a coinbase that is not spendable yet<br>• `orphan` if a coinbase from a block that's not in the local best block chain<br>• `move` if an off-block-chain move made with the `move` RPC
 | → →<br>`amount` | number (pai's) | Required<br>(exactly 1) | A negative pai amount if sending payment; a positive pai amount if receiving payment (including coinbases)
@@ -76,11 +76,11 @@ The `listtransactions` RPC returns the most recent transactions that affect the 
 | → →<br>`comment` | string | Optional<br>(0 or 1) | For transaction originating with this wallet, a locally-stored comment added to the transaction.  Only returned in regular payments if a comment was added.  Always returned in *move* category payments.  May be an empty string
 | → →<br>`to` | string | Optional<br>(0 or 1) | For transaction originating with this wallet, a locally-stored comment added to the transaction identifying who the transaction was sent to.  Only returned if a comment-to was added.  Never returned by *move* category payments.  May be an empty string
 | → →<br>`otheraccount` | string | Optional<br>(0 or 1) | This is the account the pai's were moved from or moved to, as indicated by a negative or positive *amount* field in this payment.  Only returned by *move* category payments
-| → →<br>`bip125-replaceable` | string | Required<br>(exactly 1) | *Added in Pai Core 0.12.0*<br><br>Indicates if a transaction is replaceable under BIP125:<br>• `yes` replaceable<br>• `no` not replaceable<br>• `unknown` for unconfirmed transactions not in the mempool
-| → →<br>`abandoned` | bool | Optional<br>(0 or 1) | *Added in Pai Core 0.12.1*<br><br>Indicates if a transaction is was abandoned:<br>• `true` if it was abandoned (inputs are respendable)<br>• `false`  if it was not abandoned<br>Only returned by *send* category payments
+| → →<br>`bip125-replaceable` | string | Required<br>(exactly 1) | Indicates if a transaction is replaceable under BIP125:<br>• `yes` replaceable<br>• `no` not replaceable<br>• `unknown` for unconfirmed transactions not in the mempool
+| → →<br>`abandoned` | bool | Optional<br>(0 or 1) | Indicates if a transaction is was abandoned:<br>• `true` if it was abandoned (inputs are respendable)<br>• `false`  if it was not abandoned<br>Only returned by *send* category payments
 
 
-*Example from Pai Core 0.13.1*
+*Example*
 
 List the most recent transaction from all accounts including watch-only addresses.
 
@@ -95,7 +95,7 @@ Result:
     {
         "involvesWatchonly" : true,
         "account" : "",
-        "address" : "1GeDA9rRpqaCdsdkTzGtbajt6jPvn3pg2N",
+        "address" : "PaXVxzkruFZPidQjsDft9CW174Tr99xngu",
         "category" : "send",
         "amount" : -3.45902877,
         "vout" : 0,

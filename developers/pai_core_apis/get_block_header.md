@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 GetBlockHeader
 ========================
 
-*Added in PAI Core 0.12.0*
-
 The `getblockheader` RPC gets a block header with a particular header hash from the local block database either as a JSON object or as a serialized block header.
 
 *Parameter #1---header hash*
@@ -59,7 +57,7 @@ The `getblockheader` RPC gets a block header with a particular header hash from 
 | →<br>`nextblockhash` | string (hex) | Optional<br>(0 or 1) | The hash of the next block on the best block chain, if known, encoded as hex in RPC byte order
 
 
-*Example from PAI Core 0.12.1*
+*Example*
 
 Get a block header in raw hex:
 

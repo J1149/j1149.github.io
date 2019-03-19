@@ -35,7 +35,7 @@ Core.  Use the RPCs listed in the See Also subsection below instead.
 
 %}
 
-*Example from pai Core 0.10.0*
+*Example*
 
 Get an address for the default account:
 

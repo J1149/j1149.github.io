@@ -35,7 +35,7 @@ Core.  Use the RPCs listed in the See Also subsection below instead.
   d= "The number of pai's received by the account.  May be `0`"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Get the pai's received by the "doc test" account with six or more
 confirmations:

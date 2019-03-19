@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 GetMemoryInfo
 ========================
 
-Added in PAI Core 0.14.0*
-
 The `getmemoryinfo` RPC returns information about memory usage.
 
 *Parameters: none*
@@ -27,7 +25,7 @@ The `getmemoryinfo` RPC returns information about memory usage.
 | →→<br>`chunks_used` | number (int) | Required<br>(exactly 1) | Number allocated chunks
 | →→<br>`chunks_free` | number (int) | Required<br>(exactly 1) | Number unused chunks
 
-*Example from PAI Core 0.14.1*
+*Example*
 
 ```
 pai-cli getmemoryinfo

@@ -31,7 +31,7 @@ The createrawtransaction RPC creates an unsigned serialized transaction that spe
 
 | Name    | Type       | Presence            | Description
 |---------|------------|---------------------|-------------
-|Locktime |numeric(int)| Optional(0 or 1)    | *Added in PAI Core 0.12.0*<br><br>Indicates the earliest time a transaction can be added to the block chain
+|Locktime |numeric(int)| Optional(0 or 1)    | Indicates the earliest time a transaction can be added to the block chain
 
 *Result---the unsigned raw transaction in hex*
 
@@ -39,7 +39,7 @@ The createrawtransaction RPC creates an unsigned serialized transaction that spe
 |-------------|------------|---------------------|-------------
 |result       |string       | Required(Exactly 1) | The resulting unsigned raw transaction in serialized transaction format encoded as hex. If the transaction couldn’t be generated, this will be set to JSON null and the JSON-RPC error field may contain an error message
 
-*Example from PAI Core 0.10.0*
+*Example*
 
 ```
 PAI-cli -testnet createrawtransaction '''
@@ -61,7 +61,7 @@ Result (wrapped):
 
 *See also*
 
-* DecodeRawTransaction: decodes a serialized transaction hex string into a JSON object describing the transaction.
-* SignRawTransaction: signs a transaction in the serialized transaction format using private keys stored in the wallet or provided in the call.
-* SendRawTransaction: validates a transaction and broadcasts it to the peer-to-peer network.
-* Serialized Transaction Format
+* `DecodeRawTransaction`: decodes a serialized transaction hex string into a JSON object describing the transaction.
+* `SignRawTransaction`: signs a transaction in the serialized transaction format using private keys stored in the wallet or provided in the call.
+* `SendRawTransaction`: validates a transaction and broadcasts it to the peer-to-peer network.
+* `Serialized Transaction Format`

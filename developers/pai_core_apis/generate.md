@@ -43,7 +43,7 @@ The `generate` RPC nearly instantly generates PAIs.
   d= "The hashes of the headers of the blocks generated in regtest mode, as hex in RPC byte order"
 %}
 
-*Example from PAI Core 0.13.1*
+*Example*
 
 Using regtest mode (also works in normal mode), generate 2 blocks:
 

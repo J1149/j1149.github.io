@@ -8,8 +8,6 @@ nav_order: 4
 BlockTxn
 ====================
 
-*Added in protocol version 70014 as described by BIP152.*
-
 The `blocktxn` message is defined as a message containing a serialized `BlockTransactions` message.
 Upon receipt of a properly-formatted requested `blocktxn` message, nodes should attempt to 
 reconstruct the full block by taking the prefilledtxn transactions from the original `cmpctblock` message 

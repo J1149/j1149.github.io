@@ -8,8 +8,6 @@ nav_order: 4
 Headers
 ========
 
-*Added in protocol version 31800.*
-
 The `headers` message sends block headers to a node which
 previously requested certain headers with a `getheaders` message. A headers
 message can be empty.

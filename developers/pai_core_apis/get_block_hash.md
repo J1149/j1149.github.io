@@ -28,7 +28,7 @@ The `getblockhash` RPC returns the header hash of a block at the given height in
   d= "The hash of the block at the requested height, encoded as hex in RPC byte order, or JSON `null` if an error occurred"
 %}
 
-*Example from PAI Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet getblockhash 240886

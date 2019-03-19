@@ -21,7 +21,7 @@ The `ping` RPC sends a P2P ping message to all connected nodes to measure ping t
   d= "Always JSON `null`"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet ping

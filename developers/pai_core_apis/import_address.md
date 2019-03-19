@@ -48,7 +48,7 @@ The `importaddress` RPC adds an address or pubkey script to the wallet without t
   d= "If the address or pubkey script is added to the wallet (or is already part of the wallet), JSON `null` will be returned"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Add an address, rescanning the local block database for any transactions
 matching it.

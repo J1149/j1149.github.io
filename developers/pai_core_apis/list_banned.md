@@ -8,7 +8,6 @@ grand_parent: Developer Reference
 ListBanned
 ========================
 
-*Added in Pai Core 0.12.0*
 
 The `listbanned` RPC lists all banned IPs/Subnets.
 
@@ -26,7 +25,7 @@ The `listbanned` RPC lists all banned IPs/Subnets.
 | → →<br>`ban_reason` | string | Required<br>(exactly 1) | Set to one of the following reasons:<br>• `node<!--noref--> misbehaving` if the node was banned by the client because of DoS violations<br>• `manually added` if the node was manually banned by the user
 
 
-*Examples from Pai Core 0.12.1*
+*Examples*
 
 The default (`false`):
 

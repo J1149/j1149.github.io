@@ -37,7 +37,7 @@ The `submitblock` RPC accepts a block, verifies it is a valid addition to the bl
   d= "If the block submission succeeded, set to JSON `null`.  If submission failed, set to one of the following strings: `duplicate`, `duplicate-invalid`, `inconclusive`, or `rejected`.  The JSON-RPC `error` field will still be set to `null` if submission failed for one of these reasons"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Submit the following block with the workid, "test".
 

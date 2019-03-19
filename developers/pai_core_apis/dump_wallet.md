@@ -25,7 +25,7 @@ The dumpwallet RPC creates or overwrites a file with all wallet keys in a human-
 |---------|------|-------------------------|-------------
 |`result` | null | Required<br>(exactly 1) | Always `null` whether success or failure.  The JSON-RPC error and message fields will be set if a failure occurred
 
-*Example from pai Core 0.10.0*
+*Example*
 
 Create a wallet dump and then print its first 10 lines.
 
@@ -51,6 +51,6 @@ cNCD679B4xi17jb4XeLpbRbZCbYUugptD7dCtUTfSU4KPuK2DyKT 2014-02-05T16:58:41Z reserv
 
 *See also*
 
-* BackupWallet: safely copies wallet.dat to the specified file, which can be a directory or a path with filename.
-* ImportWallet: imports private keys from a file in wallet dump file format (see the dumpwallet RPC). These keys will be added to the keys currently in the wallet. This call may need to rescan all or parts of the PAI for transactions affecting the newly-added keys, which may take several minutes.
+* `BackupWallet`: safely copies wallet.dat to the specified file, which can be a directory or a path with filename.
+* `ImportWallet`: imports private keys from a file in wallet dump file format (see the dumpwallet RPC). These keys will be added to the keys currently in the wallet. This call may need to rescan all or parts of the PAI for transactions affecting the newly-added keys, which may take several minutes.
 

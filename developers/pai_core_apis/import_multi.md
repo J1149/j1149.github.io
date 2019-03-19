@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 ImportMulti
 ========================
 
-*Added in Pai Core 0.14.0*
-
 *Requires wallet support.  Wallet must be unlocked.*
 
 The `importmulti` RPC imports addresses or scripts (with private keys, public keys, or P2SH redeem scripts) and optionally performs the minimum necessary rescan for all imports.
@@ -50,15 +48,15 @@ The `importmulti` RPC imports addresses or scripts (with private keys, public ke
 | → → → <br>`code` | number (int) | Optional<br>(0 or 1) | The error code
 | → → → <br>`message` | string | Optional<br>(0 or 1) | The error message
 
-*Example from Pai Core 0.14.1*
+*Example*
 
-Import the address 1NL9w5fP9kX2D9ToNZPxaiwFJCngNYEYJo (giving it a label and scanning the entire block chain) and the scriptPubKey 76a9149e857da0a5b397559c78c98c9d3f7f655d19c68688ac (giving a specific timestamp and label):
+Import the address PaXVxzkruFZPidQjsDft9CW174Tr99xngu (giving it a label and scanning the entire block chain) and the scriptPubKey 76a9149e857da0a5b397559c78c98c9d3f7f655d19c68688ac (giving a specific timestamp and label):
 
 ```
 pai-cli importmulti '
   [
     {
-      "scriptPubKey" : { "address": "1NL9w5fP9kX2D9ToNZPxaiwFJCngNYEYJo" },
+      "scriptPubKey" : { "address": "PaXVxzkruFZPidQjsDft9CW174Tr99xngu" },
       "timestamp" : 0,
       "label" : "Personal"
     },

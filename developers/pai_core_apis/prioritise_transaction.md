@@ -46,7 +46,7 @@ The `prioritisetransaction` RPC adds virtual priority or fee to a transaction, a
   d= "Always set to `true` if all three parameters are provided.  Will not return an error if the TXID is not in the memory pool.  If fewer or more than three arguments are provided, or if something goes wrong, will be set to `null`"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet prioritisetransaction \

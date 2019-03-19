@@ -16,7 +16,7 @@ The `help` RPC lists all available public RPC commands, or gets help for the spe
   n= "RPC"
   t= "string"
   p= "Optional<br>(0 or 1)"
-  d= "The name of the RPC to get help for.  If omitted, pai Core 0.9x will display an alphabetical list of commands; Pai Core 0.10.0 will display a categorized list of commands"
+  d= "The name of the RPC to get help for."
 %}
 
 *Result---a list of RPCs or detailed help for a specific RPC*
@@ -28,7 +28,7 @@ The `help` RPC lists all available public RPC commands, or gets help for the spe
   d= "The help text for the specified RPC or the list of commands.  The `pai-cli` command will parse this text and format it as human-readable text"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Command to get help about the `help` RPC:
 

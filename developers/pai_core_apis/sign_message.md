@@ -37,15 +37,15 @@ The `signmessage` RPC signs a message with the private key of an address.
   n= "`result`"
   t= "string (base64)"
   p= "Required<br>(exactly 1)"
-  d= "The signature of the message, encoded in base64.  Note that Pai Core before 0.10.0 creates signatures with random *k* values, so each time you sign the same message, it will create a different signature"
+  d= "The signature of the message, encoded in base64."
 %}
 
-*Example from Pai Core 0.13.1*
+*Example*
 
 Sign a the message "Hello, World!" using the following address:
 
 ```
-pai-cli signmessage 17fshh33qUze2yifiJ2sXgijSMzJ2KNEwu "Hello, World!"
+pai-cli signmessage PaXVxzkruFZPidQjsDft9CW174Tr99xngu "Hello, World!"
 ```
 
 Result:

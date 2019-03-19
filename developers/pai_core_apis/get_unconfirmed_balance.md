@@ -23,7 +23,7 @@ The `getunconfirmedbalance` RPC returns the wallet’s total unconfirmed balance
   d= "The total number of pai's paid to this wallet in unconfirmed transactions"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet getunconfirmedbalance

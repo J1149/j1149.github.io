@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 RemovePrunedFunds
 =======================
 
-*Added in Pai Core 0.13.0*
-
 The `removeprunedfunds` RPC deletes the specified transaction from the wallet. Meant for use with pruned wallets and as a companion to importprunedfunds. This will effect wallet balances.
 
 *Parameter #1---the raw transaction to import*
@@ -30,7 +28,7 @@ The `removeprunedfunds` RPC deletes the specified transaction from the wallet. M
   d= "If the funds are removed from the wallet, JSON `null` will be returned"
 %}
 
-*Example from Pai Core 0.13.1*
+*Example*
 
 ```
 pai-cli removeprunedfunds a8d0c0184dde994a09ec054286f1ce581b\

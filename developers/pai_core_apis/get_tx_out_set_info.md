@@ -25,7 +25,7 @@ The `gettxoutsetinfo` RPC returns statistics about the confirmed unspent transac
 | →<br>`total_amount` | number (pai's) | Required<br>(exactly 1) | The total number of pai's in the UTXO set
 
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet gettxoutsetinfo

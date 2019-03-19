@@ -18,7 +18,7 @@ The `getbalance` RPC gets the balance in decimal pais across all accounts or for
   n= "Account"
   t= "string"
   p= "Optional<br>(0 or 1)"
-  d= "*Deprecated: will be removed in a later version of pai Core*<br><br>The name of an account to get the balance for.  An empty string (\"\") is the default account.  The string `*` will get the balance for all accounts (this is the default behavior)"
+  d= "The name of an account to get the balance for.  An empty string (\"\") is the default account.  The string `*` will get the balance for all accounts (this is the default behavior)"
 
 %}
 
@@ -51,7 +51,7 @@ The `getbalance` RPC gets the balance in decimal pais across all accounts or for
   d= "The balance of the account (or all accounts) in pais"
 %}
 
-*Examples from pai Core 0.10.0*
+*Examples*
 
 Get the balance for the "test1" account, including transactions with
 at least one confirmation and those spent to watch-only addresses in

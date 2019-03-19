@@ -37,7 +37,7 @@ The `getnetworkhashps` RPC returns the estimated current or historical network h
   d= "The estimated number of hashes per second based on the parameters provided.  May be 0 (for Height=`0`, the genesis block) or a negative value if the highest-height block averaged has a block header time earlier than the lowest-height block averaged"
 %}
 
-*Example from PAI Core 0.10.0*
+*Example*
 
 Get the average hashes per second for all the blocks since the last
 difficulty change before block 227255.

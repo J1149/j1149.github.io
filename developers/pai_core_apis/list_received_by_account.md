@@ -53,7 +53,7 @@ The listreceivedbyaccount RPC lists the total number of pai's received by each a
 | → →<br>`confirmations` | number (int) | Required<br>(exactly 1) | The number of confirmations received by the last transaction received by this account.  May be `0`
 
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Get the balances for all non-empty accounts, including only transactions
 which have been confirmed at least six times:

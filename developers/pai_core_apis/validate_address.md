@@ -37,17 +37,17 @@ The `validateaddress` RPC returns information about the given Pai address.
 | →<br>`sigrequired` | number (int) | Optional<br>(0 or 1) | Only returned for multisig P2SH addresses belonging to the wallet.  The number of signatures required by this script
 | →<br>`pubkey` | string (hex) | Optional<br>(0 or 1) | The public key corresponding to this address.  Only returned if the address is a P2PKH address in the wallet
 | →<br>`iscompressed` | bool | Optional<br>(0 or 1) | Set to `true` if a compressed public key or set to `false` if an uncompressed public key.  Only returned if the address is a P2PKH address in the wallet
-| →<br>`account` | string | Optional<br>(0 or 1) | *Deprecated: will be removed in a later version of Pai Core*<br><br>The account this address belong to.  May be an empty string for the default account.  Only returned if the address belongs to the wallet
-| →<br>`hdkeypath` | string | Optional<br>(0 or 1) | *Added in Pai Core 0.13.0*<br><br>The HD keypath if the key is HD and available
-| →<br>`hdmasterkeyid` | string (hash160) | Optional<br>(0 or 1) | *Added in Pai Core 0.13.0*<br><br>The Hash160 of the HD master public key
+| →<br>`account` | string | Optional<br>(0 or 1) | The account this address belong to.  May be an empty string for the default account.  Only returned if the address belongs to the wallet
+| →<br>`hdkeypath` | string | Optional<br>(0 or 1) | The HD keypath if the key is HD and available
+| →<br>`hdmasterkeyid` | string (hash160) | Optional<br>(0 or 1) | The Hash160 of the HD master public key
 
 
-*Example from Pai Core 0.13.1*
+*Example*
 
 Validate the following P2PKH address from the wallet:
 
 ```
-pai-cli validateaddress 17fshh33qUze2yifiJ2sXgijSMzJ2KNEwu
+pai-cli validateaddress PaXVxzkruFZPidQjsDft9CW174Tr99xngu
 ```
 
 Result:
@@ -55,7 +55,7 @@ Result:
 ```
 {
     "isvalid": true,
-    "address": "17fshh33qUze2yifiJ2sXgijSMzJ2KNEwu",
+    "address": "PaXVxzkruFZPidQjsDft9CW174Tr99xngu",
     "scriptPubKey": "76a914492ae280d70af33acf0ae7cd329b961e65e9cbd888ac",
     "ismine": true,
     "iswatchonly": false,
@@ -69,7 +69,7 @@ Result:
 Validate the following P2SH multisig address from the wallet:
 
 ```
-pai-cli -testnet validateaddress 2MyVxxgNBk5zHRPRY2iVjGRJHYZEp1pMCSq
+pai-cli -testnet validateaddress PFZPidQjsDft9CW174Tr99xnguJMPc84JA
 ```
 
 Result:
@@ -77,7 +77,7 @@ Result:
 ```
 {
     "isvalid" : true,
-    "address" : "2MyVxxgNBk5zHRPRY2iVjGRJHYZEp1pMCSq",
+    "address" : "PFZPidQjsDft9CW174Tr99xnguJMPc84JA",
     "ismine" : true,
     "iswatchonly" : false,
     "isscript" : true,

@@ -8,8 +8,6 @@ nav_order: 4
 Reject
 ========
 
-*Added in protocol version 70002 as described by BIP61.*
-
 The `reject` message informs the receiving node that one of its previous
 messages has been rejected.
 

@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 GetMemPoolAncestors
 ========================
 
-*Added in PAI Core 0.13.0*
-
 The `getmempoolancestors` RPC returns all in-mempool ancestors for a transaction in the mempool.
 
 *Parameter #1---a transaction identifier (TXID)*
@@ -55,7 +53,7 @@ The `getmempoolancestors` RPC returns all in-mempool ancestors for a transaction
 | → → →<br>Depends TXID | string | Optional (0 or more) | The TXIDs of any unconfirmed transactions this transaction depends upon, encoded as hex in RPC byte order
 
 
-*Examples from PAI Core 0.13.1*
+*Example*
 
 The default (`false`):
 

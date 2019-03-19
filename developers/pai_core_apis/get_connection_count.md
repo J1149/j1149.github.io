@@ -21,7 +21,7 @@ The `getconnectioncount` RPC returns the number of connections to other nodes.
   d= "The total number of connections to other nodes (both inbound and outbound)"
 %}
 
-*Example from PAI Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet getconnectioncount

@@ -23,7 +23,7 @@ The `walletlock` RPC removes the wallet encryption key from memory, locking the 
   d= "Always set to JSON `null`"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet walletlock

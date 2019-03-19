@@ -39,7 +39,7 @@ The `addmultisigaddress` RPC adds a P2SH multisig address to the wallet.
 |-------|----------------|---------------------|-------------
 |result |string (base58) | Required(exactly 1) | The P2SH multisig address. The address will also be added to the wallet, and outputs paying that address will be tracked by the wallet
 
-*Example from PAI Core 0.10.0*
+*Example*
 
 Adding a 2-of-3 P2SH multisig address to the "test account" by mixing
 two P2PKH addresses and one full public key:
@@ -67,6 +67,6 @@ Result:
 
 *See also*
 
-* CreateMultiSig: creates a P2SH multi-signature address.
-* DecodeScript:  decodes a hex-encoded P2SH redeem script.
-* Pay-To-Script-Hash (P2SH)
+* `CreateMultiSig`: creates a P2SH multi-signature address.
+* `DecodeScript`:  decodes a hex-encoded P2SH redeem script.
+* `Pay-To-Script-Hash` (P2SH)

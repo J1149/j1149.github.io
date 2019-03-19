@@ -79,7 +79,7 @@ Core.  Use the RPCs listed in the See Also subsection below instead.
   d= "The TXID of the sent transaction, encoded as hex in RPC byte order"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Spend 0.1 pai's from the account "test" to the address indicated below
 using only UTXOs with at least six confirmations, giving the

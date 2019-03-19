@@ -24,7 +24,7 @@ The `listlockunspent` RPC returns a list of temporarily unspendable (locked) out
 | → →<br>`vout` | number (int) | Required<br>(exactly 1) | The output index number (vout) of the locked output within the transaction.  Output index `0` is the first output within the transaction
 
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet listlockunspent

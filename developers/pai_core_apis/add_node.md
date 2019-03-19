@@ -28,7 +28,7 @@ The addnode RPC attempts to add or remove a node from the addnode list, or to tr
 |--------|-----------|---------------------|-------------
 |result  |null       | Required(Exactly 1) | Always JSON null whether the node was added, removed, tried-and-connected, or tried-and-not-connected. The JSON-RPC error field will be set only if you try removing a node that is not on the addnodes list
 
-*Example from PAI Core 0.10.0*
+*Example*
 
 Try connecting to the following node.
 
@@ -40,4 +40,4 @@ Result (no output from `PAI-cli` because result is set to `null`).
 
 *See also*
 
-* GetAddedNodeInfo: returns information about the given added node, or all added nodes (except onetry nodes). Only nodes which have been manually added using the addnode RPC will have their information displayed.
+* `GetAddedNodeInfo`: returns information about the given added node, or all added nodes (except onetry nodes). Only nodes which have been manually added using the addnode RPC will have their information displayed.

@@ -25,7 +25,7 @@ The `dumpprivkey` RPC returns the wallet-import-format (WIF) private key corresp
 |--------------|-----------------|-------------------------|-------------
 |`result` | string (base58) | Required<br>(exactly 1) | The private key encoded as base58check using wallet import format
 
-*Example from pai Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet dumpprivkey moQR7i8XM4rSGoNwEsw3h4YEuduuP6mxw7
@@ -39,5 +39,5 @@ cTVNtBK7mBi2yc9syEnwbiUpnpGJKohDWzXMeF4tGKAQ7wvomr95
 
 *See also*
 
-* ImportPrivKey: adds a private key to your wallet. The key should be formatted in the wallet import format created by the dumpprivkey RPC.
-* DumpWallet: creates or overwrites a file with all wallet keys in a human-readable format.
+* `ImportPrivKey`: adds a private key to your wallet. The key should be formatted in the wallet import format created by the dumpprivkey RPC.
+* `DumpWallet`: creates or overwrites a file with all wallet keys in a human-readable format.

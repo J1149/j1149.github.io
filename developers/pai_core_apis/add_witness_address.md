@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 Add Witness Address
 ====================
 
-*Added in PAI Core 0.13.0*
-
 *Requires wallet support. Requires an unlocked wallet or an unencrypted wallet.*
 
 The `addwitnessaddress` RPC adds a witness address for a script (with pubkey or redeem script known).
@@ -26,10 +24,10 @@ The `addwitnessaddress` RPC adds a witness address for a script (with pubkey or 
 |-------|--------------|---------------------|-------------
 |result |String(base58)| Required(Exactly 1) | The value of the new address (P2SH of witness script)
 
-*Example from PAI Core 0.13.1*
+*Example*
 
 ```
-PAI-cli addwitnessaddress 1BRo7qrYHMPrzdBDzfjmzteBdYAyTMXW75
+PAI-cli addwitnessaddress PaXVxzkruFZPidQjsDft9CW174Tr99xngu
 ```
 
 Result:
@@ -43,5 +41,5 @@ The RPC is disabled by default on mainnet as long as Segregated Witness has not 
 
 *See also*
 
-* BIP-141 - Segregated Witness
-* BIP-142 - Address Format for Segregated Witness
+* `BIP-141` - Segregated Witness
+* `BIP-142` - Address Format for Segregated Witness

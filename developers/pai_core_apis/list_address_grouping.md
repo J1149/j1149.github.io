@@ -23,10 +23,10 @@ The `listaddressgroupings` RPC lists groups of addresses that may have had their
 | → →<br>Address Details | array | Required<br>(1 or more) | An array containing information about a particular address
 | → → →<br>Address | string (base58) | Required<br>(exactly 1) | The address in base58check format
 | → → →<br>Balance | number (pai's) | Required<br>(exactly 1) | The current spendable balance of the address, not counting unconfirmed transactions
-| → → →<br>Account | string | Optional<br>(0 or 1) | *Deprecated: will be removed in a later version of Pai Core*<br><br>The account the address belongs to, if any.  This field will not be returned for change addresses.  The default account is an empty string (\"\")
+| → → →<br>Account | string | Optional<br>(0 or 1) | The account the address belongs to, if any.  This field will not be returned for change addresses.  The default account is an empty string (\"\")
 
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet listaddressgroupings

@@ -8,8 +8,6 @@ nav_order: 4
 GetHeaders
 =============
 
-*Added in protocol version 31800.*
-
 The `getheaders` message requests a `headers` message that provides block headers
 starting from a particular point in the block chain. It allows a
 peer which has been disconnected or started for the first time to get

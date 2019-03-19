@@ -22,7 +22,7 @@ The `getbestblockhash` RPC returns the header hash of the most recent block on t
 
 %}
 
-*Example from PAI Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet getbestblockhash

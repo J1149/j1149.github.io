@@ -74,7 +74,7 @@ account a balance that may exceed the number of pai's in the wallet
   d= "Set to `true` if the move was successful"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Move 0.1 pai's from "doc test" to "test1", giving the transaction the
 comment "Example move":

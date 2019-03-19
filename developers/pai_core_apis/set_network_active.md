@@ -8,7 +8,7 @@ grand_parent: Developer Reference
 SetNetworkActive
 =======================
 
-*Added in Pai Core 0.14.0*
+*Added*
 
 The `setnetworkactive` RPC disables/enables all P2P network activity.
 
@@ -30,7 +30,7 @@ The `setnetworkactive` RPC disables/enables all P2P network activity.
   d= "JSON `null`.  The JSON-RPC error field will be set only if you entered an invalid parameter"
 %}
 
-*Example from Pai Core 0.14.1*
+*Example*
 
 ```
 pai-cli setnetworkactive true

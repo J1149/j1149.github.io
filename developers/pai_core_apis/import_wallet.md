@@ -31,7 +31,7 @@ The `importwallet` RPC imports private keys from a file in wallet dump file form
   d= "If all the keys in the file are added to the wallet (or are already part of the wallet), JSON `null` will be returned"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Import the file shown in the example subsection of the `dumpwallet` RPC.
 

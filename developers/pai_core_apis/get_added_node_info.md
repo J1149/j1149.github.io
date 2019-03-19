@@ -16,7 +16,7 @@ The `getaddednodeinfo` RPC returns information about the given added node, or al
   n= "Details"
   t= "bool"
   p= "Required<br>(exactly 1)"
-  d= "*Removed in pai Core 0.14.0*<br><br>Set to `true` to display detailed information about each added node; set to `false` to only display the IP address or hostname and port added"
+  d= "Set to `true` to display detailed information about each added node; set to `false` to only display the IP address or hostname and port added"
 
 %}
 
@@ -88,7 +88,7 @@ The `getaddednodeinfo` RPC returns information about the given added node, or al
   d= "Whether or not the local node is connected to this addnode using this IP address.  Valid values are:<br>• `false` for not connected<br>• `inbound` if the addnode connected to us<br>• `outbound` if we connected to the addnode"
 %}
 
-*Example from pai Core 0.14.1*
+*Example*
 
 ```
 pai-cli getaddednodeinfo

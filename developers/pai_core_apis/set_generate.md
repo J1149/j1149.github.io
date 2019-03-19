@@ -10,7 +10,6 @@ SetGenerate
 
 *Requires wallet support.*
 
-The `setgenerate` RPC was removed in Pai Core 0.13.0. If you have an older version of Pai Core, use help setgenerate RPC to get help. For testing, the generate call can still be used to mine a block, and the generatetoaddress RPC call has been added to mine to a specific address. This works with wallet disabled.
 
 *See also*
 

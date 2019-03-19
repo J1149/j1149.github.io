@@ -8,7 +8,6 @@ grand_parent: Developer Reference
 SetBan
 =======================
 
-*Added in Pai Core 0.12.0*
 
 The `setban` RPC attempts add or remove a IP/Subnet from the banned list.
 
@@ -57,7 +56,7 @@ The `setban` RPC attempts add or remove a IP/Subnet from the banned list.
   d= "Always JSON `null`"
 %}
 
-*Example from Pai Core 0.12.1*
+*Example*
 
 Ban the following node.
 

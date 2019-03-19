@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 Bump Free
 ======================
 
-*Added in PAI Core 0.14.0*
-
 *Requires wallet support. Wallet must be unlocked.*
 
 The `bumpfee` RPC {{summary_bumpFee}} The increased fee is deducted from the change output. The command fails if the change output is too small to increase the fee or 
@@ -40,7 +38,7 @@ if the wallet or mempool contains a transaction that spends one of the transacti
 |→ `fee`    | bool              | Optional(0 or 1)    | The fee of the new transaction
 |→ `errors` | array             | Required(exactly 1) | Errors encountered during processing (may be empty)
 
-*Example from PAI Core 0.14.1*
+*Example*
 
 ```
 PAI-cli -testnet bumpfee d4a33e0cabaz723149e1fcab4e033a40173\
@@ -64,8 +62,8 @@ Result:
 
 *See also*
 
-* CreateRawTransaction:  creates an unsigned serialized transaction that spends a previous output to a new output with a P2PKH or P2SH address. The transaction is not stored in the wallet or transmitted to the network.
-* FundRawTransaction:adds inputs to a transaction until it has enough in value to meet its out value.
-* SignRawTransaction: signs a transaction in the serialized transaction format using private keys stored in the wallet or provided in the call.
-* SendRawTransaction: validates a transaction and broadcasts it to the peer-to-peer network.
-* Serialized Transaction Format
+* `CreateRawTransaction`:  creates an unsigned serialized transaction that spends a previous output to a new output with a P2PKH or P2SH address. The transaction is not stored in the wallet or transmitted to the network.
+* `FundRawTransaction`:adds inputs to a transaction until it has enough in value to meet its out value.
+* `SignRawTransaction`: signs a transaction in the serialized transaction format using private keys stored in the wallet or provided in the call.
+* `SendRawTransaction`: validates a transaction and broadcasts it to the peer-to-peer network.
+* `Serialized Transaction Format`

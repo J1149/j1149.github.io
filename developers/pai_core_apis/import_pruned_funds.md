@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 ImportPrunedFunds
 ========================
 
-*Added in Pai Core 0.13.0*
-
 *Requires wallet support.*
 
 The `importprunedfunds` RPC imports funds without the need of a rescan. Meant for use with pruned wallets. Corresponding address or script must previously be included in wallet. The end-user is responsible to import additional transactions that subsequently spend the imported outputs or rescan after the point in the blockchain the transaction is included.
@@ -41,7 +39,7 @@ The `importprunedfunds` RPC imports funds without the need of a rescan. Meant fo
   d= "If the funds are added to wallet, JSON `null` will be returned"
 %}
 
-*Example from Pai Core 0.13.1*
+*Example*
 
 ```
 pai-cli importprunedfunds "txhex" "txoutproof"

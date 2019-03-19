@@ -22,7 +22,7 @@ The decoderawtransaction RPC decodes a serialized transaction hex string into a 
 |-------|------|---------------------|-------------
 |Result |object| Required(Exactly 1) | An object describing the decoded transaction, or JSON null if the transaction could not be decoded
 
-*Example from PAI Core 0.13.1*
+*Example*
 
 Decode a signed one-input, three-output transaction:
 
@@ -78,6 +78,6 @@ Result:
 
 *See also*
 
-* CreateRawTransaction: creates an unsigned serialized transaction that spends a previous output to a new output with a P2PKH or P2SH address. The transaction is not stored in the wallet or transmitted to the network.
-* SignRawTransaction:  signs a transaction in the serialized transaction format using private keys stored in the wallet or provided in the call.
-* SendRawTransaction: validates a transaction and broadcasts it to the peer-to-peer network.
+* `CreateRawTransaction`: creates an unsigned serialized transaction that spends a previous output to a new output with a P2PKH or P2SH address. The transaction is not stored in the wallet or transmitted to the network.
+* `SignRawTransaction`:  signs a transaction in the serialized transaction format using private keys stored in the wallet or provided in the call.
+* `SendRawTransaction`: validates a transaction and broadcasts it to the peer-to-peer network.

@@ -28,7 +28,7 @@ The `decodescript` RPC {{summary_decodeScript}}
 | → →<br>Address   | string       | Required<br>(1 or more) | A P2PKH address
 | →<br>`p2sh`      | string (hex) | Required<br>(exactly 1) | The P2SH address of this redeem script
 
-*Example from pai Core 0.10.0*
+*Example*
 
 A 2-of-3 P2SH multisig pubkey script:
 
@@ -51,11 +51,11 @@ Result:
         "mo1vzGwCzWqteip29vGWWW6MsEBREuzW94",
         "mt17cV37fBqZsnMmrHnGCm9pM28R1kQdMG"
     ],
-    "p2sh" : "2MyVxxgNBk5zHRPRY2iVjGRJHYZEp1pMCSq"
+    "p2sh" : "PaXVxzkruFZPidQjsDft9CW174Tr99xngu"
 }
 ```
 
 *See also*
 
-* CreateMultiSig: creates a P2SH multi-signature address.
-* Pay-To-Script-Hash (P2SH)
+* `CreateMultiSig`: creates a P2SH multi-signature address.
+* `Pay-To-Script-Hash (P2SH)`

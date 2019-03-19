@@ -41,7 +41,7 @@ The `setaccount` RPC puts the specified address in the given account.
   d= "Set to JSON `null` if the address was successfully placed in the account"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Put the address indicated below in the "doc test" account.
 

@@ -43,7 +43,7 @@ value of the passphrase parameter).`
   d= "Always set to JSON `null`"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Change the wallet passphrase from "test" to "example":
 

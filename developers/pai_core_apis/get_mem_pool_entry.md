@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 GetMemPoolEntry
 ========================
 
-*Added in PAI Core 0.13.0*
-
 The `getmempoolentry` RPC returns mempool data for given transaction (must be in mempool).
 
 *Parameter #1---a transaction identifier (TXID)*
@@ -42,7 +40,7 @@ The `getmempoolentry` RPC returns mempool data for given transaction (must be in
 | → <br>`depends` | array | Required<br>(exactly 1) | An array holding TXIDs of unconfirmed transactions this transaction depends upon (parent transactions).  Those transactions must be part of a block before this transaction can be added to a block, although all transactions may be included in the same block.  The array may be empty
 | → →<br>Depends TXID | string | Optional (0 or more) | The TXIDs of any unconfirmed transactions this transaction depends upon, encoded as hex in RPC byte order
 
-*Examples from PAI Core 0.13.1*
+*Example*
 
 ```
 pai-cli getmempoolentry 52273e0ce6cf3452932cfbc1c517c0ce1af1\
