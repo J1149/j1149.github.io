@@ -21,7 +21,7 @@ The `getdifficulty` RPC
   d= "The difficulty of creating a block with the same target threshold (nBits) as the highest-height block in the local best block chain.  The number is a a multiple of the minimum difficulty"
 %}
 
-*Example from PAI Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet getdifficulty

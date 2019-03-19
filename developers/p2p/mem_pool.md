@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 MemPool
 =========
 
-*Added in protocol version 60002.*
-
 The `mempool` message requests the TXIDs of transactions that the
 receiving node has verified as valid but which have not yet appeared in
 a block. That is, transactions which are in the receiving node's memory
@@ -29,12 +27,6 @@ The `inv` response to the `mempool` message is, at best, one node's
 view of the network---not a complete list of unconfirmed transactions
 on the network. Here are some additional reasons the list might not
 be complete:
-
-* Before Pai Core 0.9.0, the response to the `mempool` message was
-  only one `inv` message. An `inv` message is limited to 50,000
-  inventories, so a node with a memory pool larger than 50,000 entries
-  would not send everything.  Later versions of Pai Core send as
-  many `inv` messages as needed to reference its complete memory pool.
 
 * The `mempool` message is not currently fully compatible with the
   `filterload` message's `BLOOM_UPDATE_ALL` and

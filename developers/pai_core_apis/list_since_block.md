@@ -48,7 +48,7 @@ The `listsinceblock` RPC gets all transactions affecting the wallet which have o
 | →<br>`transactions` | array | Required<br>(exactly 1) | An array of objects each describing a particular **payment** to or from this wallet.  The objects in this array do not describe an actual transactions, so more than one object in this array may come from the same transaction.  This array may be empty
 | → →<br>Payment | object | Optional<br>(0 or more) | An payment which did not appear in the specified block or an earlier block
 | → →<br>involvesWatchOnly | bool | Optional<br>(0 or more) | Set to true if the payment involves a watch-only address. Otherwise not returned
-| → →<br>account | string | Required<br>(exactly 1) | *Deprecated: will be removed in a later version of Pai Core.* The account which the payment was credited to or debited from. May be an empty string (“”) for the default account
+| → →<br>account | string | Required<br>(exactly 1) | The account which the payment was credited to or debited from. May be an empty string (“”) for the default account
 | → →<br>address | string(base58) | Optional<br>(0 or 1) | The address paid in this payment, which may be someone else’s address not belonging to this wallet. May be empty if the address is unknown, such as when paying to a non-standard pubkey script
 | → → →<br>category | string | required<br>(exactly 1) | Set to one of the following values: <br> • send if sending payment <br> • receive if this wallet received payment in a regular transaction <br> • generate if a matured and spendable coinbase <br> • immature if a coinbase that is not spendable yet <br> • orphan if a coinbase from a block that’s not in the local best block chain
 | → → →<br>amount | number(pai's) | Required<br>(exactly 1) | A negative pai amount if sending payment; a positive pai amount if receiving payment (including coinbases)
@@ -62,13 +62,13 @@ The `listsinceblock` RPC gets all transactions affecting the wallet which have o
 | → → → →<br>TXID | string(hex) | Optional<br>(0 or more) | The TXID of a conflicting transaction, encoded as hex in RPC byte order
 | → → → <br>time | number(int) | Required<br>(exactly 1) | A Unix epoch time when the transaction was added to the wallet
 | → → → <br>timeeceived | number(int) | Required<br>(exactly 1) | A Unix epoch time when the transaction was detected by the local node, or the time of the block on the local best block chain that included the transaction
-| → → → <br>bip 125-replaceable | string | Required<br>(exactly 1) | Added in Pai Core 0.12.0 <br> Indicates if a transaction is replaceable under BIP 125: <br> • yes is replaceable <br> • no not replaceable <br> • unknown for unconfirmed transactions not in the mempool"
+| → → → <br>bip 125-replaceable | string | Required<br>(exactly 1) | Indicates if a transaction is replaceable under BIP 125: <br> • yes is replaceable <br> • no not replaceable <br> • unknown for unconfirmed transactions not in the mempool"
 | →→→<br>comment | string | Optional<br>(0 or 1) | For transaction originating with this wallet, a locally-stored comment added to the transaction. Only returned if a comment was added
 | →→→<br>to | string | Optional<br>(0 or 1) | For transaction originating with this wallet, a locally-stored comment added to the transaction identifying who the transaction was sent to. Only returned if a comment-to was added
 | →<br>`lastblock` | string (hex) | Required<br>(exactly 1) | The header hash of the block with the number of confirmations specified in the *target confirmations* parameter, encoded as hex in RPC byte order
 
 
-*Example from Pai Core 0.13.1*
+*Example*
 
 Get all transactions since a particular block (including watch-only
 transactions) and the header hash of the sixth most recent block.
@@ -86,7 +86,7 @@ Result (edited to show only two payments):
     "transactions" : [
         {
             "account" : "doc test",
-            "address" : "mmXgiR6KAhZCyQ8ndr2BCfEq1wNG2UnyG6",
+            "address" : "PaXVxzkruFZPidQjsDft9CW174Tr99xngu",
             "category" : "receive",
             "amount" : 0.10000000,
             "vout" : 0,
@@ -104,7 +104,7 @@ Result (edited to show only two payments):
         {
             "involvesWatchonly" : true,
             "account" : "someone else's address2",
-            "address" : "n3GNqMveyvaPvUbH469vDRadqpJMPc84JA",
+            "address" : "PFZPidQjsDft9CW174Tr99xnguJMPc84JA",
             "category" : "receive",
             "amount" : 0.00050000,
             "vout" : 0,

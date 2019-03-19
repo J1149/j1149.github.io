@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 PruneBlockChain
 =======================
 
-*Added in Pai Core 0.14.0*
-
 The `pruneblockchain` RPC prunes the blockchain up to a specified height or timestamp. The -prune option needs to be enabled (disabled by default).
 
 *Parameter #1---the block height or timestamp*
@@ -30,7 +28,7 @@ The `pruneblockchain` RPC prunes the blockchain up to a specified height or time
   d= "The height of the last block pruned"
 %}
 
-*Examples from Pai Core 0.14.1*
+*Examples*
 
 ```
 pai-cli pruneblockchain 413555

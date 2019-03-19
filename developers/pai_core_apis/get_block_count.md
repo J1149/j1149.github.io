@@ -21,7 +21,7 @@ The `getblockcount` RPC returns the number of blocks in the local best block cha
   d= "The number of blocks in the local best block chain.  For a new node with only the hardcoded genesis block, this number will be 0"
 %}
 
-*Example from PAI Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet getblockcount

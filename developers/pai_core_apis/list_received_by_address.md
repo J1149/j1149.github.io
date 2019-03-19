@@ -48,7 +48,7 @@ The `listreceivedbyaddress` RPC lists the total number of pai's received by each
 | →<br>Address | object | Optional<br>(0 or more) | An object describing an address
 | → →<br>`involvesWatchonly` | bool | Optional<br>(0 or 1) | Set to `true` if this address is a watch-only address which has received a spendable payment (that is, a payment with at least the specified number of confirmations and which is not an immature coinbase).  Otherwise not returned
 | → →<br>`address` | string (base58) | Required<br>(exactly 1) | The address being described encoded in base58check
-| → →<br>`account` | string | Required<br>(exactly 1) | *Deprecated: will be removed in a later version of Pai Core*<br><br>The account the address belongs to.  May be the default account, an empty string (\"\")
+| → →<br>`account` | string | Required<br>(exactly 1) | The account the address belongs to.  May be the default account, an empty string (\"\")
 | → →<br>`amount` | number (pai's) | Required<br>(exactly 1) | The total amount the address has received in pai's
 | → →<br>`confirmations` | number (int) | Required<br>(exactly 1) | The number of confirmations of the latest transaction to the address.  May be `0` for unconfirmed
 | → →<br>`label` | string | Required<br>(exactly 1) | The account the address belongs to.  May be the default account, an empty string (\"\")
@@ -56,7 +56,7 @@ The `listreceivedbyaddress` RPC lists the total number of pai's received by each
 | → → →<br>TXID | string | Optional<br>(0 or more) | The TXID of a transaction paying the address, encoded as hex in RPC byte order
 
 
-*Example from Pai Core 0.13.1*
+*Example*
 
 List addresses with balances confirmed by at least six blocks, including
 watch-only addresses:
@@ -70,7 +70,7 @@ Result (edit to show only two entries):
 ```
 [
     {
-        "address" : "mnUbTmdAFD5EAg3348Ejmonub7JcWtrMck",
+        "address" : "PaXVxzkruFZPidQjsDft9CW174Tr99xngu",
         "account" : "test1",
         "amount" : 1.99900000,
         "confirmations" : 55680,
@@ -82,7 +82,7 @@ Result (edit to show only two entries):
     },
     {
         "involvesWatchonly" : true,
-        "address" : "n3GNqMveyvaPvUbH469vDRadqpJMPc84JA",
+        "address" : "PFZPidQjsDft9CW174Tr99xnguJMPc84JA",
         "account" : "someone else's address2",
         "amount" : 0.00050000,
         "confirmations" : 34714,

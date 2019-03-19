@@ -39,16 +39,14 @@ starting with block one (the first block after the genesis block).
 The following annotated hexdump shows a `getblocks` message.  (The
 message header has been omitted.)
 
-```
-71110100 ........................... Protocol version: 70001
-02 ................................. Hash count: 2
 
-d39f608a7775b537729884d4e6633bb2
-105e55a16a14d31b0000000000000000 ... Hash #1
+```71110100 ........................... Protocol version: 70001 02 ................................. Hash count: 2```
 
-5c3e6403d40837110a2e8afb602b1c01
-714bda7ce23bea0a0000000000000000 ... Hash #2
+`d39f608a7775b537729884d4e6633bb2
+105e55a16a14d31b0000000000000000 ... Hash #1`
 
-00000000000000000000000000000000
-00000000000000000000000000000000 ... Stop hash
-```
+`5c3e6403d40837110a2e8afb602b1c01
+714bda7ce23bea0a0000000000000000 ... Hash #2`
+
+`00000000000000000000000000000000
+00000000000000000000000000000000 ... Stop hash```

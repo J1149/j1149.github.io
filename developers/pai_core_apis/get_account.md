@@ -31,7 +31,7 @@ The `getaccount` RPC returns the name of the account associated with the given a
 
 %}
 
-*Example from PAI Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet getaccount mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN

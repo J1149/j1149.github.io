@@ -21,7 +21,7 @@ The `stop` RPC safely shuts down the Pai Core server.
   d= "The string \"Pai server stopping\""
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 ```
 pai-cli -testnet stop

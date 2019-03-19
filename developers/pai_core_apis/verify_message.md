@@ -46,7 +46,7 @@ The `verifymessage` RPC verifies a signed message.
   d= "Set to `true` if the message was signed by a key corresponding to the provided P2PKH address; set to `false` if it was not signed by that key; set to JSON `null` if an error occurred"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Check the signature on the message created in the example for
 `signmessage`:

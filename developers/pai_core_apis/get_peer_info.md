@@ -27,9 +27,9 @@ The `getpeerinfo` RPC returns data about each connected network node.
 | → →<br>`bytessent` | number (int) | Required<br>(exactly 1) | The total number of bytes we've sent to this node
 | → →<br>`bytesrecv` | number (int) | Required<br>(exactly 1) | The total number of bytes we've received from this node
 | → →<br>`conntime` | number (int) | Required<br>(exactly 1) | The Unix epoch time when we connected to this node
-| → →<br>`timeoffset` | number (int) | Required<br>(exactly 1) | *Added in Pai Core 0.12.0*<br><br>The time offset in seconds
+| → →<br>`timeoffset` | number (int) | Required<br>(exactly 1) | The time offset in seconds
 | → →<br>`pingtime` | number (int) | Required<br>(exactly 1) | The number of seconds this node took to respond to our last P2P `ping` message
-| → →<br>`minping` | number (int) | Optional<br>(0 or 1) | *Updated in Pai Core 0.13.0*<br><br>The minimum observed ping time (if any at all)
+| → →<br>`minping` | number (int) | Optional<br>(0 or 1) | The minimum observed ping time (if any at all)
 | → →<br>`pingwait` | number (real) | Optional<br>(0 or 1) | The number of seconds we've been waiting for this node to respond to a P2P `ping` message.  Only shown if there's an outstanding `ping` message
 | → →<br>`version` | number (int) | Required<br>(exactly 1) | The protocol version number used by this node.
 | → →<br>`subver` | string | Required<br>(exactly 1) | The user agent this node sends in its `version` message.  This string will have been sanitized to prevent corrupting the JSON results.  May be an empty string
@@ -41,12 +41,12 @@ The `getpeerinfo` RPC returns data about each connected network node.
 | → →<br>`inflight` | array | Required<br>(exactly 1) | An array of blocks which have been requested from this peer.  May be empty
 | → → →<br>Blocks | number (int) | Optional<br>(0 or more) | The height of a block being requested from the remote peer
 | → →<br>`whitelisted` | bool | Required<br>(exactly 1) | Set to `true` if the remote peer has been whitelisted; otherwise, set to `false`.  Whitelisted peers will not be banned if their ban score exceeds the maximum (100 by default).  By default, peers connecting from localhost are whitelisted
-| → →<br>`bytessent_per_msg` | string : <br>object | Required<br>(exactly 1) | *Added in Pai Core 0.13.0*<br><br>Information about total sent bytes aggregated by message type
+| → →<br>`bytessent_per_msg` | string : <br>object | Required<br>(exactly 1) | Information about total sent bytes aggregated by message type
 | → → →<br>Message Type | number(int) | Required<br>(1 or more) | Total sent bytes aggregated by message type. One field for every used message type
-| → →<br>`bytesrecv_per_msg` | string : <br>object | Required<br>(exactly 1) | *Added in Pai Core 0.13.0*<br><br>Information about total received bytes aggregated by message type
+| → →<br>`bytesrecv_per_msg` | string : <br>object | Required<br>(exactly 1) | Information about total received bytes aggregated by message type
 | → → →<br>Message Type | number (int) | Required<br>(1 or more) | Total received bytes aggregated by message type. One field for every used message type
 
-*Example from Pai Core 0.13.1*
+*Example*
 
 ```
 pai-cli getpeerinfo

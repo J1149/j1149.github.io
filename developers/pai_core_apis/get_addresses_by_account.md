@@ -41,7 +41,7 @@ Core.  Use the RPCs listed in the See Also subsection below instead.
   d= "A P2PKH or P2SH address belonging to the account"
 %}
 
-*Example from pai Core 0.10.0*
+*Example*
 
 Get the addresses assigned to the account "doc test":
 

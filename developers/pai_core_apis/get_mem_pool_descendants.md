@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 GetMemPoolDescendants
 ========================
 
-*Added in PAI Core 0.13.0*
-
 The `getmempooldescendants` RPC returns all in-mempool descendants for a transaction in the mempool.
 
 *Parameter #1---a transaction identifier (TXID)*
@@ -57,7 +55,7 @@ The `getmempooldescendants` RPC returns all in-mempool descendants for a transac
 *Result (format: `true`)---a JSON object describing each transaction*
 
 
-*Examples from PAI Core 0.13.1*
+*Example*
 
 The default (`false`):
 

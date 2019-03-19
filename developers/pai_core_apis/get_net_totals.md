@@ -28,7 +28,7 @@ The `getnettotals` RPC returns information about network traffic, including byte
 | → →<br>`bytes_left_in_cycle` | number(int) | Required<br>(exactly 1) | Amount of bytes left in current time cycle.  `0` is displayed if no upload target is set
 | → →<br>`time_left_in_cycle` | number(int) | Required<br>(exactly 1) | Seconds left in current time cycle.  `0` is displayed if no upload target is set
 
-*Example from PAI Core 0.13.1*
+*Example*
 
 ```
 pai-cli getnettotals

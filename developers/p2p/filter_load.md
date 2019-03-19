@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 FilterLoad
 ===========
 
-*Added in protocol version 70001 as described by BIP37.*
-
 The `filterload` message tells the receiving peer to filter all relayed
 transactions and requested merkle blocks through the provided filter.
 This allows clients to receive transactions relevant to their wallet

@@ -25,7 +25,7 @@ The `getrawtransaction` RPC gets a hex-encoded serialized transaction or a JSON 
   n= "Format"
   t= "bool"
   p= "Optional<br>(0 or 1)"
-  d= "*Updated in Pai Core 0.14.0*<br><br>Set to `false` (the default) to return the serialized transaction as hex.  Set to `true` to return a decoded transaction.  Before 0.14.0, use `0` and `1`, respectively"
+  d= "Set to `false` (the default) to return the serialized transaction as hex.  Set to `true` to return a decoded transaction."
 %}
 
 *Result (if transaction not found)---`null`*
@@ -58,7 +58,7 @@ The `getrawtransaction` RPC gets a hex-encoded serialized transaction or a JSON 
 | →<br>`blocktime` | number (int) | Optional<br>(0 or 1) | This field is currently identical to the time field described above
 
 
-*Examples from Pai Core 0.14.1*
+*Examples*
 
 A transaction in serialized transaction format:
 

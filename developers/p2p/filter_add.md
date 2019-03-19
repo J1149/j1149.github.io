@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 FilterAdd
 ===========
 
-*Added in protocol version 70001 as described by BIP37.*
-
 The `filteradd` message tells the receiving peer to add a single element to
 a previously-set bloom filter, such as a new public key. The element is
 sent directly to the receiving peer; the peer then uses the parameters set

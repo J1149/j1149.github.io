@@ -31,7 +31,7 @@ The `keypoolrefill` RPC fills the cache of unused pre-generated keys (the keypoo
   d= "If the keypool is successfully filled, JSON `null` will be returned"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Generate one extra key than the default:
 

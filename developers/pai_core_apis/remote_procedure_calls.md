@@ -56,7 +56,7 @@ format:
 | → <br>`id`           | string          | Optional<br>(0 or 1)        | An arbitrary string that will be returned with the response.  May be omitted or set to an empty string ("")
 | → <br>`method`       | string          | Required<br>(exactly 1)     | The RPC method name (e.g. `getblock`).  See the RPC section for a list of available methods.
 | → <br>`params`       | array           | Optional<br>(0 or 1)        | An array containing positional parameter values for the RPC.  May be an empty array or omitted for RPC calls that don't have any required parameters.
-| → <br>`params`       | object          | Optional<br>(0 or 1)        | Starting from PAI Core 0.14.0 (replaces the `params` array above) An object containing named parameter values for the RPC.  May be an empty object or omitted for RPC calls that don't have any required parameters.
+| → <br>`params`       | object          | Optional<br>(0 or 1)        | An object containing named parameter values for the RPC.  May be an empty object or omitted for RPC calls that don't have any required parameters.
 | → → <br>Parameter    | *any*           | Optional<br>(0 or more)       | A parameter.  May be any JSON type allowed by the particular RPC method
 {:.ntpd}
 
@@ -174,7 +174,7 @@ stream:
 error: {"code": -8, "message": "Block height out of range"}
 ```
 
-Starting in PAI Core version 0.7.0, the RPC interface supports request
+The RPC interface supports request
 batching as described in [version 2.0 of the JSON-RPC
 specification][JSON-RPC request batching]. To initiate multiple
 RPC requests within a single HTTP request, a client can `POST` a JSON array

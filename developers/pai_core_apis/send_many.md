@@ -19,7 +19,7 @@ The `sendmany` RPC creates and broadcasts a transaction which sends outputs to m
   n= "From Account"
   t= "string"
   p= "Required<br>(exactly 1)"
-  d= "*Deprecated: will be removed in a later version of Pai Core*<br><br>The name of the account from which the pai's should be spent.  Use an empty string (\"\") for the default account. Pai Core will ensure the account has sufficient pai's to pay the total amount in the *outputs* field described below (but the transaction fee paid is not included in the calculation, so an account can spend a total of its balance plus the transaction fee)"
+  d= "The name of the account from which the pai's should be spent.  Use an empty string (\"\") for the default account. Pai Core will ensure the account has sufficient pai's to pay the total amount in the *outputs* field described below (but the transaction fee paid is not included in the calculation, so an account can spend a total of its balance plus the transaction fee)"
 %}
 
 *Parameter #2---the addresses and amounts to pay*
@@ -66,7 +66,7 @@ The `sendmany` RPC creates and broadcasts a transaction which sends outputs to m
   d= "The TXID of the sent transaction, encoded as hex in RPC byte order"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 From the account *test1*, send 0.1 pai's to the first address and 0.2
 pai's to the second address, with a comment of "Example Transaction".

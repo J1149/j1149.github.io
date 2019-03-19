@@ -21,7 +21,7 @@ The `getblock` RPC gets a block with a particular header hash from the local blo
 
 *Parameter #2---whether to get JSON or hex output*
 
-Prior to 0.15.0 release the verbose parameter was of boolean type. After the 0.15.0 release, the variable has been renamed to `verbosity` and now takes an integer from 0 to 2. It is backward compatible with prior releases with verbose level 0 equivalent to verbose=false, whilst verbose level 1 is equivalent to verbose=true.
+It takes an integer from 0 to 2.
 
 {% include table_header.md
   n= "Format"
@@ -47,16 +47,16 @@ Prior to 0.15.0 release the verbose parameter was of boolean type. After the 0.1
 | →<br>`hash` | string(hex) | Required<br>(exactly 1) | The hash of this block's block header encoded as hex in RPC byte order.  This is the same as the hash provided in parameter #1
 | →<br>`confirmations` | number(int) | Required<br>(exactly 1) | The number of confirmations the transactions in this block have, starting at 1 when this block is at the tip of the best block chain.  This score will be -1 if the the block is not part of the best block chain
 | →<br>`size` | number(int) | Required<br>(exactly 1) | The size of this block in serialized block format, counted in bytes
-| →<br>`strippedsize` | number(int) | Required<br>(exactly 1) | *Added in PAI Core 0.13.0*<br><br>The size of this block in serialized block format excluding witness data, counted in bytes
-| →<br>`weight` | number(int) | Required<br>(exactly 1) | *Added in PAI Core 0.13.0*<br><br>This block's weight as defined in BIP141
+| →<br>`strippedsize` | number(int) | Required<br>(exactly 1) | The size of this block in serialized block format excluding witness data, counted in bytes
+| →<br>`weight` | number(int) | Required<br>(exactly 1) | This block's weight as defined in BIP141
 | →<br>`height` | number(int) | Required<br>(exactly 1) | The height of this block on its block chain
 | →<br>`version` | number(int) | Required<br>(exactly 1) | This block's version number.
-| →<br>`versionHex` | string(hex) | Required<br>(exactly 1) | *Added in PAI Core 0.13.0*<br><br>This block's version formatted in hexadecimal
+| →<br>`versionHex` | string(hex) | Required<br>(exactly 1) | This block's version formatted in hexadecimal
 | →<br>`merkleroot` | string(hex) | Required<br>(exactly 1) | The merkle root for this block, encoded as hex in RPC byte order
 | →<br>`tx` | array | Required<br>(exactly 1) | An array containing the TXIDs of all transactions in this block.  The transactions appear in the array in the same order they appear in the serialized block
 | → →<br>TXID | string (hex) | Required<br>(1 or more) | The TXID of a transaction in this block, encoded as hex in RPC byte order
 | →<br>`time` | number(int) | Required<br>(exactly 1) | The value of the *time* field in the block header, indicating approximately when the block was created
-| →<br>`mediantime` | number(int) | Required<br>(exactly 1) | *Added in PAI Core 0.12.0*<br><br>The median block time in Unix epoch time
+| →<br>`mediantime` | number(int) | Required<br>(exactly 1) | The median block time in Unix epoch time
 | →<br>`nonce` | number(int) | Required<br>(exactly 1) | The nonce which was successful at turning this particular block into one that could be added to the best block chain
 | →<br>`bits` | string (hex) | Required<br>(exactly 1) | The value of the *nBits* field in the block header, indicating the target threshold this block's header had to pass
 | →<br>`difficulty` | number (real) | Required<br>(exactly 1) | The estimated amount of work done to find this block relative to the estimated amount of work done to find block 0
@@ -73,16 +73,16 @@ Prior to 0.15.0 release the verbose parameter was of boolean type. After the 0.1
 | →<br>`hash` | string(hex) | Required<br>(exactly 1) | The hash of this block's block header encoded as hex in RPC byte order.  This is the same as the hash provided in parameter #1
 | →<br>`confirmations` | number(int) | Required<br>(exactly 1) | The number of confirmations the transactions in this block have, starting at 1 when this block is at the tip of the best block chain.  This score will be -1 if the the block is not part of the best block chain
 | →<br>`size` | number(int) | Required<br>(exactly 1) | The size of this block in serialized block format, counted in bytes
-| →<br>`strippedsize` | number(int) | Required<br>(exactly 1) | *Added in PAI Core 0.13.0*<br><br>The size of this block in serialized block format excluding witness data, counted in bytes
-| →<br>`weight` | number(int) | Required<br>(exactly 1) | *Added in PAI Core 0.13.0*<br><br>This block's weight as defined in BIP141
+| →<br>`strippedsize` | number(int) | Required<br>(exactly 1) | The size of this block in serialized block format excluding witness data, counted in bytes
+| →<br>`weight` | number(int) | Required<br>(exactly 1) | This block's weight as defined in BIP141
 | →<br>`height` | number(int) | Required<br>(exactly 1) | The height of this block on its block chain
 | →<br>`version` | number(int) | Required<br>(exactly 1) | This block's version number.
-| →<br>`versionHex` | string(hex) | Required<br>(exactly 1) | *Added in PAI Core 0.13.0*<br><br>This block's version formatted in hexadecimal
+| →<br>`versionHex` | string(hex) | Required<br>(exactly 1) | This block's version formatted in hexadecimal
 | →<br>`merkleroot` | string(hex) | Required<br>(exactly 1) | The merkle root for this block, encoded as hex in RPC byte order
 | →<br>`tx` | array | Required<br>(exactly 1) | An array containing the TXIDs of all transactions in this block.  The transactions appear in the array in the same order they appear in the serialized block
 | → →<br>TXID | string (hex) | Required<br>(1 or more) | The TXID of a transaction in this block, encoded as hex in RPC byte order
 | →<br>`time` | number(int) | Required<br>(exactly 1) | The value of the *time* field in the block header, indicating approximately when the block was created
-| →<br>`mediantime` | number(int) | Required<br>(exactly 1) | *Added in PAI Core 0.12.0*<br><br>The median block time in Unix epoch time
+| →<br>`mediantime` | number(int) | Required<br>(exactly 1) | The median block time in Unix epoch time
 | →<br>`nonce` | number(int) | Required<br>(exactly 1) | The nonce which was successful at turning this particular block into one that could be added to the best block chain
 | →<br>`bits` | string (hex) | Required<br>(exactly 1) | The value of the *nBits* field in the block header, indicating the target threshold this block's header had to pass
 | →<br>`difficulty` | number (real) | Required<br>(exactly 1) | The estimated amount of work done to find this block relative to the estimated amount of work done to find block 0
@@ -91,7 +91,8 @@ Prior to 0.15.0 release the verbose parameter was of boolean type. After the 0.1
 | →<br>`nextblockhash` | string (hex) | Optional<br>(0 or 1) | The hash of the next block on the best block chain, if known, encoded as hex in RPC byte order
 
 
-*Example from PAI Core 0.13.1*
+
+*Examples*
 
 Get a block in raw hex:
 

@@ -67,7 +67,7 @@ The `sendtoaddress` RPC spends an amount to a given address.
   d= "The TXID of the sent transaction, encoded as hex in RPC byte order"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Spend 0.1 pai's to the address below with the comment "sendtoaddress
 example" and the comment-to "Nemo From Example.com":

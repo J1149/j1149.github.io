@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 SendCmpct
 ==========
 
-*Added in protocol version 70014 as described by BIP152.*
-
 The `sendcmpct` message is defined as a message containing a 1-byte 
 integer followed by a 8-byte integer. The first integer is interpreted 
 as a boolean and should have a value of either 1 or 0. The second integer

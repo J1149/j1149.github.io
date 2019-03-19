@@ -38,7 +38,7 @@ NOTE: By default this function only works when there is an unspent output in the
   d= "A string that is a serialized, hex-encoded data for the proof"
 %}
 
-*Example from Pai Core 0.11.0*
+*Example*
 
 Get the hex-encoded proof that "txid" was included in block 0000000000000000140e84bf183d8d5207d65fbfae596bdf48f684d13d951847:
 

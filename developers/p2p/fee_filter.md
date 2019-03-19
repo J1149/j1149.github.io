@@ -8,19 +8,11 @@ grand_parent: Developer Reference
 FeeFilter
 ===========
 
-*Added in protocol version 70013 as described by BIP133.*
-
 The `feefilter` message is a request to the receiving peer to not relay any
 transaction inv messages to the sending peer where the fee rate for the
 transaction is below the fee rate specified in the feefilter message.
 
-`feefilter` was introduced in Pai Core 0.13.0 following the introduction
-of mempool limiting in Pai Core 0.12.0. Mempool limiting provides protection against
-attacks and spam transactions that have low fee rates and are unlikely to be
-included in mined blocks. The `feefilter` messages allows a node to inform its
-peers that it will not accept transactions below a specified fee rate into
-its mempool, and therefore that the peers can skip relaying inv messages for
-transactions below that fee rate to that node.
+Mempool limiting provides protection against attacks and spam transactions that have low fee rates and are unlikely to be included in mined blocks. The `feefilter` messages allows a node to inform its peers that it will not accept transactions below a specified fee rate into its mempool, and therefore that the peers can skip relaying inv messages for transactions below that fee rate to that node.
 
 | Bytes | Name    | Data Type | Description
 |-------|---------|-----------|---------------

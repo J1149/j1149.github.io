@@ -60,7 +60,7 @@ The `signrawtransaction` RPC signs a transaction in the serialized transaction f
 | →<br>`complete` | bool | Required<br>(exactly 1) | The value `true` if transaction is fully signed; the value `false` if more signatures are required
 
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Sign the hex generated in the example section for the `createrawtransaction`
 RPC:

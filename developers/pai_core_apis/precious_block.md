@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 PreciousBlock
 ===================
 
-*Added in Pai Core 0.14.0*
-
 The `preciousblock` RPC treats a block as if it were received before others with the same work. A later preciousblock call can override the effect of an earlier one. The effects of preciousblock are not retained across restarts.
 
 *Parameter #1---the block hash*
@@ -30,11 +28,11 @@ The `preciousblock` RPC treats a block as if it were received before others with
   d= "JSON `null`.  The JSON-RPC error field will be set only if you entered an invalid block hash"
 %}
 
-*Example from Pai Core 0.14.1*
+*Example*
 
 ```
 pai-cli preciousblock 000000000000000001517a0bac70b8cd6f27ee\
-1b50a8f12bf606ea6fb6d561cd
+PaXVxzkruFZPidQjsDft9CW174Tr99xngu
 ```
 
 Result (no output from `pai-cli` because result is set to `null`).

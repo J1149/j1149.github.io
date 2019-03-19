@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 SignMessageWithPrivKey
 =======================
 
-*Added in Pai Core 0.13.0*
-
 The signmessagewithprivkey RPC signs a message with a given private key.
 
 *Parameter #1---the private key to sign with*
@@ -36,10 +34,10 @@ The signmessagewithprivkey RPC signs a message with a given private key.
   n= "`result`"
   t= "string (base64)"
   p= "Required<br>(exactly 1)"
-  d= "The signature of the message, encoded in base64.  Note that Pai Core before 0.10.0 creates signatures with random *k* values, so each time you sign the same message, it will create a different signature"
+  d= "The signature of the message, encoded in base64."
 %}
 
-*Example from Pai Core 0.13.1*
+*Example*
 
 Sign a the message "Hello, World!" using the following private key:
 

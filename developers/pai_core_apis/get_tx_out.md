@@ -57,7 +57,7 @@ The `gettxout` RPC returns details about an unspent transaction output (UTXO).
 | →<br>`coinbase` | bool | Required<br>(exactly 1) | Set to `true` if the transaction output belonged to a coinbase transaction; set to `false` for all other transactions.  Coinbase transactions need to have 101 confirmations before their outputs can be spent
 
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Get the UTXO from the following transaction from the first output index ("0"),
 searching the memory pool if necessary.

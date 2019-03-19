@@ -48,7 +48,7 @@ The `importprivkey` RPC adds a private key to your wallet. The key should be for
   d= "If the private key is added to the wallet (or is already part of the wallet), JSON `null` will be returned"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Import the private key for the address
 mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe, giving it a label and scanning the

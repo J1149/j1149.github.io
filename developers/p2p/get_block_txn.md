@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 GetBlockTxn
 ============
 
-*Added in protocol version 70014 as described by BIP152.*
-
 The `getblocktxn` message is defined as a message containing a serialized 
 `BlockTransactionsRequest` message. Upon receipt of a properly-formatted `getblocktxn` message, 
 nodes which recently provided the sender of such a message a `cmpctblock` message for the 

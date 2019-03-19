@@ -37,7 +37,7 @@ The `verifychain` RPC verifies each entry in the local block chain database.
   d= "Set to `true` if verified; set to `false` if verification failed for any reason"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Verify the most recent 10,000 blocks in the most through way:
 

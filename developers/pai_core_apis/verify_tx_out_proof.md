@@ -28,7 +28,7 @@ The `verifytxoutproof` RPC verifies that a proof points to one or more transacti
   d= "The txid(s) which the proof commits to, or empty array if the proof is invalid"
 %}
 
-*Example from Pai Core 0.11.0*
+*Example*
 
 Verify a proof:
 

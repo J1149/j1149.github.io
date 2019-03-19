@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 MerkleBlock
 ============
 
-*Added in protocol version 70001 as described by BIP37.*
-
 The `merkleblock` message is a reply to a `getdata` message which
 requested a block using the inventory type `MSG_MERKLEBLOCK`.  It is
 only part of the reply: if any matching transactions are found, they will

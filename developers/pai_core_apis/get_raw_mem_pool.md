@@ -43,20 +43,20 @@ The `getrawmempool` RPC returns all transaction identifiers (TXIDs) in the memor
 | →<br>TXID | string : object | Optional<br>(0 or more) | The TXID of a transaction in the memory pool, encoded as hex in RPC byte order
 | → →<br>`size` | number (int) | Required<br>(exactly 1) | The size of the serialized transaction in bytes
 | → →<br>`fee` | number (pai's) | Required<br>(exactly 1) | The transaction fee paid by the transaction in decimal pai's
-| → →<br>`modifiedfee` | number (pai's) | Required<br>(exactly 1) | *Added in Pai Core 0.12.0*<br><br>The transaction fee with fee deltas used for mining priority in decimal pai's
+| → →<br>`modifiedfee` | number (pai's) | Required<br>(exactly 1) | The transaction fee with fee deltas used for mining priority in decimal pai's
 | → →<br>`time` | number (int) | Required<br>(exactly 1) | The time the transaction entered the memory pool, Unix epoch time format
 | → →<br>`height` | number (int) | Required<br>(exactly 1) | The block height when the transaction entered the memory pool
-| → →<br>`descendantcount` | number (int) | Required<br>(exactly 1) | *Added in Pai Core 0.12.0*<br><br>The number of in-mempool descendant transactions (including this one)
-| → →<br>`descendantsize` | number (int) | Required<br>(exactly 1) | *Added in Pai Core 0.12.0*<br><br>The size of in-mempool descendants (including this one)
-| → →<br>`descendantfees` | number (int) | Required<br>(exactly 1) | *Added in Pai Core 0.12.0*<br><br>The modified fees (see `modifiedfee` above) of in-mempool descendants (including this one)
-| → →<br>`ancestorcount` | number (int) | Required<br>(exactly 1) | *Added in Pai Core 0.13.0*<br><br>The number of in-mempool ancestor transactions (including this one)
-| → →<br>`ancestorsize` | number (int) | Required<br>(exactly 1) | *Added in Pai Core 0.13.0*<br><br>The size of in-mempool ancestors (including this one)
-| → →<br>`ancestorfees` | number (int) | Required<br>(exactly 1) | *Added in Pai Core 0.13.0*<br><br>The modified fees (see `modifiedfee` above) of in-mempool ancestors (including this one)
+| → →<br>`descendantcount` | number (int) | Required<br>(exactly 1) | The number of in-mempool descendant transactions (including this one)
+| → →<br>`descendantsize` | number (int) | Required<br>(exactly 1) | The size of in-mempool descendants (including this one)
+| → →<br>`descendantfees` | number (int) | Required<br>(exactly 1) | The modified fees (see `modifiedfee` above) of in-mempool descendants (including this one)
+| → →<br>`ancestorcount` | number (int) | Required<br>(exactly 1) | The number of in-mempool ancestor transactions (including this one)
+| → →<br>`ancestorsize` | number (int) | Required<br>(exactly 1) | The size of in-mempool ancestors (including this one)
+| → →<br>`ancestorfees` | number (int) | Required<br>(exactly 1) | The modified fees (see `modifiedfee` above) of in-mempool ancestors (including this one)
 | → →<br>`depends` | array | Required<br>(exactly 1) | An array holding TXIDs of unconfirmed transactions this transaction depends upon (parent transactions).  Those transactions must be part of a block before this transaction can be added to a block, although all transactions may be included in the same block.  The array may be empty
 | → → →<br>Depends TXID | string | Optional (0 or more) | The TXIDs of any unconfirmed transactions this transaction depends upon, encoded as hex in RPC byte order
 
 
-*Examples from Pai Core 0.13.1*
+*Examples*
 
 The default (`false`):
 

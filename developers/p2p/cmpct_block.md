@@ -8,8 +8,6 @@ grand_parent: Developer Reference
 CmpctBlock
 ==============
 
-*Added in protocol version 70014 as described by BIP152.*
-
 **Version 1 compact blocks are pre-segwit (txids)**
 **Version 2 compact blocks are post-segwit (wtxids)**
 

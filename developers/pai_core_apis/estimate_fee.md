@@ -22,7 +22,7 @@ The `estimatefee` RPC estimates the transaction fee per kilobyte that needs to b
 |---------|--------|---------------------------------|-------------
 |`result` | number (pai's) | Required<br>(exactly 1) | The estimated fee the transaction should pay in order to be included within the specified number of blocks.  If the node doesn't have enough information to make an estimate, the value `-1` will be returned
 
-*Examples from pai Core 0.14.1*
+*Examples*
 
 ```
 pai-cli estimatefee 6
@@ -48,4 +48,4 @@ Result:
 
 *See also*
 
-* SetTxFee: sets the transaction fee per kilobyte paid by transactions created by this wallet.
+* `SetTxFee`: sets the transaction fee per kilobyte paid by transactions created by this wallet.

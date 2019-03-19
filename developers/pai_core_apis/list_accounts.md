@@ -39,7 +39,7 @@ The `listaccounts` RPC lists accounts and their balances.
 | `result`  | object | Required<br>(exactly 1) | A JSON array containing key/value pairs with account names and values.  Must include, at the very least, the default account (\"\")
 | →<br>Account : Balance | string : number (pai') | Required<br>(1 or more) | The name of an account as a string paired with the balance of the account as a number of pai's.  The number of pai's may be negative if the account has spent more pai's than it received.  Accounts with zero balances and zero transactions will be displayed
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Display account balances with one confirmation and watch-only addresses
 included.

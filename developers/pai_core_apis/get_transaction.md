@@ -38,11 +38,11 @@ The `gettransaction` RPC gets detailed information about an in-wallet transactio
 | → →<br>`amount` | number (pai's) | Required<br>(exactly 1) | A negative pai amount if sending payment; a positive pai amount if receiving payment (including coinbases)
 | → →<br>`vout` | number(int) | Required<br>(exactly 1) | For an output, the output index (vout) for this output in this transaction.  For an input, the output index for the output being spent in its transaction.  Because inputs list the output indexes from previous transactions, more than one entry in the details array may have the same output index
 | → →<br>`fee` | number (pai's) | Optional<br>(0 or 1) | If sending payment, the fee paid as a negative pai's value.  May be `0`.  Not returned if receiving payment
-| → →<br>`abandoned` | bool | Optional<br>(0 or 1) | *Added in Pai Core 0.12.1*<br><br>Indicates if a transaction is was abandoned:<br>• `true` if it was abandoned (inputs are respendable)<br>• `false`  if it was not abandoned<br>Only returned by *send* category payments
+| → →<br>`abandoned` | bool | Optional<br>(0 or 1) | *Indicates if a transaction is was abandoned:<br>• `true` if it was abandoned (inputs are respendable)<br>• `false`  if it was not abandoned<br>Only returned by *send* category payments
 | →<br>`hex` | string (hex) | Required<br>(exactly 1) | The transaction in serialized transaction format
 
 
-*Example from Pai Core 0.13.1*
+*Example*
 
 ```
 pai-cli -testnet gettransaction \

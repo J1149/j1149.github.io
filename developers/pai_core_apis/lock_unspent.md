@@ -40,7 +40,7 @@ The `lockunspent` RPC temporarily locks or unlocks specified transaction outputs
   d= "Set to `true` if the outputs were successfully locked or unlocked.  If the outputs were already locked or unlocked, it will also return `true`"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Lock two outputs:
 

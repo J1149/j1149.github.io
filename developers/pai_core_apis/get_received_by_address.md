@@ -32,13 +32,13 @@ The `getreceivedbyaddress` RPC returns the total amount received by the specifie
   d= "The number of pai's received by the address, excluding coinbase transactions.  May be `0`"
 %}
 
-*Example from Pai Core 0.10.0*
+*Example*
 
 Get the pai's received for a particular address, only counting
 transactions with six or more confirmations:
 
 ```
-pai-cli -testnet getreceivedbyaddress mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN 6
+pai-cli -testnet getreceivedbyaddress PaXVxzkruFZPidQjsDft9CW174Tr99xngu 6
 ```
 
 Result:

@@ -10,8 +10,6 @@ GetInfo
 
 The `getinfo` RPC prints various information about the node and the network.
 
-{{WARNING}} `getinfo` was removed in 0.16.0 version of Pai Core. Use the RPCs listed in the See Also subsection below instead.
-
 *Parameters: none*
 
 *Result---information about the node and network*
@@ -19,7 +17,7 @@ The `getinfo` RPC prints various information about the node and the network.
 | Name | Type      | Presence            | Description
 |------|-----------|---------------------|-------------
 |`result`  |object | Required<br>(exactly 1) | Information about this node and the network
-| →<br>`version` | number (int) | Required<br>(exactly 1) | This node's version of Pai Core in its internal integer format.  For example, Pai Core 0.9.2 has the integer version number 90200
+| →<br>`version` | number (int) | Required<br>(exactly 1) | This node's version of Pai Core in its internal integer format.
 | →<br>`protocolversion` | number (int) | Required<br>(exactly 1) | The protocol version number used by this node.  See the [protocol versions section][section protocol versions] for more information
 | →<br>`walletversion` |  number (int) | Optional<br>(0 or 1) | The version number of the wallet.  Only returned if wallet support is enabled
 | →<br>`balance` |  number (int) | Optional<br>(0 or 1) | The balance of the wallet in pai's.  Only returned if wallet support is enabled
@@ -37,7 +35,7 @@ The `getinfo` RPC prints various information about the node and the network.
 | →<br>`errors` | string | Required<br>(exactly 1) | A plain-text description of any errors this node has encountered or detected.  If there are no errors, an empty string will be returned.  This is not related to the JSON-RPC `error` field
 
 
-*Example from PAI Core 0.10.0 with wallet support enabled*
+*Example*
 
 ```
 pai-cli -testnet getinfo
