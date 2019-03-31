@@ -18,7 +18,7 @@ J1149.com is a resource for PAI developers.
 
 ## Welcome!
 
-Welcome to J1149. The purpose of this website is to provide documentation and code examples for the development of applications in the [Project PAI](projectpai.com) ecosystem.
+Welcome to J1149. The purpose of this website is to provide documentation and code examples for the development of applications in the [Project PAI](https://projectpai.com/) ecosystem.
 
 The navigational sections of this website outline components of the Project PAI blockchain. The example use cases, API documentation, and example code will help you to get started with Project PAI application development.
 
