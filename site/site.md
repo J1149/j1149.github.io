@@ -3,7 +3,7 @@ layout: default
 title: Site
 nav_order: 8
 has_children: true
-permalink: /docs
+permalink: /site
 ---
 
 
