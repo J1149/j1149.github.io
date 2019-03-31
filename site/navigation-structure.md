@@ -66,7 +66,7 @@ Sometimes you will want to create a page with many children (a section). First, 
 +-- ..
 |-- (Jekyll files)
 |
-|-- docs
+|-- site
 |   |-- ui-components
 |   |   |-- ui-components.md  (parent page)
 |   |   |-- buttons.md
@@ -102,11 +102,11 @@ layout: default
 title: UI Components
 nav_order: 2
 has_children: true
-permalink: /docs/ui-components
+permalink: /site/ui-components
 ---
 ```
 
-Here we're setting up the UI Components landing page that is available at `/docs/ui-components`, which has children and is ordered second in the main nav.
+Here we're setting up the UI Components landing page that is available at `/site/ui-components`, which has children and is ordered second in the main nav.
 
 ### Child pages
 {: .text-gamma }
@@ -141,7 +141,7 @@ title: UI Components
 nav_order: 2
 has_children: true
 has_toc: false
-permalink: /docs/ui-components
+permalink: /site/ui-components
 ---
 ```
 
@@ -196,7 +196,7 @@ This would create the following navigation structure:
 
 ## Auxiliary Navigation
 
-To add a auxiliary navigation item to your site (in the upper right on all pages), add it to the `aux_nav` [configuration option]({{ site.baseurl }}{% link docs/configuration.md %}#aux-nav) in your site's `_config.yml` file.
+To add a auxiliary navigation item to your site (in the upper right on all pages), add it to the `aux_nav` [configuration option]({{ site.baseurl }}{% link site/configuration.md %}#aux-nav) in your site's `_config.yml` file.
 
 #### Example
 {: .no_toc }
