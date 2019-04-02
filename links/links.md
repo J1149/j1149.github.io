@@ -7,7 +7,8 @@ nav_order: 11
 # Additional Links and External Resources
 
 - [Project PAI](https://projectpai.com/)
-- [J1149 Medium Blog](https://medium.com/@j1149)
+- [J1149 Medium](https://medium.com/@j1149)
+- [Project PAI Medium](https://medium.com/project-pai)
 - [PAI Block Explorer](https://paichain.info/)
 - [PAI Testnet Explorer](https://testnet.paichain.info/)
 - [PAI Github](https://github.com/projectpai/)
