@@ -13,7 +13,7 @@ nav_order: 11
 - [PAI Testnet Explorer](https://testnet.paichain.info/)
 - [PAI Github](https://github.com/projectpai/)
 - [PAIup mobile wallet](https://paiup.com/)
-{% comment %}- [PAIup web wallet](https://wallet.paiup.com/){% endcomment %}
+- [PAIup web wallet](https://wallet.paiup.com/)
 - [PAIyo personal AI app](https://paiyo.com/)
 - [PAI Forum](https://www.paiforum.com)
 - [PAI Sub-Reddit](https://www.reddit.com/r/ProjectPAI/)
