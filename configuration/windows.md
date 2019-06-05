@@ -51,6 +51,8 @@ To get the bash shell, you must first activate the feature in Windows.
   * Open a cmd prompt and type "bash"
   * Accept the license
   * Create a new UNIX user account (this is a separate account from your Windows account)
+4. Update apt-get
+  * In the cmd prompt where you ran "bash" run: "sudo apt-get update"
 
 After the bash shell is active, you can follow the instructions below, starting
 with the "Cross-compilation" section. Compiling the 64-bit version is
@@ -73,15 +75,40 @@ build process.
 
 See also: [dependencies.md]({{site.git_paicoin_doc_address}}/dependencies.md).
 
+Cloning the Repository
+-----------------------
+
+First open a cmd line and enter the windows subsystem for linux with:
+
+    wsl
+	
+Make a directory that is not at a mount point and make sure you have acess to it, for example:
+
+	cd /usr/src
+    sudo mkdir paicoin
+	sudo chown username:username /usr/src/paicoin
+	
+where, username is your username on the WSL.
+
+Then download the paicoin repository locally:
+
+    git clone https://github.com/projectpai/paicoin.git
+
+
 ## Building for 64-bit Windows
 
 To build executables for Windows 64-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
+	
+If you are using Ubuntu 18.04 the following needs to be ran (select the posix option):
+
+	 sudo update-alternatives --config x86_64-w64-mingw32-g++
 
 Then build using:
 
-    cd depends
+    PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g') # strip out problematic Windows %PATH% imported var
+    cd paicoin/depends
     make HOST=x86_64-w64-mingw32
     cd ..
     ./autogen.sh # not required when building from tarball
@@ -96,7 +123,7 @@ To build executables for Windows 32-bit, install the following dependencies:
 
 Then build using:
 
-    cd depends
+    cd paicoin/depends
     make HOST=i686-w64-mingw32
     cd ..
     ./autogen.sh # not required when building from tarball
