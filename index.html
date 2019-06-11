@@ -1,0 +1,47 @@
+---
+title: J1149 - Home
+layout: default
+bodyClass: page-home
+---
+
+<div class="intro pb-4">
+  <div class="container">
+    <h1>J1149 - Project PAI's Blockchain</h1>
+    <p>Join our remote team in building one of the most exciting blockchain projects to ever take off.</p>
+  </div>
+</div>
+
+<div class="container pt-2">
+  <div class="call">
+    <div class="call-box-top">
+      <div class="call-phone"><strong>Phone: </strong> 516 331 1331 </div>
+      <div class="call-email"><strong>Email: </strong>
+        <a href="mailto:alex@j1149.com">
+          alex@j1149.com
+        </a>
+      </div>
+    </div>
+    <div class="call-box-bottom">
+      <a href="{{site.baseurl}}/contact" class="button">Contact</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-4"><!-- titles for when there's more to add--></h2>
+    </div>
+    {% for feature in site.data.features %}
+    <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <div class="feature">
+        {% if feature.image %}<div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image }}" /></div> {% endif %}
+        <h2 class="feature-title">{{ feature.title }}</h2>
+        <div class="feature-content">{{ feature.description }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

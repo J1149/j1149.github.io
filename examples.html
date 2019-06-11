@@ -1,0 +1,32 @@
+---
+title: Examples
+layout: default
+---
+
+<div class="intro intro-small" style="margin-top: -35px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Examples</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <div class="container pb-6">
+                <div class="row">
+                  {% for doc in site.examples %}
+                  <div class="col-12 col-md-4 mb-1">
+                    <div class="service service-summary">
+                      <div class="service-content">
+                        <h2 class="service-title">
+                          <a href="{{site.baseurl}}{{ doc.url }}">{{ doc.title }}</a>
+                        </h2>
+                        {{ doc.content | markdownify | strip_html | truncate: 100 }}
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+

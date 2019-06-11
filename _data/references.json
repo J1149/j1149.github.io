@@ -1,0 +1,26 @@
+[
+  {
+    "title": "P2P",
+    "description": "Examples of a proto-typical blockchain",
+    "image": "../images/references/network2.png",
+    "link": "../p2p_link/"
+  },
+  {
+    "title": "PAI Core APIs",
+    "description": "Specific references to the PAI blockchain",
+    "image": "../images/references/network3.png",
+    "link": "../p2p_pai/"
+  },
+  {
+    "title": "Examples",
+    "description": "Examples of the PAI network",
+    "image": "../images/references/network4.png",
+    "link": "../examples/"
+  },
+  {
+    "title": "Config",
+    "description": "How to connect to the PAI network",
+    "image": "../images/references/network1.png",
+    "link": "../config/"
+  }
+]

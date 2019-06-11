@@ -1,0 +1,32 @@
+---
+layout: default
+title: J1149 - Links
+---
+
+<div class="intro intro-small" style="margin-top: -35px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1>Links</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7" style="margin-top: -100px;">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h2 class="title-3 text-dark mb-4"><!-- titles for when there's more to add--></h2>
+          </div>
+          {% for feature in site.data.links %}
+          <div class="col-12 col-md-6 col-lg-4 mb-2">
+              <a href="{{ feature.description}}">
+            <div class="feature">
+              <h2 class="feature-title">{{ feature.title }}</h2>
+              <div class="feature-content">{{ feature.description }}</div>
+            </div>
+        </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>

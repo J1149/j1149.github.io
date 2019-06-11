@@ -1,0 +1,34 @@
+---
+title: P2P Chain
+layout: default
+---
+
+<div class="intro intro-small" style="margin-top: -35px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>P2P Chain</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+<div class="container pb-6">
+  <div class="row">
+    {% for document in site.services %}
+    <div class="col-12 col-md-4 mb-1">
+      <div class="service service-summary">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a href="{{site.baseurl}}{{ document.url }}">{{ document.title }}</a>
+          </h2>
+          {{ document.content | markdownify | strip_html | truncate: 100 }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
