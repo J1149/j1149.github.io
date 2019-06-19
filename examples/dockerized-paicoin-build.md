@@ -1,6 +1,13 @@
-# Dockerized Block Explorer
+---
+layout: default
+title: Dockerized Paicoin Build
+parent: Examples
+nav_order: 7
+---
 
-To run the dockerized block chain, you must first install docker. Note, the 
+# Dockerized Paicoin Build
+
+To run the dockerized Paicoin Build, you must first install docker. Note, the 
 normal docker executable might be incompatible with certain operating systems 
 (like Windows 10 Home). If you have an incompatible operating system this might 
 be resolved by installing docker toolbox from:
