@@ -27,7 +27,6 @@ RUN sh debugging_tools_install.sh
 ADD miniconda_install.sh /home/scripts
 RUN sh miniconda_install.sh
 
-RUN pwd
 ADD paicoin_cli.py /home/scripts
 ADD rpcauth.py /home/scripts
 WORKDIR /home/scripts

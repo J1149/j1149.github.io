@@ -29,7 +29,13 @@ place them in the same directory:
 After downloading the files, open up the command-line in the directory they were 
 downloaded into. Then use the following commands in the command-line:
 
-1. `docker build -t "block_explorer:v1" .`
-2. `docker run -i -t --name blk_explr "block_explorer:v1" /bin/bash`
+1. `docker build -t "paicoin_build:v1" .`
+2. `docker run -i -t --name pc_bld "paicoin_build:v1" /bin/bash`
 
 The last command should allow you to use the command line interface of paicoin. 
+
+For example, if you run `paicoin-cli` with the argument `getbestblockhash` you 
+should get something like:
+
+    # paicoin-cli getbestblockhash
+	0000000001e7f6939ae69ef28275162e27f06c2ea674ddf494b4d2aa767319a8
