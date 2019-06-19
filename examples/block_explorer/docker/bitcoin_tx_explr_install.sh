@@ -6,5 +6,5 @@ cd /home
 git clone https://github.com/yogh-io/bitcoin-transaction-explorer.git
 cd /home/bitcoin-transaction-explorer
 mvn install -X clean install
-cp ./bitcoin-transactions-server/target/bitcoin-transactions-server-0.1.war /opt/tomcat/latest/webapps 
+mv ./bitcoin-transactions-server/target/bitcoin-transactions-server-0.1.war /opt/tomcat/latest/webapps/paicoin-info.war 
 rm -rf /home/bitcoin-transaction-explorer

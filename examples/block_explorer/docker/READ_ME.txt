@@ -15,7 +15,7 @@ CONTAINER ID        IMAGE                                   COMMAND             
 # In which case port 8080 is mapped to 32768 on the Host machine. 
 
 # You can type the following address into your browser to get to the block chain explorer:
-http://localhost:32768/bitcoin-transactions-server-0.1/
+http://localhost:32768/paicoin-transactions-server/
 
 # enter config into the search bar.
 # setup a password for this "site"
