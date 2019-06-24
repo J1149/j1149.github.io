@@ -30,7 +30,7 @@ After downloading the files, open up the command-line in the directory they were
 downloaded into. Then use the following commands in the command-line:
 
 1. `docker build -t "paicoin_build:v1" .`
-2. `docker run -i -t --name pc_bld "paicoin_build:v1" /bin/bash`
+2. `docker run -i -t --name pc_bld "paicoin_build:v1"`
 
 The last command should allow you to use the command line interface of paicoin. 
 

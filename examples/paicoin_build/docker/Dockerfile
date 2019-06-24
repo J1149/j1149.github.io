@@ -13,7 +13,7 @@ WORKDIR /home/scripts
 
 # install paicoin
 ADD paicoin_install.sh /home/scripts
-RUN sh paicoin_install.sh
+RUN sh -e paicoin_install.sh
 
 # Add file needed to create username/password for paicoin RPC
 RUN mkdir /root/.paicoin
@@ -21,11 +21,11 @@ ADD paicoin.conf /root/.paicoin
 
 # debugging tools install
 ADD debugging_tools_install.sh /home/scripts
-RUN sh debugging_tools_install.sh
+RUN sh -e debugging_tools_install.sh
 
 # Miniconda
 ADD miniconda_install.sh /home/scripts
-RUN sh miniconda_install.sh
+RUN sh -e miniconda_install.sh
 
 ADD paicoin_cli.py /home/scripts
 ADD rpcauth.py /home/scripts
