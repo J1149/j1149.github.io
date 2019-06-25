@@ -36,7 +36,7 @@ The `importwallet` RPC imports private keys from a file in wallet dump file form
 Import the file shown in the example subsection of the `dumpwallet` RPC.
 
 ```
-pai-cli -testnet importwallet /tmp/dump.txt
+paicoin-cli -testnet importwallet /tmp/dump.txt
 ```
 
 (Success: no result displayed.)

@@ -31,8 +31,8 @@ The `preciousblock` RPC treats a block as if it were received before others with
 *Example*
 
 ```
-pai-cli preciousblock 000000000000000001517a0bac70b8cd6f27ee\
+paicoin-cli preciousblock 000000000000000001517a0bac70b8cd6f27ee\
 PaXVxzkruFZPidQjsDft9CW174Tr99xngu
 ```
 
-Result (no output from `pai-cli` because result is set to `null`).
+Result (no output from `paicoin-cli` because result is set to `null`).

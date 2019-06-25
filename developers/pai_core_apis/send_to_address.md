@@ -73,7 +73,7 @@ Spend 0.1 pai's to the address below with the comment "sendtoaddress
 example" and the comment-to "Nemo From Example.com":
 
 ```
-pai-cli -testnet sendtoaddress mmXgiR6KAhZCyQ8ndr2BCfEq1wNG2UnyG6 \
+paicoin-cli -testnet sendtoaddress mmXgiR6KAhZCyQ8ndr2BCfEq1wNG2UnyG6 \
   0.1 "sendtoaddress example" "Nemo From Example.com"
 ```
 

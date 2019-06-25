@@ -24,7 +24,7 @@ The `ping` RPC sends a P2P ping message to all connected nodes to measure ping t
 *Example*
 
 ```
-pai-cli -testnet ping
+paicoin-cli -testnet ping
 ```
 
 (Success: no result printed.)
@@ -32,7 +32,7 @@ pai-cli -testnet ping
 Get the results using the `getpeerinfo` RPC:
 
 ```
-pai-cli -testnet getpeerinfo | grep ping
+paicoin-cli -testnet getpeerinfo | grep ping
 ```
 
 Results:

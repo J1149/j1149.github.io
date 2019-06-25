@@ -24,7 +24,7 @@ The `stop` RPC safely shuts down the Pai Core server.
 *Example*
 
 ```
-pai-cli -testnet stop
+paicoin-cli -testnet stop
 ```
 
 Result:

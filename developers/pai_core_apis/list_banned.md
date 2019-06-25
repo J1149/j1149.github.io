@@ -30,7 +30,7 @@ The `listbanned` RPC lists all banned IPs/Subnets.
 The default (`false`):
 
 ```
-pai-cli listbanned
+paicoin-cli listbanned
 ```
 
 Result:

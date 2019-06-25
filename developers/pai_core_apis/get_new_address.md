@@ -44,7 +44,7 @@ The `getnewaddress` RPC returns a new Pai address for receiving payments. If an 
 Create a new address in the "doc test" account:
 
 ```
-pai-cli -testnet getnewaddress "doc test"
+paicoin-cli -testnet getnewaddress "doc test"
 ```
 
 Result:

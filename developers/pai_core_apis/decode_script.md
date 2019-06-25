@@ -33,7 +33,7 @@ The `decodescript` RPC {{summary_decodeScript}}
 A 2-of-3 P2SH multisig pubkey script:
 
 ```
-pai-cli -testnet decodescript 522103ede722780d27b05f0b1169ef\
+paicoin-cli -testnet decodescript 522103ede722780d27b05f0b1169ef\
 c90fa15a601a32fc6c3295114500c586831b6aaf2102ecd2d250a76d204011de\
 6bc365a56033b9b3a149f679bc17205555d3c2b2854f21022d609d2f0d359e5b\
 c0e5d0ea20ff9f5d3396cb5b1906aa9c56a0e7b5edc0c5d553ae

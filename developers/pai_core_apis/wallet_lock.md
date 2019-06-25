@@ -26,7 +26,7 @@ The `walletlock` RPC removes the wallet encryption key from memory, locking the 
 *Example*
 
 ```
-pai-cli -testnet walletlock
+paicoin-cli -testnet walletlock
 ```
 
 (Success: nothing printed.)

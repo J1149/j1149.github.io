@@ -28,10 +28,10 @@ Disconnects following node from your node.
 *Example*
 
 ```
-pai-cli -testnet disconnectnode 192.0.2.113:18333
+paicoin-cli -testnet disconnectnode 192.0.2.113:18333
 ```
 
-Result (no output from `pai-cli` because result is set to `null`).
+Result (no output from `paicoin-cli` because result is set to `null`).
 
 *See also*
 

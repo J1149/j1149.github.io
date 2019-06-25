@@ -49,7 +49,7 @@ The `getpeerinfo` RPC returns data about each connected network node.
 *Example*
 
 ```
-pai-cli getpeerinfo
+paicoin-cli getpeerinfo
 ```
 
 Result (edited to show only a single entry, with IP addresses changed to

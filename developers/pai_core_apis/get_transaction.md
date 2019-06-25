@@ -45,7 +45,7 @@ The `gettransaction` RPC gets detailed information about an in-wallet transactio
 *Example*
 
 ```
-pai-cli -testnet gettransaction \
+paicoin-cli -testnet gettransaction \
   5a7d24cd665108c66b2d56146f244932edae4e2376b561b3d396d5ae017b9589
 ```
 

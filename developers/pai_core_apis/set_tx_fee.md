@@ -35,7 +35,7 @@ The `settxfee` RPC sets the transaction fee per kilobyte paid by transactions cr
 Set the transaction fee per kilobyte to 100,000 satoshis.
 
 ```
-pai-cli -testnet settxfee 0.00100000
+paicoin-cli -testnet settxfee 0.00100000
 ```
 
 Result:

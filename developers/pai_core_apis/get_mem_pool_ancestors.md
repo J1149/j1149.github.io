@@ -58,7 +58,7 @@ The `getmempoolancestors` RPC returns all in-mempool ancestors for a transaction
 The default (`false`):
 
 ```
-pai-cli getmempoolancestors 52273e0ce6cf3452932cfbc1c517c0ce\
+paicoin-cli getmempoolancestors 52273e0ce6cf3452932cfbc1c517c0ce\
 1af1d255fda67a6e3bd63ba1d908c8c2
 ```
 
@@ -74,7 +74,7 @@ Result:
 Verbose output (`true`):
 
 ```
-pai-cli getmempoolancestors 52273e0ce6cf3452932cfbc1c517c0ce\
+paicoin-cli getmempoolancestors 52273e0ce6cf3452932cfbc1c517c0ce\
 1af1d255fda67a6e3bd63ba1d908c8c2 true
 ```
 

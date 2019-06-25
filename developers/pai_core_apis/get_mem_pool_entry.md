@@ -43,7 +43,7 @@ The `getmempoolentry` RPC returns mempool data for given transaction (must be in
 *Example*
 
 ```
-pai-cli getmempoolentry 52273e0ce6cf3452932cfbc1c517c0ce1af1\
+paicoin-cli getmempoolentry 52273e0ce6cf3452932cfbc1c517c0ce1af1\
 d255fda67a6e3bd63ba1d908c8c2
 ```
 

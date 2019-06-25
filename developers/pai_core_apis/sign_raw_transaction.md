@@ -66,7 +66,7 @@ Sign the hex generated in the example section for the `createrawtransaction`
 RPC:
 
 ```
-pai-cli -testnet signrawtransaction 01000000011da9283b4ddf8d\
+paicoin-cli -testnet signrawtransaction 01000000011da9283b4ddf8d\
 89eb996988b89ead56cecdc44041ab38bf787f1206cd90b51e0000000000ffff\
 ffff01405dc600000000001976a9140dfc8bafc8419853b34d5e072ad37d1a51\
 59f58488ac00000000

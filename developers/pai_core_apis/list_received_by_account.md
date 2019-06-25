@@ -59,7 +59,7 @@ Get the balances for all non-empty accounts, including only transactions
 which have been confirmed at least six times:
 
 ```
-pai-cli -testnet listreceivedbyaccount 6 false
+paicoin-cli -testnet listreceivedbyaccount 6 false
 ```
 
 Result (edited to only show the first two results):

@@ -80,7 +80,7 @@ Move 0.1 pai's from "doc test" to "test1", giving the transaction the
 comment "Example move":
 
 ```
-pai-cli -testnet move "doc test" "test1" 0.1 0 "Example move"
+paicoin-cli -testnet move "doc test" "test1" 0.1 0 "Example move"
 ```
 
 Result:

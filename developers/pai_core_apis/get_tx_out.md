@@ -64,7 +64,7 @@ searching the memory pool if necessary.
 
 
 ```
-pai-cli -testnet gettxout \
+paicoin-cli -testnet gettxout \
   d77aee99e8bdc11f40b8a9354956f0346fec5535b82c77c8b5c06047e3bca86a \
   0 true
 ```

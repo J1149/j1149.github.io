@@ -25,7 +25,7 @@ The `help` RPC lists all available public RPC commands, or gets help for the spe
   n= "`result`"
   t= "string"
   p= "Required<br>(exactly 1)"
-  d= "The help text for the specified RPC or the list of commands.  The `pai-cli` command will parse this text and format it as human-readable text"
+  d= "The help text for the specified RPC or the list of commands.  The `paicoin-cli` command will parse this text and format it as human-readable text"
 %}
 
 *Example*
@@ -33,7 +33,7 @@ The `help` RPC lists all available public RPC commands, or gets help for the spe
 Command to get help about the `help` RPC:
 
 ```
-pai-cli -testnet help help
+paicoin-cli -testnet help help
 ```
 
 Result:

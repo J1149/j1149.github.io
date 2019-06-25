@@ -60,7 +60,7 @@ The `getmempooldescendants` RPC returns all in-mempool descendants for a transac
 The default (`false`):
 
 ```
-pai-cli getmempooldescendants 52273e0ce6cf3452932cfbc1c517c0\
+paicoin-cli getmempooldescendants 52273e0ce6cf3452932cfbc1c517c0\
 ce1af1d255fda67a6e3bd63ba1d908c8c2
 ```
 
@@ -76,7 +76,7 @@ Result:
 Verbose output (`true`):
 
 ```
-pai-cli getmempooldescendants 52273e0ce6cf3452932cfbc1c517c0\
+paicoin-cli getmempooldescendants 52273e0ce6cf3452932cfbc1c517c0\
 ce1af1d255fda67a6e3bd63ba1d908c8c2 true
 ```
 

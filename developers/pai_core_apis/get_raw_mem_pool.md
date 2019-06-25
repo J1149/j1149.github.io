@@ -61,7 +61,7 @@ The `getrawmempool` RPC returns all transaction identifiers (TXIDs) in the memor
 The default (`false`):
 
 ```
-pai-cli getrawmempool
+paicoin-cli getrawmempool
 ```
 
 Result:
@@ -76,7 +76,7 @@ Result:
 Verbose output (`true`):
 
 ```
-pai-cli getrawmempool true
+paicoin-cli getrawmempool true
 ```
 
 Result:

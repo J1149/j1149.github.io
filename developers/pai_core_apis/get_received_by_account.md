@@ -41,7 +41,7 @@ Get the pai's received by the "doc test" account with six or more
 confirmations:
 
 ```
-pai-cli -testnet getreceivedbyaccount "doc test" 6
+paicoin-cli -testnet getreceivedbyaccount "doc test" 6
 ```
 
 Result:

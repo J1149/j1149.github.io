@@ -30,7 +30,7 @@ The dumpwallet RPC creates or overwrites a file with all wallet keys in a human-
 Create a wallet dump and then print its first 10 lines.
 
 ```
-pai-cli -testnet dumpwallet /tmp/dump.txt
+paicoin-cli -testnet dumpwallet /tmp/dump.txt
 head /tmp/dump.txt
 ```
 

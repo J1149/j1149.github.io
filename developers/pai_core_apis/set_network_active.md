@@ -33,10 +33,10 @@ The `setnetworkactive` RPC disables/enables all P2P network activity.
 *Example*
 
 ```
-pai-cli setnetworkactive true
+paicoin-cli setnetworkactive true
 ```
 
-Result (no output from `pai-cli` because result is set to `null`).
+Result (no output from `paicoin-cli` because result is set to `null`).
 
 *See also*
 

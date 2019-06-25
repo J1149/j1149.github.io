@@ -27,10 +27,10 @@ Abandons the transaction on your node.
 *Example*
 
 ```
-PAI-cli abandontransaction fa3970c341c9f5de6ab13f128cbfec58d732e736a505fe32137ad551c799ecc4
+paicoin-cli abandontransaction fa3970c341c9f5de6ab13f128cbfec58d732e736a505fe32137ad551c799ecc4
 ```
 
-Result (no output from `PAI-cli` because result is set to `null`).
+Result (no output from `paicoin-cli` because result is set to `null`).
 
 *See also*
 

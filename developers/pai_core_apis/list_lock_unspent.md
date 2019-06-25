@@ -27,7 +27,7 @@ The `listlockunspent` RPC returns a list of temporarily unspendable (locked) out
 *Example*
 
 ```
-pai-cli -testnet listlockunspent
+paicoin-cli -testnet listlockunspent
 ```
 
 Result:

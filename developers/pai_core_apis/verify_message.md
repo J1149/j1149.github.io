@@ -52,7 +52,7 @@ Check the signature on the message created in the example for
 `signmessage`:
 
 ```
-pai-cli -testnet verifymessage \
+paicoin-cli -testnet verifymessage \
   mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe \
   IL98ziCmwYi5pL+dqKp4Ux+zCa4hP/xbjHmWh+Mk/lefV/0pWV1p/gQ94jgExSmgH2/+PDcCCrOHAady2IEySSI= \
   'Hello, World!'

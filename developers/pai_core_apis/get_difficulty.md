@@ -24,7 +24,7 @@ The `getdifficulty` RPC
 *Example*
 
 ```
-pai-cli -testnet getdifficulty
+paicoin-cli -testnet getdifficulty
 ```
 
 Result:

@@ -33,10 +33,10 @@ The addnode RPC attempts to add or remove a node from the addnode list, or to tr
 Try connecting to the following node.
 
 ```
-PAI-cli -testnet addnode 192.0.2.113:18333 onetry
+paicoin-cli -testnet addnode 192.0.2.113:18333 onetry
 ```
 
-Result (no output from `PAI-cli` because result is set to `null`).
+Result (no output from `paicoin-cli` because result is set to `null`).
 
 *See also*
 

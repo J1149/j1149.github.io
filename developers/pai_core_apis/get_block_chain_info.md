@@ -53,7 +53,7 @@ The `getblockchaininfo` RPC provides information about the current state of the 
 *Example*
 
 ```
-pai-cli getblockchaininfo
+paicoin-cli getblockchaininfo
 ```
 
 Result:

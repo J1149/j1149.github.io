@@ -42,7 +42,7 @@ The `sendrawtransaction` RPC validates a transaction and broadcasts it to the pe
 Broadcast a signed transaction:
 
 ```
-pai-cli -testnet sendrawtransaction 01000000011da9283b4ddf8d\
+paicoin-cli -testnet sendrawtransaction 01000000011da9283b4ddf8d\
 89eb996988b89ead56cecdc44041ab38bf787f1206cd90b51e000000006a4730\
 4402200ebea9f630f3ee35fa467ffc234592c79538ecd6eb1c9199eb23c4a16a\
 0485a20220172ecaf6975902584987d295b8dddf8f46ec32ca19122510e22405\

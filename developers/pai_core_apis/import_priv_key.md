@@ -55,7 +55,7 @@ mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe, giving it a label and scanning the
 entire block chain:
 
 ```
-pai-cli -testnet importprivkey \
+paicoin-cli -testnet importprivkey \
               cU8Q2jGeX3GNKNa5etiC8mgEgFSeVUTRQfWE2ZCzszyqYNK4Mepy \
               "test label" \
               true

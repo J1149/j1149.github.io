@@ -61,10 +61,10 @@ The `setban` RPC attempts add or remove a IP/Subnet from the banned list.
 Ban the following node.
 
 ```
-pai-cli -testnet setban 192.0.2.113:18333 add 2592000
+paicoin-cli -testnet setban 192.0.2.113:18333 add 2592000
 ```
 
-Result (no output from `pai-cli` because result is set to `null`).
+Result (no output from `paicoin-cli` because result is set to `null`).
 
 *See also*
 

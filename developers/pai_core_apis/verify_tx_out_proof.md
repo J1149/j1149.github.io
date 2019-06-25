@@ -33,7 +33,7 @@ The `verifytxoutproof` RPC verifies that a proof points to one or more transacti
 Verify a proof:
 
 ```
-pai-cli verifytxoutproof \
+paicoin-cli verifytxoutproof \
 03000000394ab3f08f712aa0f1d26c5daa4040b50e96d31d4e8e3c130000000000000000\
 ca89aaa0bbbfcd5d1210c7888501431256135736817100d8c2cf7e4ab9c02b168115d455\
 04dd1418836b20a6cb0800000d3a61beb3859abf1b773d54796c83b0b937968cc4ce3c0f\

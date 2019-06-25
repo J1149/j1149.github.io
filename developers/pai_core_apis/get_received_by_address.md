@@ -38,7 +38,7 @@ Get the pai's received for a particular address, only counting
 transactions with six or more confirmations:
 
 ```
-pai-cli -testnet getreceivedbyaddress PaXVxzkruFZPidQjsDft9CW174Tr99xngu 6
+paicoin-cli -testnet getreceivedbyaddress PaXVxzkruFZPidQjsDft9CW174Tr99xngu 6
 ```
 
 Result:

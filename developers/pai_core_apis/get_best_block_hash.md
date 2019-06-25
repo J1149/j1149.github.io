@@ -25,7 +25,7 @@ The `getbestblockhash` RPC returns the header hash of the most recent block on t
 *Example*
 
 ```
-pai-cli -testnet getbestblockhash
+paicoin-cli -testnet getbestblockhash
 ```
 
 Result:

@@ -85,7 +85,7 @@ The `listtransactions` RPC returns the most recent transactions that affect the 
 List the most recent transaction from all accounts including watch-only addresses.
 
 ```
-pai-cli listtransactions "*" 1 0 true
+paicoin-cli listtransactions "*" 1 0 true
 ```
 
 Result:

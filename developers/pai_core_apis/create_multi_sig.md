@@ -36,7 +36,7 @@ Creating a 2-of-3 P2SH multisig address by mixing two P2PKH addresses and
 one full public key:
 
 ```
-PAI-cli -testnet createmultisig 2 '''
+paicoin-cli -testnet createmultisig 2 '''
   [
     "mjbLRSidW1MY8oubvs4SMEnHNFXxCcoehQ",
     "02ecd2d250a76d204011de6bc365a56033b9b3a149f679bc17205555d3c2b2854f",

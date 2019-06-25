@@ -40,7 +40,7 @@ Core.  Use the RPCs listed in the See Also subsection below instead.
 Get an address for the default account:
 
 ```
-pai-cli -testnet getaccountaddress ""
+paicoin-cli -testnet getaccountaddress ""
 ```
 
 Result:

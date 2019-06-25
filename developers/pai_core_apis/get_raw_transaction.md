@@ -63,7 +63,7 @@ The `getrawtransaction` RPC gets a hex-encoded serialized transaction or a JSON 
 A transaction in serialized transaction format:
 
 ```
-pai-cli getrawtransaction \
+paicoin-cli getrawtransaction \
   52309405287e737cf412fc42883d65a392ab950869fae80b2a5f1e33326aca46
 ```
 
@@ -82,7 +82,7 @@ ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc\
 Get the same transaction in JSON:
 
 ```
-pai-cli getrawtransaction \
+paicoin-cli getrawtransaction \
 ef7c0cbf6ba5af68d2ea239bba709b26ff7b0b669839a63bb01c2cb8e8de481e \
 true
 ```

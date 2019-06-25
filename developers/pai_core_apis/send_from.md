@@ -88,7 +88,7 @@ transaction the comment "Example spend" and labeling the spender
 
 
 ```
-pai-cli -testnet sendfrom "test" \
+paicoin-cli -testnet sendfrom "test" \
             mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe \
             0.1 \
             6 \

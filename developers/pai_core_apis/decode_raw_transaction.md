@@ -27,7 +27,7 @@ The decoderawtransaction RPC decodes a serialized transaction hex string into a 
 Decode a signed one-input, three-output transaction:
 
 ```
-PAI-cli decoderawtransaction 0100000001bafe2175b9d7b3041ebac\
+paicoin-cli decoderawtransaction 0100000001bafe2175b9d7b3041ebac\
 529056b393cf2997f7964485aa382ffa449ffdac02a000000008a47304402201\
 3d212c22f0b46bb33106d148493b9a9723adb2c3dd3a3ebe3a9c9e3b95d8cb00\
 220461661710202fbab550f973068af45c294667fc4dc526627a7463eb23ab39\

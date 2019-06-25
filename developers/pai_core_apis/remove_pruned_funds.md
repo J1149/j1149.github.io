@@ -31,7 +31,7 @@ The `removeprunedfunds` RPC deletes the specified transaction from the wallet. M
 *Example*
 
 ```
-pai-cli removeprunedfunds a8d0c0184dde994a09ec054286f1ce581b\
+paicoin-cli removeprunedfunds a8d0c0184dde994a09ec054286f1ce581b\
 ebf46446a512166eae7628734ea0a5
 ```
 

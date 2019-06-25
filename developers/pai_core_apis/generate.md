@@ -48,7 +48,7 @@ The `generate` RPC nearly instantly generates PAIs.
 Using regtest mode (also works in normal mode), generate 2 blocks:
 
 ```
-pai-cli -regtest generate 2 500000
+paicoin-cli -regtest generate 2 500000
 ```
 
 Result:
