@@ -1,4 +1,4 @@
-baseurl: ''
+baseurl: 'j1149.com-staging/'
 exclude: ['README.md']
 permalink: pretty
 title: 'J1149'
