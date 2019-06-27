@@ -58,7 +58,7 @@ at least one confirmation and those spent to watch-only addresses in
 that account.
 
 ```
-pai-cli -testnet getbalance "test1" 1 true
+paicoin-cli -testnet getbalance "test1" 1 true
 ```
 
 Result:

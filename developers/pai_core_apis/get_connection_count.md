@@ -24,7 +24,7 @@ The `getconnectioncount` RPC returns the number of connections to other nodes.
 *Example*
 
 ```
-pai-cli -testnet getconnectioncount
+paicoin-cli -testnet getconnectioncount
 ```
 
 Result:

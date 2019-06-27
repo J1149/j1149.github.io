@@ -48,7 +48,7 @@ value of the passphrase parameter).`
 Unlock the wallet for 10 minutes (the passphrase is "test"):
 
 ```
-pai-cli -testnet walletpassphrase test 600
+paicoin-cli -testnet walletpassphrase test 600
 ```
 
 (Success: no result printed.)

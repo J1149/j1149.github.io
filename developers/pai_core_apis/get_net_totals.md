@@ -31,7 +31,7 @@ The `getnettotals` RPC returns information about network traffic, including byte
 *Example*
 
 ```
-pai-cli getnettotals
+paicoin-cli getnettotals
 ```
 
 Result:

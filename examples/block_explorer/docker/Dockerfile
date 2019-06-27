@@ -13,16 +13,16 @@ WORKDIR /home/scripts
 
 # install paicoin
 ADD paicoin_install.sh /home/scripts
-RUN sh paicoin_install.sh
+RUN sh -e paicoin_install.sh
 
 # Install Tomcat; probably should be replaced with a bash script...
 ADD tomcat.service /etc/systemd/system/
 ADD tomcat_install.sh /home/scripts
-RUN sh tomcat_install.sh 
+RUN sh -e tomcat_install.sh 
 
 # Bitcoin-transaction-explorer install
 ADD bitcoin_tx_explr_install.sh /home/scripts
-RUN sh bitcoin_tx_explr_install.sh
+RUN sh -e bitcoin_tx_explr_install.sh
 
 # Add file needed to create username/password for paicoin RPC
 RUN mkdir /root/.paicoin
@@ -30,11 +30,11 @@ ADD paicoin.conf /root/.paicoin
 
 # debugging tools install
 ADD debugging_tools_install.sh /home/scripts
-RUN sh debugging_tools_install.sh
+RUN sh -e debugging_tools_install.sh
 
 # Miniconda
 ADD miniconda_install.sh /home/scripts
-RUN sh miniconda_install.sh
+RUN sh -e miniconda_install.sh
 
 ADD block_explorer.py /home/scripts
 ADD rpcauth.py /home/scripts

@@ -33,7 +33,7 @@ The `getmininginfo` RPC returns various mining-related information.
 *Example*
 
 ```
-pai-cli getmininginfo
+paicoin-cli getmininginfo
 ```
 
 Result:

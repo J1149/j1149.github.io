@@ -42,7 +42,7 @@ The `importprunedfunds` RPC imports funds without the need of a rescan. Meant fo
 *Example*
 
 ```
-pai-cli importprunedfunds "txhex" "txoutproof"
+paicoin-cli importprunedfunds "txhex" "txoutproof"
 ```
 
 (Success: no result displayed.)

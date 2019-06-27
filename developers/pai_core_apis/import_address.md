@@ -54,7 +54,7 @@ Add an address, rescanning the local block database for any transactions
 matching it.
 
 ```
-pai-cli -testnet importaddress \
+paicoin-cli -testnet importaddress \
   muhtvdmsnbQEPFuEmxcChX58fGvXaaUoVt "watch-only test" true
 ```
 
@@ -65,7 +65,7 @@ Result:
 Show that the address has been added:
 
 ```
-pai-cli -testnet getaccount muhtvdmsnbQEPFuEmxcChX58fGvXaaUoVt
+paicoin-cli -testnet getaccount muhtvdmsnbQEPFuEmxcChX58fGvXaaUoVt
 ```
 
 Result:

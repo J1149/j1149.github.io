@@ -28,7 +28,7 @@ The `getmemoryinfo` RPC returns information about memory usage.
 *Example*
 
 ```
-pai-cli getmemoryinfo
+paicoin-cli getmemoryinfo
 ```
 
 Result:

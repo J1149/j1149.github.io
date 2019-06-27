@@ -42,7 +42,7 @@ The `getnetworkinfo` RPC returns information about the node’s connection to th
 *Example*
 
 ```
-pai-cli getnetworkinfo
+paicoin-cli getnetworkinfo
 ```
 
 Result (actual addresses have been replaced with reserved addresses):

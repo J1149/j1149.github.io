@@ -42,7 +42,7 @@ The createrawtransaction RPC creates an unsigned serialized transaction that spe
 *Example*
 
 ```
-PAI-cli -testnet createrawtransaction '''
+paicoin-cli -testnet createrawtransaction '''
   [
     {
       "txid": "1eb590cd06127f78bf38ab4140c4cdce56ad9eb8886999eb898ddf4d3b28a91d",

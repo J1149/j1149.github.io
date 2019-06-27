@@ -36,7 +36,7 @@ the `dumpwallet` RPC.
 *Example*
 
 ```
-pai-cli -testnet encryptwallet "test"
+paicoin-cli -testnet encryptwallet "test"
 ```
 
 Result:

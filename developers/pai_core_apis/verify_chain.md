@@ -42,7 +42,7 @@ The `verifychain` RPC verifies each entry in the local block chain database.
 Verify the most recent 10,000 blocks in the most through way:
 
 ```
-pai-cli -testnet verifychain 4 10000
+paicoin-cli -testnet verifychain 4 10000
 ```
 
 Result (took 4 minutes and 25 seconds on a generic PC laptop; it

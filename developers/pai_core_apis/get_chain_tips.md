@@ -59,7 +59,7 @@ The `getchaintips` RPC returns information about the highest-height block (tip) 
 *Example*
 
 ```
-pai-cli -testnet getchaintips
+paicoin-cli -testnet getchaintips
 ```
 
 ```

@@ -63,7 +63,7 @@ the following command into the command-line:
 	* In the "Host" field, enter `localhost`
 	* In the "Port" field, enter `8566`
 	* In the "RPC Username" field, use the username you had entered in step 3.
-	* In the "RPC Password" field, use the passowrd you had entered in step 3.
+	* In the "RPC Password" field, use the password you had entered in step 3.
 	* Leave the rest of the fields blank.
 
 9. paicoind needs some time to download the entire blockchain so wait a few 

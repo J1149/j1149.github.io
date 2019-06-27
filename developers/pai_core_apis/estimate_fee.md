@@ -25,7 +25,7 @@ The `estimatefee` RPC estimates the transaction fee per kilobyte that needs to b
 *Examples*
 
 ```
-pai-cli estimatefee 6
+paicoin-cli estimatefee 6
 ```
 
 Result:
@@ -37,7 +37,7 @@ Result:
 Requesting data the node can't calculate (out of range):
 
 ```
-pai-cli estimatefee 100
+paicoin-cli estimatefee 100
 ```
 
 Result:

@@ -31,7 +31,7 @@ The `getblockhash` RPC returns the header hash of a block at the given height in
 *Example*
 
 ```
-pai-cli -testnet getblockhash 240886
+paicoin-cli -testnet getblockhash 240886
 ```
 
 Result:

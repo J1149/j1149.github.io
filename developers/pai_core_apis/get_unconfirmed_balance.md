@@ -26,7 +26,7 @@ The `getunconfirmedbalance` RPC returns the wallet’s total unconfirmed balance
 *Example*
 
 ```
-pai-cli -testnet getunconfirmedbalance
+paicoin-cli -testnet getunconfirmedbalance
 ```
 
 Result (no unconfirmed incoming payments):

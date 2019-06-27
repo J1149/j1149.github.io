@@ -36,7 +36,7 @@ The `keypoolrefill` RPC fills the cache of unused pre-generated keys (the keypoo
 Generate one extra key than the default:
 
 ```
-pai-cli -testnet keypoolrefill 101
+paicoin-cli -testnet keypoolrefill 101
 ```
 
 (No result shown: success.)

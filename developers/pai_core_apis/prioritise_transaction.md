@@ -49,7 +49,7 @@ The `prioritisetransaction` RPC adds virtual priority or fee to a transaction, a
 *Example*
 
 ```
-pai-cli -testnet prioritisetransaction \
+paicoin-cli -testnet prioritisetransaction \
     fe0165147da737e16f5096ab6c1709825217377a95a882023ed089a89af4cff9 \
     1234 456789
 ```

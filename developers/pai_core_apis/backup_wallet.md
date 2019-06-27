@@ -27,7 +27,7 @@ The `backupwallet` RPC safely copies wallet.dat to the specified file, which can
 *Example*
 
 ```
-PAI-cli -testnet backupwallet /tmp/backup.dat
+paicoin-cli -testnet backupwallet /tmp/backup.dat
 ```
 
 *See also*

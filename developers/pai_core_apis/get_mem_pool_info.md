@@ -27,7 +27,7 @@ The `getmempoolinfo` RPC returns information about the node’s current transact
 *Example*
 
 ```
-pai-cli -testnet getmempoolinfo
+paicoin-cli -testnet getmempoolinfo
 ```
 
 Result:

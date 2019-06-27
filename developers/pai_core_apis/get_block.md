@@ -97,7 +97,7 @@ It takes an integer from 0 to 2.
 Get a block in raw hex:
 
 ```
-pai-cli getblock \
+paicoin-cli getblock \
             00000000839a8e6886ab5951d76f411475428afc90947ee320161bbf18eb6048 \
             false
 ```
@@ -117,7 +117,7 @@ e62294721166bf621e73a82cbf2342c858eeac00000000
 Get the same block in JSON:
 
 ```
-pai-cli getblock \
+paicoin-cli getblock \
             00000000839a8e6886ab5951d76f411475428afc90947ee320161bbf18eb6048
 ```
 

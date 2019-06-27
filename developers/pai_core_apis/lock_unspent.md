@@ -45,7 +45,7 @@ The `lockunspent` RPC temporarily locks or unlocks specified transaction outputs
 Lock two outputs:
 
 ```
-pai-cli -testnet lockunspent false '''
+paicoin-cli -testnet lockunspent false '''
   [
     {
       "txid": "5a7d24cd665108c66b2d56146f244932edae4e2376b561b3d396d5ae017b9589",
@@ -68,7 +68,7 @@ true
 Verify the outputs have been locked:
 
 ```
-pai-cli -testnet listlockunspent
+paicoin-cli -testnet listlockunspent
 ```
 
 Result
@@ -89,7 +89,7 @@ Result
 Unlock one of the above outputs:
 
 ```
-pai-cli -testnet lockunspent true '''
+paicoin-cli -testnet lockunspent true '''
 [
   {
     "txid": "5a7d24cd665108c66b2d56146f244932edae4e2376b561b3d396d5ae017b9589",
@@ -108,7 +108,7 @@ true
 Verify the output has been unlocked:
 
 ```
-pai-cli -testnet listlockunspent
+paicoin-cli -testnet listlockunspent
 ```
 
 Result:

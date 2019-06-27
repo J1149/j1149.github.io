@@ -29,7 +29,7 @@ The `listaddressgroupings` RPC lists groups of addresses that may have had their
 *Example*
 
 ```
-pai-cli -testnet listaddressgroupings
+paicoin-cli -testnet listaddressgroupings
 ```
 
 Result (edited to only the first two results):

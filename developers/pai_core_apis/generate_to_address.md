@@ -60,7 +60,7 @@ The `generatetoaddress` RPC mines blocks immediately to a specified address.
 Using regtest mode, generate 2 blocks with maximal 500000 iterations:
 
 ```
-pai-cli -regtest generatetoaddress 2 "PaXVxzkruFZPidQjsDft9CW174Tr99xngu\
+paicoin-cli -regtest generatetoaddress 2 "PaXVxzkruFZPidQjsDft9CW174Tr99xngu\
 eBdYAyTMXW75" 500000
 ```
 

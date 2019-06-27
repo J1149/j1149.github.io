@@ -42,7 +42,7 @@ The `submitblock` RPC accepts a block, verifies it is a valid addition to the bl
 Submit the following block with the workid, "test".
 
 ```
-pai-cli -testnet submitblock 02000000df11c014a8d798395b5059c\
+paicoin-cli -testnet submitblock 02000000df11c014a8d798395b5059c\
 722ebdf3171a4217ead71bf6e0e99f4c7000000004a6f6a2db225c81e77773f6\
 f0457bcb05865a94900ed11356d0b75228efb38c7785d6053ffff001d005d437\
 0010100000001000000000000000000000000000000000000000000000000000\

@@ -41,7 +41,7 @@ if the wallet or mempool contains a transaction that spends one of the transacti
 *Example*
 
 ```
-PAI-cli -testnet bumpfee d4a33e0cabaz723149e1fcab4e033a40173\
+paicoin-cli -testnet bumpfee d4a33e0cabaz723149e1fcab4e033a40173\
 88a644c65370e3cb06ba2f0e13975\
 '{
     "totalFee": 4000,

@@ -46,7 +46,7 @@ Core.  Use the RPCs listed in the See Also subsection below instead.
 Get the addresses assigned to the account "doc test":
 
 ```
-pai-cli -testnet getaddressesbyaccount "doc test"
+paicoin-cli -testnet getaddressesbyaccount "doc test"
 ```
 
 Result:

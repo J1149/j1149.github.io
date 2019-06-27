@@ -45,7 +45,7 @@ The `signmessage` RPC signs a message with the private key of an address.
 Sign a the message "Hello, World!" using the following address:
 
 ```
-pai-cli signmessage PaXVxzkruFZPidQjsDft9CW174Tr99xngu "Hello, World!"
+paicoin-cli signmessage PaXVxzkruFZPidQjsDft9CW174Tr99xngu "Hello, World!"
 ```
 
 Result:

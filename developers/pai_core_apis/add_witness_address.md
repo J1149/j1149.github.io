@@ -27,7 +27,7 @@ The `addwitnessaddress` RPC adds a witness address for a script (with pubkey or 
 *Example*
 
 ```
-PAI-cli addwitnessaddress PaXVxzkruFZPidQjsDft9CW174Tr99xngu
+paicoin-cli addwitnessaddress PaXVxzkruFZPidQjsDft9CW174Tr99xngu
 ```
 
 Result:

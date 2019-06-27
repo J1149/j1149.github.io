@@ -48,7 +48,7 @@ value of the passphrase parameter).`
 Change the wallet passphrase from "test" to "example":
 
 ```
-pai-cli -testnet walletpassphrasechange test example
+paicoin-cli -testnet walletpassphrasechange test example
 ```
 
 (Success: no result printed.)

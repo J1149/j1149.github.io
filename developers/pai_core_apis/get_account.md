@@ -34,7 +34,7 @@ The `getaccount` RPC returns the name of the account associated with the given a
 *Example*
 
 ```
-pai-cli -testnet getaccount mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN
+paicoin-cli -testnet getaccount mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN
 ```
 
 Result:

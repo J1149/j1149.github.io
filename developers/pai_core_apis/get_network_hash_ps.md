@@ -43,7 +43,7 @@ Get the average hashes per second for all the blocks since the last
 difficulty change before block 227255.
 
 ```
-pai-cli -testnet getnetworkhashps -1 227255
+paicoin-cli -testnet getnetworkhashps -1 227255
 ```
 
 Result:

@@ -27,8 +27,8 @@ values.
 Open-source client libraries for the RPC interface are readily available in most
 modern programming languages, so you probably don't need to write your own from
 scratch. PAI Core also ships with its own compiled C++ RPC client,
-`PAI-cli`, located in the `bin` directory alongside `PAId` and
-`PAI-qt`. The `PAI-cli` program can be used as a command-line interface
+`paicoin-cli`, located in the `bin` directory alongside `PAId` and
+`PAI-qt`. The `paicoin-cli` program can be used as a command-line interface
 (CLI) to PAI Core or for making RPC calls from applications written in
 languages lacking a suitable native client. The remainder of this section
 describes the PAI Core RPC protocol in detail.
@@ -103,10 +103,10 @@ the genesis block:
 }
 ```
 
-The command to send this request using `PAI-cli` is:
+The command to send this request using `paicoin-cli` is:
 
 ```
-PAI-cli getblockhash 0
+paicoin-cli getblockhash 0
 ```
 
 Alternatively, we could `POST` this request using the cURL command-line program
@@ -134,7 +134,7 @@ The HTTP response data for this request would be:
 
 Note: In order to minimize its size, the raw JSON response from PAI Core
 doesn't include any extraneous whitespace characters. Here we've added
-whitespace to make the object more readable. Speaking of which, `PAI-cli`
+whitespace to make the object more readable. Speaking of which, `paicoin-cli`
 also transforms the raw response to make it more human-readable. It:
 
 - Adds whitespace indentation to JSON objects
@@ -143,7 +143,7 @@ also transforms the raw response to make it more human-readable. It:
 - Strips the outer double-quotes around `result`s of type string
 - Returns only the `error` field if there's an error
 
-Continuing with the example above, the output<!--noref--> from the `PAI-cli`
+Continuing with the example above, the output<!--noref--> from the `paicoin-cli`
 command would be simply:
 
 ```
@@ -166,7 +166,7 @@ following response (again, whitespace added for clarity):
 }
 ```
 
-If `PAI-cli` encounters an error, it exits with a non-zero status code and
+If `paicoin-cli` encounters an error, it exits with a non-zero status code and
 outputs<!--noref--> the `error` field as text to the process's standard error
 stream:
 
@@ -180,14 +180,14 @@ specification][JSON-RPC request batching]. To initiate multiple
 RPC requests within a single HTTP request, a client can `POST` a JSON array
 filled with Request objects. The HTTP response data is then a JSON array filled
 with the corresponding Response objects. Depending on your usage pattern,
-request batching may provide significant performance gains. The `PAI-cli`
+request batching may provide significant performance gains. The `paicoin-cli`
 RPC client does not support batch requests.
 
 To keep this documentation compact and readable, the examples for each of the
-available RPC calls will be given as `PAI-cli` commands:
+available RPC calls will be given as `paicoin-cli` commands:
 
 ```
-PAI-cli [options] <method name> <param1> <param2> ...
+paicoin-cli [options] <method name> <param1> <param2> ...
 ```
 
 This translates into an JSON-RPC<!--noref--> Request object of the form:

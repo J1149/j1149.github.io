@@ -47,7 +47,7 @@ The `validateaddress` RPC returns information about the given Pai address.
 Validate the following P2PKH address from the wallet:
 
 ```
-pai-cli validateaddress PaXVxzkruFZPidQjsDft9CW174Tr99xngu
+paicoin-cli validateaddress PaXVxzkruFZPidQjsDft9CW174Tr99xngu
 ```
 
 Result:
@@ -69,7 +69,7 @@ Result:
 Validate the following P2SH multisig address from the wallet:
 
 ```
-pai-cli -testnet validateaddress PFZPidQjsDft9CW174Tr99xnguJMPc84JA
+paicoin-cli -testnet validateaddress PFZPidQjsDft9CW174Tr99xnguJMPc84JA
 ```
 
 Result:

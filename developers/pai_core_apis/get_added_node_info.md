@@ -91,7 +91,7 @@ The `getaddednodeinfo` RPC returns information about the given added node, or al
 *Example*
 
 ```
-pai-cli getaddednodeinfo
+paicoin-cli getaddednodeinfo
 ```
 
 Result (real hostname and IP address replaced):

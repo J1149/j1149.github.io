@@ -42,7 +42,7 @@ The signmessagewithprivkey RPC signs a message with a given private key.
 Sign a the message "Hello, World!" using the following private key:
 
 ```
-pai-cli signmessagewithprivkey 5HpHagT65TZzG1PH3CSu63k8DbpvD\
+paicoin-cli signmessagewithprivkey 5HpHagT65TZzG1PH3CSu63k8DbpvD\
 8s5ip4nEB3kEsreKamq6aB "Hello, World!"
 ```
 

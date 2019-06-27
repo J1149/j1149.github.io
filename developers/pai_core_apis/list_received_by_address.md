@@ -62,7 +62,7 @@ List addresses with balances confirmed by at least six blocks, including
 watch-only addresses:
 
 ```
-pai-cli -testnet listreceivedbyaddress 6 false true
+paicoin-cli -testnet listreceivedbyaddress 6 false true
 ```
 
 Result (edit to show only two entries):

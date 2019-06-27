@@ -30,7 +30,7 @@ However, PAI Core's RPCs use the byte-wise reverse for hashes, so if you
 want to get information about block 300,000 using the `getblock` RPC,
 you need to reverse the requested hash:
 
-    > PAI-cli getblock \
+    > paicoin-cli getblock \
       000000000000000082ccf8f1557c5d40b21edabb18d2d691cfbf87118bac7254
 
 (Note: hex representation uses two characters to display each byte of

@@ -30,7 +30,7 @@ Transaction priority is relative to a transaction's byte size.
 *Examples*
 
 ```
-pai-cli estimatepriority 6
+paicoin-cli estimatepriority 6
 ```
 
 Result:
@@ -42,7 +42,7 @@ Result:
 Requesting data the node can't calculate yet:
 
 ```
-pai-cli estimatepriority 100
+paicoin-cli estimatepriority 100
 ```
 
 Result:

@@ -62,7 +62,7 @@ The `getblockheader` RPC gets a block header with a particular header hash from 
 Get a block header in raw hex:
 
 ```
-pai-cli -testnet getblockheader \
+paicoin-cli -testnet getblockheader \
             00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09 \
             false
 ```
@@ -79,7 +79,7 @@ Result (wrapped):
 Get the same block in JSON:
 
 ```
-pai-cli -testnet getblockheader \
+paicoin-cli -testnet getblockheader \
             00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09
 ```
 

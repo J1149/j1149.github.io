@@ -62,7 +62,7 @@ Get all outputs confirmed at least 6 times for a particular
 address:
 
 ```
-pai-cli -testnet listunspent 6 99999999 '''
+paicoin-cli -testnet listunspent 6 99999999 '''
   [
     "mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe"
   ]

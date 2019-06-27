@@ -46,7 +46,7 @@ The `setaccount` RPC puts the specified address in the given account.
 Put the address indicated below in the "doc test" account.
 
 ```
-pai-cli -testnet setaccount \
+paicoin-cli -testnet setaccount \
     mmXgiR6KAhZCyQ8ndr2BCfEq1wNG2UnyG6 "doc test"
 ```
 

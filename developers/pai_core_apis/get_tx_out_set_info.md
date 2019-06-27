@@ -28,7 +28,7 @@ The `gettxoutsetinfo` RPC returns statistics about the confirmed unspent transac
 *Example*
 
 ```
-pai-cli -testnet gettxoutsetinfo
+paicoin-cli -testnet gettxoutsetinfo
 ```
 
 Result:

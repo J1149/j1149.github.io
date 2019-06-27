@@ -23,10 +23,10 @@ The clearbanned RPC clears list of banned nodes.
 Clears the ban list.
 
 ```
-PAI-cli clearbanned
+paicoin-cli clearbanned
 ```
 
-Result (no output from `PAI-cli` because result is set to `null`).
+Result (no output from `paicoin-cli` because result is set to `null`).
 
 *See also*
 

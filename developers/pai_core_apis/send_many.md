@@ -72,7 +72,7 @@ From the account *test1*, send 0.1 pai's to the first address and 0.2
 pai's to the second address, with a comment of "Example Transaction".
 
 ```
-pai-cli -testnet sendmany \
+paicoin-cli -testnet sendmany \
   "test1" \
   '''
     {

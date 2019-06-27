@@ -31,7 +31,7 @@ The `pruneblockchain` RPC prunes the blockchain up to a specified height or time
 *Examples*
 
 ```
-pai-cli pruneblockchain 413555
+paicoin-cli pruneblockchain 413555
 ```
 
 Result:

@@ -45,7 +45,7 @@ Display account balances with one confirmation and watch-only addresses
 included.
 
 ```
-pai-cli -testnet listaccounts 1 true
+paicoin-cli -testnet listaccounts 1 true
 ```
 
 Result:

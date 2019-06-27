@@ -26,7 +26,7 @@ The `getrawchangeaddress` RPC returns a new Pai address for receiving change. Th
 *Example*
 
 ```
-pai-cli -testnet getrawchangeaddress
+paicoin-cli -testnet getrawchangeaddress
 ```
 
 Result:

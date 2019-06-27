@@ -24,7 +24,7 @@ The `getblockcount` RPC returns the number of blocks in the local best block cha
 *Example*
 
 ```
-pai-cli -testnet getblockcount
+paicoin-cli -testnet getblockcount
 ```
 
 Result:

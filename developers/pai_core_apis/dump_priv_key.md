@@ -28,7 +28,7 @@ The `dumpprivkey` RPC returns the wallet-import-format (WIF) private key corresp
 *Example*
 
 ```
-pai-cli -testnet dumpprivkey moQR7i8XM4rSGoNwEsw3h4YEuduuP6mxw7
+paicoin-cli -testnet dumpprivkey moQR7i8XM4rSGoNwEsw3h4YEuduuP6mxw7
 ```
 
 Result:

@@ -38,7 +38,7 @@ The `getinfo` RPC prints various information about the node and the network.
 *Example*
 
 ```
-pai-cli -testnet getinfo
+paicoin-cli -testnet getinfo
 ```
 
 Result:
