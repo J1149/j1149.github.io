@@ -1,0 +1,44 @@
+baseurl: ''
+exclude: ['README.md']
+permalink: pretty
+title: 'J1149'
+
+collections:
+  papi:
+    output: true
+    permalink: /papi/:path/
+  configuration:
+    output: true
+    permalink: /configuration/:path/
+  examples:
+    output: true
+    permalink: /examples/:path/
+
+defaults:
+  - scope:
+      path: 'images'
+    values:
+      image: true
+  - scope:
+      type: papi
+    values:
+      layout: service
+      bodyClass: page-services-single
+  - scope:
+      type: examples
+    values:
+      layout: service
+      bodyClass: page-services-single
+  - scope:
+      type: configuration
+    values:
+      layout: service
+      bodyClass: page-services-single    
+
+sass:
+  style: compact # possible values: nested expanded compact compressed
+
+google_analytics_id: UA-134217390-1
+
+plugins:
+  - jekyll-environment-variables

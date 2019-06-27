@@ -1,0 +1,42 @@
+---
+title: J1149 - Devs
+layout: default
+bodyClass: page-services-list
+---
+
+
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Running & Building</h1>
+          <p>
+              These sections provide information about running a PAI client locally, and sending commands to its RPC interface.
+          </p>
+          <p>
+              Code examples, docker images, build steps, and additional information can be found under the examples section.
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <h2 class="title-3 text-dark mb-4"><!-- titles for when there's more to add--></h2>
+              </div>
+              {% for reference in site.data.references %}
+              <div class="col-12 col-md-6 col-lg-4 mb-2">
+                  <a href="{{ reference.link }}">
+                <div class="feature">
+                  {% if reference.image %}<div class="feature-image"><img alt="{{ reference.title }} logo" src="{{ reference.image }}" /></div> {% endif %}
+                  <h2 class="feature-title">{{ reference.title }}</h2>
+                  <div class="feature-content">{{ reference.description }}</div>
+                </div>
+            </a>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
