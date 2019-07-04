@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Open Collaboration",
+    "description": "Join the discussion -- no matter your level of programming experience.",
+    "image": "images/features/noun_branding_1885335.svg"
+  },
+  {
+    "title": "Open Source",
+    "description": "This website and its materials are open source (MIT License).",
+    "image": "images/features/noun_The Process_1885341.svg"
+  },
+  {
+    "title": "Open to Improvement",
+    "description": "Improve this website by proposing changes or new ideas.",
+    "image": "images/features/noun_3d modeling_1885342.svg"
+  }
+]

@@ -1,0 +1,42 @@
+---
+title: J1149 - Home
+layout: default
+bodyClass: page-home
+---
+
+<div class="intro pb-4">
+  <div class="container">
+    <h1>Hello Developers!</h1>
+    <p>J1149 provides documentation and examples for creating software with Project PAI.</p>
+  </div>
+</div>
+
+<div class="container pt-2">
+  <div class="call">
+    <div class="call-box-top">
+      <div class="call-phone">Get updates from the J1149 newsletter:</div>
+    </div>
+    <div class="call-box-bottom">
+      <a href="https://mailchi.mp/f7ff4e1f05c7/j11" target="_blank" class="button">Subscribe</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-4"><!-- titles for when there's more to add--></h2>
+    </div>
+    {% for feature in site.data.features %}
+    <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <div class="feature">
+        {% if feature.image %}<div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image }}" /></div> {% endif %}
+        <h2 class="feature-title">{{ feature.title }}</h2>
+        <div class="feature-content">{{ feature.description }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

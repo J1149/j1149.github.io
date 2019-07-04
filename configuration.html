@@ -1,0 +1,37 @@
+---
+title: Configuration
+layout: default
+---
+
+<div class="intro intro-small" style="margin-top: -35px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Configuration</h1>
+            <ul>
+                <li>Archived binaries can be found within the projectpai/paicoin repository <a href="https://github.com/projectpai/paicoin/releases">here</a>.</li>
+                <li>If you are feeling up to the challenge of building from source, the following subsections provide build instructions for Unix, Windows, and OSX operating systems.</li>
+                <li>For the most up-to-date build notes: please see the <a href="https://github.com/projectpai/paicoin/tree/master/doc">PAI Coin docs folder</a>.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <div class="container pb-6">
+                <div class="row">
+                  {% for doc in site.configuration %}
+                  <div class="col-12 col-md-4 mb-1">
+                    <div class="service service-summary">
+                      <div class="service-content">
+                        <h2 class="service-title">
+                          <a href="{{site.baseurl}}{{ doc.url }}">{{ doc.title }}</a>
+                        </h2>
+                        {{ doc.content | markdownify | strip_html | truncate: 100 }}
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+

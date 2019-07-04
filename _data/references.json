@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Configuration",
+    "description": "Running a Local PAI Client",
+    "image": "../images/references/network1.png",
+    "link": "../configuration/"
+  },
+  {
+    "title": "API",
+    "description": "Client RPC Documentation",
+    "image": "../images/references/network3.png",
+    "link": "../papi/"
+  },
+  {
+    "title": "Examples",
+    "description": "Code and Additional Information",
+    "image": "../images/references/network4.png",
+    "link": "../examples/"
+  },
+
+]
